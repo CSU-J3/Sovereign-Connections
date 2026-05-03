@@ -1,4 +1,4 @@
-# Foreign Sovereign Funds Tracker
+# Sovereign Connections Tracker
 
 ![status](https://img.shields.io/badge/status-pre--launch-orange) ![data collection](https://img.shields.io/badge/data%20collection-not%20yet%20active-lightgrey) ![scope](https://img.shields.io/badge/scope-foreign%20sovereign%20%26%20sovereign--adjacent-blue)
 
@@ -142,7 +142,7 @@ Borrowed from BoP and Connected Procurement:
 ## Architecture (planned, not yet built)
 
 ```
-foreign-sovereign-funds/
+sovereign-connections/
 ├── README.md                          # this file
 ├── PROJECT.md                         # full project instructions for Claude Projects
 ├── docs/
