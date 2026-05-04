@@ -17,8 +17,8 @@ This repo currently contains only the project scope and methodology. Data collec
 | Connected business registry   | Not built                                                        |
 | Collector code                | Stubs only                                                       |
 | Data file                     | Seed records (6) and seed entities (7); collectors not yet wired |
-| Public dashboard              | Scaffold built (`web/`), not yet deployed                        |
-| Methodology page              | Placeholder; canonical version on Substack                       |
+| Public dashboard              | [sovereign-connections.vercel.app](https://sovereign-connections.vercel.app) |
+| Methodology page              | Not yet written                                                  |
 | First record collected        | None                                                             |
 
 The repo exists at this stage to document the scope publicly before any data collection begins.
@@ -148,8 +148,8 @@ sovereign-connections/
 ├── docs/
 │   ├── changelog.md                   # versioned methodology changes
 │   └── handoffs/                      # per-session handoff docs
-├── data/
-│   ├── records.json                   # canonical records (seeded; Python writes, web/ reads)
+├── data/                              # collector write target (Python); for v0 hand-edited seed
+│   ├── records.json                   # canonical records (seeded)
 │   ├── candidates.json                # pending review (empty for v0)
 │   ├── sovereign_entities.json        # sovereign-adjacent entity registry (seeded)
 │   └── connected_businesses.json      # entity registry with sourced ties (empty for v0)
@@ -170,7 +170,7 @@ sovereign-connections/
 └── .github/workflows/                 # collector + deploy automation (stub)
 ```
 
-The Python and TypeScript halves run on separate lifecycles. Collectors output JSON into the repo-root `data/`; the Next.js app under `web/` reads from `web/data/`, which is the deploy artifact actually built into the dashboard bundle. For v0 both locations hold the same hand-edited seed. When collectors come online, a sync script will copy `data/*.json` into `web/data/*.json` before each build, keeping the deploy boundary clean (Vercel only sees files under `web/`). There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
+The Python and TypeScript halves run on separate lifecycles and on opposite sides of the deploy boundary. Vercel builds only files under `web/`, so the dashboard reads from `web/data/*.json`. The repo-root `data/` directory is the collector write target: Python writes there, and a sync step copies `data/*.json` into `web/data/*.json` before each build. For v0 both locations hold the same hand-edited seed. There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
 
 ## License
 
