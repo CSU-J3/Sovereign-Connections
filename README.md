@@ -8,18 +8,18 @@ This repo currently contains only the project scope and methodology. Data collec
 
 ## Status
 
-| Item                          | State                                  |
-| ----------------------------- | -------------------------------------- |
-| Scope statement               | Documented (this README)               |
-| Defined terms                 | Documented (see below)                 |
-| Primary source list           | Documented (see below)                 |
-| Sovereign wealth fund registry| Not built                              |
-| Connected business registry   | Not built                              |
-| Collector code                | Not built                              |
-| Data file                     | Not present                            |
-| Public dashboard              | Not deployed                           |
-| Methodology page              | Not yet written                        |
-| First record collected        | None                                   |
+| Item                          | State                                                            |
+| ----------------------------- | ---------------------------------------------------------------- |
+| Scope statement               | Documented (this README)                                         |
+| Defined terms                 | Documented (see below)                                           |
+| Primary source list           | Documented (see below)                                           |
+| Sovereign wealth fund registry| Seed registry (7 SWFs) shipped at `/swfs`                        |
+| Connected business registry   | Not built                                                        |
+| Collector code                | Stubs only                                                       |
+| Data file                     | Seed records (6) and seed entities (7); collectors not yet wired |
+| Public dashboard              | Scaffold built (`web/`), not yet deployed                        |
+| Methodology page              | Placeholder; canonical version on Substack                       |
+| First record collected        | None                                                             |
 
 The repo exists at this stage to document the scope publicly before any data collection begins.
 
@@ -139,32 +139,37 @@ Borrowed from BoP and Connected Procurement:
 - Errors get corrected publicly with a changelog entry, not silent edits.
 - Sovereign wealth fund governance structures are documented per fund, not assumed.
 
-## Architecture (planned, not yet built)
+## Architecture
 
 ```
 sovereign-connections/
 ├── README.md                          # this file
 ├── PROJECT.md                         # full project instructions for Claude Projects
 ├── docs/
-│   ├── index.html                     # public dashboard
-│   ├── methodology.html               # methodology page
-│   ├── swf-registry.html              # per-SWF governance documentation
-│   └── data.json                      # tracker output
+│   ├── changelog.md                   # versioned methodology changes
+│   └── handoffs/                      # per-session handoff docs
 ├── data/
-│   ├── records.json                   # canonical records
-│   ├── candidates.json                # pending review
-│   ├── sovereign_entities.json        # sovereign and sovereign-adjacent entity registry
-│   └── connected_businesses.json      # entity registry with sourced ties
-├── collectors/
+│   ├── records.json                   # canonical records (seeded; Python writes, web/ reads)
+│   ├── candidates.json                # pending review (empty for v0)
+│   ├── sovereign_entities.json        # sovereign-adjacent entity registry (seeded)
+│   └── connected_businesses.json      # entity registry with sourced ties (empty for v0)
+├── collectors/                        # Python, stubs only
 │   ├── oge_278_collector.py
 │   ├── sec_edgar_collector.py
 │   ├── pacer_collector.py
 │   ├── fara_collector.py
 │   ├── cfius_collector.py
 │   └── foreign_registry_collector.py
-└── .github/workflows/
-    └── collect-and-deploy.yml
+├── web/                               # Next.js 15 dashboard, Vercel project root
+│   ├── app/                           # /, /swfs, /record/[id], /methodology
+│   ├── components/                    # PascalCase, mirrors cbt convention
+│   ├── lib/                           # types, data loader, constants, format helpers
+│   ├── package.json
+│   └── README.md                      # local dev and Vercel deploy notes
+└── .github/workflows/                 # collector + deploy automation (stub)
 ```
+
+The Python and TypeScript halves run on separate lifecycles. Collectors output JSON into `data/`; the Next.js app under `web/` imports those JSON files at build time. There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
 
 ## License
 

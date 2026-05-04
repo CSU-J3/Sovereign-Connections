@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# next / vercel build output
+.next/
+.vercel/
+next-env.d.ts
+dist/
+tsconfig.tsbuildinfo
+
+# secrets
+.env
+.env.local
+.env*.local
+
+# logs
+*.log
+
+# os junk
+.DS_Store
+Thumbs.db
+
+.vercel

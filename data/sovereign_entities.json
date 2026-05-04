@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "id": "PIF",
+    "name": "Public Investment Fund",
+    "country": "Saudi Arabia",
+    "governance_note": "Effectively the crown prince's investment vehicle. Chaired by MBS since 2015. Board composition and major investment decisions track royal-court priorities; the institutional separation between fund and state is thin compared to other listed SWFs."
+  },
+  {
+    "id": "MUBADALA",
+    "name": "Mubadala Investment Company",
+    "country": "United Arab Emirates",
+    "governance_note": "Sovereign with more institutional separation than PIF. Chaired by MBZ. Operates as an investment institution with named CEOs and published annual reports. The sovereign character is real; the governance gap between fund and state is narrower than NBIM but wider than PIF."
+  },
+  {
+    "id": "ADIA",
+    "name": "Abu Dhabi Investment Authority",
+    "country": "United Arab Emirates",
+    "governance_note": "Conservative governance norms. Rarely takes activist or operational positions in portfolio companies. Discloses limited operational detail compared to NBIM. Treated as sovereign for tracker purposes despite the lower public profile."
+  },
+  {
+    "id": "QIA",
+    "name": "Qatar Investment Authority",
+    "country": "Qatar",
+    "governance_note": "Royal-family controlled. Board chaired by the Emir. Investment activity tracks royal-court priorities including high-profile real estate and sports holdings."
+  },
+  {
+    "id": "KIA",
+    "name": "Kuwait Investment Authority",
+    "country": "Kuwait",
+    "governance_note": "Parliamentary oversight in theory. Managing director system in practice. The Kuwaiti National Assembly holds nominal oversight authority; the operational fund is run by professional managers with limited direct political interference relative to GCC peers."
+  },
+  {
+    "id": "NBIM",
+    "name": "Norges Bank Investment Management / Government Pension Fund Global",
+    "country": "Norway",
+    "governance_note": "Statutorily independent. Published ethics guidelines. Public exclusion lists naming companies the fund will not invest in. The strongest governance separation in the SWF universe; useful as a calibration point for what sovereign-source money looks like when the fund operates at arm's length from the state."
+  },
+  {
+    "id": "GIC",
+    "name": "GIC Private Limited",
+    "country": "Singapore",
+    "governance_note": "Technocratic governance. Chairman traditionally the sitting prime minister. Operates with formal investment-committee structures and named CEOs. Sovereign character documented; institutional separation between fund and state intermediate."
+  }
+]

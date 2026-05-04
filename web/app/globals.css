@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --bg-base: #0a0e14;
+  --bg-panel: #050709;
+  --bg-row-hover: #0f1620;
+  --border-strong: #1f2937;
+  --border-soft: #111820;
+
+  --text-primary: #e5e7eb;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #6b7280;
+
+  --accent-amber: #d97706;
+  --accent-amber-bright: #fbbf24;
+
+  --scope-live: #10b981;
+  --scope-comp: #94a3b8;
+  --scope-litig: #3b82f6;
+  --scope-oos: #fb7185;
+}
+
+@theme {
+  --font-mono:
+    ui-monospace, "JetBrains Mono", "SF Mono", SFMono-Regular, Menlo, Consolas,
+    "Liberation Mono", monospace;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--bg-base);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-feature-settings: "ss01", "cv02";
+}
+
+/* ---- records grid ------------------------------------------------------- */
+/* Columns: chevron | id | business/family | scope | period | source        */
+.records-row {
+  display: grid;
+  grid-template-columns: 14px 56px 1fr 64px 80px 70px;
+  align-items: center;
+  column-gap: 12px;
+  padding: 8px 14px;
+  border-bottom: 0.5px solid var(--border-soft);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.records-row:hover {
+  background-color: var(--bg-row-hover);
+}
+
+.records-row.is-expanded {
+  background-color: var(--bg-row-hover);
+}
+
+.records-header-row {
+  display: grid;
+  grid-template-columns: 14px 56px 1fr 64px 80px 70px;
+  align-items: center;
+  column-gap: 12px;
+  padding: 8px 14px;
+  background-color: var(--bg-panel);
+  border-bottom: 0.5px solid var(--border-strong);
+  color: var(--text-dim);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.expanded-panel {
+  background-color: var(--bg-row-hover);
+  border-left: 2px solid var(--accent-amber);
+  border-bottom: 0.5px solid var(--border-strong);
+  padding: 14px 14px 14px 28px;
+  margin-left: 82px;
+}
+
+.show-mobile {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .records-row,
+  .records-header-row {
+    grid-template-columns: 14px 56px 1fr 60px 60px;
+    column-gap: 6px;
+    padding: 8px 8px;
+  }
+  .col-period {
+    display: none;
+  }
+  .expanded-panel {
+    margin-left: 0;
+    padding: 14px;
+  }
+  .show-desktop {
+    display: none !important;
+  }
+  .show-mobile {
+    display: inline !important;
+  }
+  .filter-chips {
+    flex-wrap: wrap;
+  }
+}
