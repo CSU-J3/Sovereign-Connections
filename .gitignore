@@ -4,6 +4,9 @@ __pycache__/
 
 # Working artifacts: handoff docs and decision notes pasted in from Claude.ai
 # sessions. Kept on disk for reference but not committed.
-handoffs/
+# (Anchored to root so docs/handoffs/ — the cbt-pattern session log
+# directory — stays committed.)
+/handoffs/
 CLAUDE_CODE_HANDOFF.md
 foreign-sovereign-first-session-handoff.md
+/web/sovereign-connections-closing-housekeeping.md
