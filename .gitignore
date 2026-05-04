@@ -1,0 +1,9 @@
+.claude/
+__pycache__/
+*.pyc
+
+# Working artifacts: handoff docs and decision notes pasted in from Claude.ai
+# sessions. Kept on disk for reference but not committed.
+handoffs/
+CLAUDE_CODE_HANDOFF.md
+foreign-sovereign-first-session-handoff.md
