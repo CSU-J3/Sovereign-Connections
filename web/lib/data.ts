@@ -1,5 +1,5 @@
-import recordsJson from "../../data/records.json";
-import entitiesJson from "../../data/sovereign_entities.json";
+import recordsJson from "@/data/records.json";
+import entitiesJson from "@/data/sovereign_entities.json";
 import type {
   Framework,
   Scope,

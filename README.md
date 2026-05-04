@@ -163,13 +163,14 @@ sovereign-connections/
 ├── web/                               # Next.js 15 dashboard, Vercel project root
 │   ├── app/                           # /, /swfs, /record/[id], /methodology
 │   ├── components/                    # PascalCase, mirrors cbt convention
+│   ├── data/                          # seed JSON read by the dashboard at build time
 │   ├── lib/                           # types, data loader, constants, format helpers
 │   ├── package.json
 │   └── README.md                      # local dev and Vercel deploy notes
 └── .github/workflows/                 # collector + deploy automation (stub)
 ```
 
-The Python and TypeScript halves run on separate lifecycles. Collectors output JSON into `data/`; the Next.js app under `web/` imports those JSON files at build time. There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
+The Python and TypeScript halves run on separate lifecycles. Collectors output JSON into the repo-root `data/`; the Next.js app under `web/` reads from `web/data/`, which is the deploy artifact actually built into the dashboard bundle. For v0 both locations hold the same hand-edited seed. When collectors come online, a sync script will copy `data/*.json` into `web/data/*.json` before each build, keeping the deploy boundary clean (Vercel only sees files under `web/`). There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
 
 ## License
 

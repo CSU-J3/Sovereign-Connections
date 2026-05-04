@@ -1,6 +1,6 @@
 # Sovereign Connections — web
 
-Next.js 15 dashboard for the Sovereign Connections tracker. Records and sovereign-entity data live at the repo root in `../data/*.json`; this app reads them directly via static imports. The Python collectors (also at the repo root) write that JSON; for v0 the seed data is hand-edited.
+Next.js 15 dashboard for the Sovereign Connections tracker. The dashboard reads its data from `web/data/*.json` (this directory). The repo-root `data/` directory remains the long-term home for collector output: when Python collectors come online, they write to `../data/`, and a sync script copies updated JSON into `web/data/` before each build. For v0 the two locations hold the same hand-edited seed.
 
 ## Local development
 
@@ -15,10 +15,9 @@ Then open http://localhost:3000.
 
 ## Deploying to Vercel
 
-The Vercel project for this app should set **Root Directory = `web`**. Because the app imports JSON from `../data/`, two things need to be true:
+The Vercel project for this app **must** set **Root Directory = `web`** (Settings → General → Root Directory). Without this, Vercel runs `vercel build` against the repo root, finds no Next.js project, and ships an empty `/vercel/output` — every route then returns a Vercel-level 404.
 
-1. `outputFileTracingRoot` is set to the repo root in `next.config.ts` (already done). This tells Next.js to include parent files in the trace.
-2. In the Vercel project settings, leave **Include source files outside of the Root Directory in the Build Step** enabled (default for monorepos when `outputFileTracingRoot` points outside the root).
+There is no `vercel.json` and no `outputFileTracingRoot` workaround. The deploy boundary equals the project boundary: Vercel builds everything inside `web/` and nothing outside it.
 
 Stack: Next.js 15 App Router, React 19, TypeScript 5, Tailwind v4 (CSS-first config). No database for v0; static JSON only. No `/api` routes, no Vercel Cron, no watchlist.
 
@@ -41,6 +40,7 @@ web/
 │   ├── record/[id]/page.tsx
 │   └── methodology/page.tsx
 ├── components/              PascalCase, mirrors cbt convention
+├── data/                    seed JSON read by the dashboard at build time
 ├── lib/                     types, data loader, constants, format
 └── ...
 ```

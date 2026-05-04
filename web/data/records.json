@@ -1,0 +1,72 @@
+[
+  {
+    "id": "SC-001",
+    "business": "Affinity Partners",
+    "family_member": "Jared Kushner",
+    "scope": "COMP",
+    "source": "PIF",
+    "period": "2021-PRES",
+    "frameworks": ["EMOL", "FIRRMA", "OGE", "208"],
+    "evidence_category": [2],
+    "summary": "The closest documented direct analogue to the post-2025 fact pattern. SEC filings establish the financial interest; NYT and FT reporting establish the PIF source. Pre-2025 timing places it in the comparative set rather than the live tracker.",
+    "documented_amount": "$2 billion"
+  },
+  {
+    "id": "SC-002",
+    "business": "Trump Organization foreign-government bookings",
+    "family_member": "Donald Trump (and family beneficial interests)",
+    "scope": "COMP",
+    "source": "MULTI",
+    "period": "2017-2020",
+    "frameworks": ["EMOL", "OGE"],
+    "evidence_category": [1, 2, 3],
+    "summary": "First-term hospitality-revenue fact pattern. CREW reporting, House Oversight Committee documents, and the underlying foreign Emoluments litigation established the records. Comparative for methodology calibration on what counts as a foreign government official acting in official capacity payment.",
+    "documented_amount": "Various"
+  },
+  {
+    "id": "SC-003",
+    "business": "Ivanka Trump China trademarks",
+    "family_member": "Ivanka Trump",
+    "scope": "COMP",
+    "source": "CHN",
+    "period": "2017-2018",
+    "frameworks": ["EMOL", "FARA"],
+    "evidence_category": [2],
+    "summary": "Tests the state-grant-as-payment framing. Trademarks were awarded by a Chinese state IP office on a non-routine timeline coinciding with her White House role. Comparative reference for whether non-cash sovereign benefits register as foreign Emoluments Clause flows.",
+    "documented_amount": "18+ trademarks granted"
+  },
+  {
+    "id": "SC-004",
+    "business": "DC and Maryland v. Trump",
+    "family_member": "(foreign Emoluments Clause litigation)",
+    "scope": "LITIG",
+    "source": "NA",
+    "period": "2017-2021",
+    "frameworks": ["EMOL"],
+    "evidence_category": [1],
+    "summary": "Anchor case for the foreign Emoluments Clause modern doctrinal posture. Reached the Fourth Circuit on standing and zone-of-interests; vacated and remanded as moot in January 2021 after Trump left office. The case law on emolument definition still governs the framework this tracker uses."
+  },
+  {
+    "id": "SC-005",
+    "business": "Blumenthal v. Trump",
+    "family_member": "(congressional standing case)",
+    "scope": "LITIG",
+    "source": "NA",
+    "period": "2017-2020",
+    "frameworks": ["EMOL"],
+    "evidence_category": [1],
+    "summary": "DC Circuit held individual members of Congress lacked standing to sue over foreign Emoluments Clause violations absent institutional authorization. Load-bearing for any future enforcement challenge."
+  },
+  {
+    "id": "SC-006",
+    "business": "Burisma board engagement",
+    "family_member": "Hunter Biden",
+    "scope": "OOS",
+    "source": "NONE",
+    "period": "2014-2019",
+    "frameworks": ["FARA", "LDA"],
+    "evidence_category": [1, 2, 3],
+    "summary": "Documented for methodology completeness as the case the framework excludes despite political salience. Burisma is a Cyprus-registered private holding company; no Ukrainian state ownership in the documented record. State ties run through the owner's prior ministerial tenure, not through ownership structure. The exclusion is symmetrical: a Republican-side analogue with the same facts would also fall outside scope.",
+    "documented_amount": "~$3.4M to Rosemont Seneca Bohai LLC (entity-level inflows)"
+  }
+]
