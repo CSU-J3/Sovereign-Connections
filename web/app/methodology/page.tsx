@@ -34,14 +34,6 @@ function H2({ children }: { children: React.ReactNode }) {
   );
 }
 
-function Lead({ children }: { children: React.ReactNode }) {
-  return (
-    <span style={{ color: "var(--text-primary)", fontWeight: 500 }}>
-      {children}
-    </span>
-  );
-}
-
 function PathLink({ href, path }: { href: string; path: string }) {
   return (
     <a href={href} target="_blank" rel="noreferrer" className={linkClass} style={{ color: "var(--text-primary)" }}>
@@ -197,19 +189,19 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>Why this rule and not a broader one.</Lead> The rule tracks the
-          foreign Emoluments Clause's central concern (foreign-state-source
-          value reaching domestic officeholders) and what primary records can
-          support. Broader rules capture more cases at the cost of drifting into
-          causal claims the documented record does not support.{" "}
-          <Lead>Why not a narrower one.</Lead> A literal Emoluments Clause
-          analysis arguably fails on the Tahnoon-WLF facts, because the value
-          reaches Trump family entities through a private vehicle rather than
-          the principal personally and the source is a state-backed firm rather
-          than the UAE proper. The tracker captures the transaction because the
-          controlling-interest chain runs through Tahnoon's official roles to
-          the cap table. Narrower-than-this misses the mechanism actually doing
-          the work in the case the tracker is built around.
+          Why this rule and not a broader one. The rule tracks the foreign
+          Emoluments Clause's central concern (foreign-state-source value
+          reaching domestic officeholders) and what primary records can support.
+          Broader rules capture more cases at the cost of drifting into causal
+          claims the documented record does not support. Why not a narrower one.
+          A literal Emoluments Clause analysis arguably fails on the
+          Tahnoon-WLF facts, because the value reaches Trump family entities
+          through a private vehicle rather than the principal personally and
+          the source is a state-backed firm rather than the UAE proper. The
+          tracker captures the transaction because the controlling-interest
+          chain runs through Tahnoon's official roles to the cap table.
+          Narrower-than-this misses the mechanism actually doing the work in
+          the case the tracker is built around.
         </P>
 
         <H2>Burisma: the case the rule excludes</H2>
@@ -423,12 +415,12 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>What this section does not assert.</Lead> It does not allege the
-          Tahnoon transaction was a quid pro quo. It does not claim the November
-          19, 2025 AI chip export approvals to UAE-linked companies were caused
-          by the WLF deal. It does not claim Witkoff's negotiating posture in
-          the Iran or Gaza talks was influenced by his retained interests. The
-          page documents flows and fields. The reader draws what inferences the
+          What this section does not assert. It does not allege the Tahnoon
+          transaction was a quid pro quo. It does not claim the November 19,
+          2025 AI chip export approvals to UAE-linked companies were caused by
+          the WLF deal. It does not claim Witkoff's negotiating posture in the
+          Iran or Gaza talks was influenced by his retained interests. The page
+          documents flows and fields. The reader draws what inferences the
           documented record will support.
         </P>
 
@@ -498,9 +490,8 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>Versioning posture.</Lead> v1.x records logged before v2.0
-          adoption are not re-examined; the change is forward-looking. The
-          2026-05-05 entry in{" "}
+          Versioning posture. v1.x records logged before v2.0 adoption are not
+          re-examined; the change is forward-looking. The 2026-05-05 entry in{" "}
           <PathLink href={CHANGELOG} path="docs/changelog.md" /> documents the
           diff, the rationale, and the worked-example references that motivated
           the change. Every methodology change is versioned and dated.
@@ -516,9 +507,9 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>Not the foreign Emoluments Clause analysis itself.</Lead>{" "}
-          Constitutional Emoluments analysis turns on whether the officeholder
-          personally receives foreign-state-source value. The tracker captures
+          Not the foreign Emoluments Clause analysis itself. Constitutional
+          Emoluments analysis turns on whether the officeholder personally
+          receives foreign-state-source value. The tracker captures
           family-and-business receipts as a related but distinct category. A
           foreign Emoluments Clause case might or might not be brought on a
           record the tracker logs (DC and Maryland v. Trump and Blumenthal v.
@@ -527,7 +518,7 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>Not Section 7031(c) of the State Department appropriations act.</Lead>{" "}
+          Not Section 7031(c) of the State Department appropriations act.
           7031(c) bars foreign government officials and their immediate family
           members from US entry where the Secretary of State has credible
           information of "significant corruption" or "gross violation of human
@@ -543,96 +534,92 @@ export default function MethodologyPage() {
         </P>
 
         <P>
-          <Lead>Not FARA.</Lead> The Foreign Agents Registration Act (22 USC
-          611-621) covers unregistered representation of foreign principals. A
-          connected business receiving Gulf sovereign money is not a FARA
-          question for the family member or appointee unless that person is also
-          acting as a foreign government's agent.
+          Not FARA. The Foreign Agents Registration Act (22 USC 611-621) covers
+          unregistered representation of foreign principals. A connected
+          business receiving Gulf sovereign money is not a FARA question for the
+          family member or appointee unless that person is also acting as a
+          foreign government's agent.
         </P>
 
         <P>
-          <Lead>Not FIRRMA or CFIUS jurisdiction.</Lead> The Foreign Investment
-          Risk Review Modernization Act of 2018 gives CFIUS authority to review
-          foreign acquisitions on national-security grounds; this tracker
-          documents flows. Records can overlap, but the analyses are separate
-          and the tracker does not adopt CFIUS verdicts.
+          Not FIRRMA or CFIUS jurisdiction. The Foreign Investment Risk Review
+          Modernization Act of 2018 gives CFIUS authority to review foreign
+          acquisitions on national-security grounds; this tracker documents
+          flows. Records can overlap, but the analyses are separate and the
+          tracker does not adopt CFIUS verdicts.
         </P>
 
         <P>
-          <Lead>Not 18 USC 208 or 5 CFR Part 2640.</Lead> These cover the
-          criminal and administrative conflict-of-interest framework for
-          officeholders, and supply the five-category financial-interest
-          definition the tracker borrows. They then ask a different question:
-          whether the officeholder is barred from participating in particular
-          matters. Records can surface 208 exposure; this page does not make 208
-          findings.
+          Not 18 USC 208 or 5 CFR Part 2640. These cover the criminal and
+          administrative conflict-of-interest framework for officeholders, and
+          supply the five-category financial-interest definition the tracker
+          borrows. They then ask a different question: whether the officeholder
+          is barred from participating in particular matters. Records can
+          surface 208 exposure; this page does not make 208 findings.
         </P>
 
         <P>
-          <Lead>
-            Not 5 CFR 2635.204 (gifts from foreign governments to executive-branch
-            employees) and not the Lobbying Disclosure Act.
-          </Lead>{" "}
-          Each governs a different transaction class adjacent to but outside
-          this tracker's frame.
+          Not 5 CFR 2635.204 (gifts from foreign governments to executive-branch
+          employees) and not the Lobbying Disclosure Act. Each governs a
+          different transaction class adjacent to but outside this tracker's
+          frame.
         </P>
 
         <P>
-          <Lead>Cross-framework note.</Lead> Records will sometimes overlap with
-          FARA filings, 7031(c) designations, FIRRMA/CFIUS reviews, 18 USC 208
+          Cross-framework note. Records will sometimes overlap with FARA
+          filings, 7031(c) designations, FIRRMA/CFIUS reviews, 18 USC 208
           issues, or Emoluments Clause litigation. This page links to adjacent
           records and does not assume the adjacent framework's verdict.
         </P>
 
         <P>
-          <Lead>Per-SWF appendix.</Lead> Sovereign wealth funds operate with
-          varying degrees of independence from their governments; treating the
-          Public Investment Fund as identical to the Saudi state, or Mubadala as
-          identical to the UAE government, oversimplifies. PROJECT.md commits
-          this page to a per-SWF governance appendix that documents each fund's
-          governance structure, its relationship to its government, and the
-          documentary basis for treating it as sovereign-source. The appendix
-          grows as the registry grows.
+          Per-SWF appendix. Sovereign wealth funds operate with varying degrees
+          of independence from their governments; treating the Public Investment
+          Fund as identical to the Saudi state, or Mubadala as identical to the
+          UAE government, oversimplifies. PROJECT.md commits this page to a
+          per-SWF governance appendix that documents each fund's governance
+          structure, its relationship to its government, and the documentary
+          basis for treating it as sovereign-source. The appendix grows as the
+          registry grows.
         </P>
 
         <H2>Disclosed gaps and cadence</H2>
 
         <P>
-          <Lead>Disclosed-gap principle.</Lead> When a record's sovereign-source
-          chain or financial interest cannot be established from primary
-          records, the gap is disclosed rather than papered over. The Apollo
-          question discussed above is the live worked example: secondary
-          reporting framed it one way; primary-record verification (and the
-          NYT's own October 5, 2025 correction) closed it the other way.
-          Disclosing gaps makes the records that survive verification stronger.
+          Disclosed-gap principle. When a record's sovereign-source chain or
+          financial interest cannot be established from primary records, the gap
+          is disclosed rather than papered over. The Apollo question discussed
+          above is the live worked example: secondary reporting framed it one
+          way; primary-record verification (and the NYT's own October 5, 2025
+          correction) closed it the other way. Disclosing gaps makes the records
+          that survive verification stronger.
         </P>
 
         <P>
-          <Lead>Soft-flag principle.</Lead> Records that belong in the dataset
-          but should not count toward headline totals carry a flag with a
-          documented reason. A typical case: the sovereign-source finding is
-          well-documented but the financial-interest documentation is weaker, or
-          the reverse. The reason is on the record. The flag is not a hedge; it
-          is a signal that the record exists at a different evidence level than
-          the headline records.
+          Soft-flag principle. Records that belong in the dataset but should not
+          count toward headline totals carry a flag with a documented reason. A
+          typical case: the sovereign-source finding is well-documented but the
+          financial-interest documentation is weaker, or the reverse. The reason
+          is on the record. The flag is not a hedge; it is a signal that the
+          record exists at a different evidence level than the headline records.
         </P>
 
         <P>
-          <Lead>Cadence.</Lead> This tracker has the slowest cadence of the
-          three projects in the portfolio. Foreign sovereign flows surface
-          through SEC filings, OGE Form 278e disclosures, FARA filings, court
-          records (CFIUS, civil litigation), and reporting; each runs on its
-          own clock. New records get logged when the underlying primary record
-          posts. The tracker does not chase real-time news cycles. Many of the
-          underlying records publish irregularly or only when triggered by
-          litigation or media attention.
+          Cadence. This tracker has the slowest cadence of the three projects in
+          the portfolio. Foreign sovereign flows surface through SEC filings,
+          OGE Form 278e disclosures, FARA filings, court records (CFIUS, civil
+          litigation), and reporting; each runs on its own clock. New records
+          get logged when the underlying primary record posts. The tracker does
+          not chase real-time news cycles. Many of the underlying records
+          publish irregularly or only when triggered by litigation or media
+          attention.
         </P>
 
         <P>
-          <Lead>Errors and corrections.</Lead> Errors get corrected publicly
-          through entries in <PathLink href={CHANGELOG} path="docs/changelog.md" />
-          , not silent edits. The same evidentiary standard the methodology
-          applies to its sources applies to itself.
+          Errors and corrections. Errors get corrected publicly through entries
+          in <PathLink href={CHANGELOG} path="docs/changelog.md" />, not silent
+          edits. The same evidentiary standard the methodology applies to its
+          sources applies to itself.
         </P>
 
         <H2>What comes next</H2>
