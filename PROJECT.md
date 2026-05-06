@@ -65,6 +65,77 @@ When ownership chains are ambiguous (a private fund with a sovereign limited par
 
 Any entity in which a named family member holds a financial interest as defined above, documented through OGE 278 filings, SEC filings, public corporate registrations, court filings, or for entities outside the U.S. their equivalent in the relevant jurisdiction (UK Companies House, Saudi General Authority for Investment registrations, UAE free-zone disclosures, etc.). News reporting alone does not establish a connection.
 
+## Covered persons
+
+**Version:** 2.0
+**Effective date:** May 5, 2026 (adopted)
+**Supersedes:** v1.x covered-persons rule (which remains live for all records logged before adoption)
+
+v1.x captures sovereign-source payments to businesses with named-family-member financial interests. The Witkoff fact pattern surfaced a structural gap: senior administration appointees and designated envoys can hold retained financial interests in businesses receiving foreign sovereign or sovereign-adjacent money from governments whose policy portfolios overlap with the appointee's official duties, without any family member of the principal being on the cap table. v1.x misses these. v2.0 closes that gap with a bounded expansion. The bound is the portfolio-overlap requirement.
+
+### v1.x retained, unchanged: named family members
+
+A record qualifies under v1.x where:
+
+1. A named family member (as defined above) holds a financial interest (as defined above, per 5 CFR 2640.103(a) and 18 USC 208(a)) in a connected business (as defined above), AND
+2. That connected business receives foreign sovereign or sovereign-adjacent money (as defined above), AND
+3. The financial-interest connection is established through category 1 sources (OGE 278 filings, SEC filings, public corporate registrations, court filings, foreign jurisdiction registry filings); the sovereign-source flow is established through category 1 sources or through category 3 reporting that cites underlying primary documents the tracker can also link.
+
+The Defined Terms above are fixed. v2.0 does not modify them. v1.x records logged to date are not re-examined under v2.0; the change is forward-looking.
+
+### v2.0 addition: covered intermediaries
+
+A record additionally qualifies under v2.0 where:
+
+1. A senior administration appointee or designated envoy of the current administration holds a financial interest (per 5 CFR 2640.103(a) and 18 USC 208(a)) in a connected business, AND
+2. That connected business receives foreign sovereign or sovereign-adjacent money, AND
+3. The foreign government providing or controlling that money has policy interests overlapping with the appointee's official duties (the **portfolio-overlap requirement**), AND
+4. The financial-interest connection is established through category 1 sources; the sovereign-source flow is established through category 1 sources or through category 3 reporting that cites underlying primary documents.
+
+"Senior administration appointee or designated envoy" means: Cabinet officers, sub-Cabinet appointees at deputy/under-secretary level or above, White House staff at Assistant-to-the-President level or above, and any individual designated as a presidential envoy, special envoy, ambassador-at-large, or equivalent role. Career officials are out of scope unless they hold a political appointment meeting the above. Outside advisors without formal appointment are out of scope.
+
+"Portfolio overlap" is the bounding mechanism. The rule does not capture an appointee with foreign business exposure unrelated to that appointee's duties. A Treasury appointee with retained interests in a business funded by a Saudi sovereign source does not qualify under v2.0 unless the appointee's Treasury portfolio touches Saudi sovereign-financial relations. A Middle East envoy with retained interests in a business funded by a Gulf sovereign source qualifies, because the portfolio-overlap test is satisfied directly. The test is documented per record on the methodology page.
+
+### Convergent-interest flag
+
+Separate from the inclusion rule, individual records carry a **convergent-interest flag** where the same transaction or transaction sequence sends documented value to both:
+
+(a) the covered intermediary (the appointee's connected business), AND
+(b) a named family member of the principal (per the v1.x rule).
+
+The flag is a record-level field, not a trigger for inclusion. A record without the flag still qualifies if it meets the v2.0 criteria above. The flag attaches where the dual flow is established through category 1 sources or through category 3 reporting that cites underlying primary documents; absent that documentation, the flag is not asserted, and the record carries the appointee-only characterization. Records with the flag are presented in a higher evidence category on the dashboard.
+
+### Symmetry test
+
+Every v2.0 inclusion is checked against the symmetry test before logging: would an analogous record on the opposite political side, holding all structural features constant, qualify under the same rule? If not, the rule is misformed and the record is not logged until the rule is corrected. The symmetry test is documented per record on the methodology page where the record turns on a contested feature.
+
+### What v2.0 does not capture
+
+- Appointees with foreign business exposure outside their official portfolio. Captured only by v2.0 when portfolio overlap is documented per record.
+- Sovereign-source flows to businesses where the sovereign governance link runs through public-market minority shareholdings without control rights. The controlling-interest-chain test in the Defined Terms above governs; see the Witkoff working reference on Apollo Commercial Real Estate Finance Inc. for the worked example.
+- Appointees who divested before the sovereign-source flow occurred. The financial interest must be documented as concurrent with or post-dating the flow.
+- Outside advisors, donors, or unofficial confidantes without formal appointment.
+- Quid pro quo or causal-influence claims. v2.0 documents flows; it does not allege intent.
+
+### Worked examples
+
+Three reference files anchor the rule:
+
+- **Burisma.** The case the framework excludes despite political salience. Private company, no sovereign or sovereign-adjacent ownership chain, no sovereign-source payment to the connected business. Fails v1.x on the sovereign-source test; would fail v2.0 on the same test. Reference: `docs/references/burisma-methodology-reference.md`.
+
+- **Witkoff Group / Apollo-channel flows.** The case demonstrating v2.0's controlling-interest-chain bound. The Brook financing came from Apollo Commercial Real Estate Finance Inc. (NYSE: ARI), a publicly traded mortgage REIT in which QIA holds under 10% common-and-preferred equity with no board seat or approval rights. The Belgrove $100 million loan came from Apollo Global Management itself; per the NYT's October 5, 2025 correction, "The lender in that transaction was Apollo Global Management, a private-equity firm that has worked with Qatar, not a financial trust that is a subsidiary of Apollo and partly owned by Qatar." Both flows fail the sovereign-source test under v1.x and v2.0. The methodology read is reinforced by the NYT's own correction. The case is also notable because the structural test holds even where documented strategic intent exists on the sovereign side: Joey Allaham's 2017-2018 representations to QIA proposed using Apollo's REIT as a vehicle to invest in Trump-allied projects. The rule still excludes the resulting flows because the controlling-interest-chain test does not turn on intent. The same logic applied symmetrically would exclude an opposite-party analogue. Reference: `docs/references/witkoff-methodology-reference.md`, Apollo-channel section.
+
+- **Witkoff Group / Pakistan Roosevelt Hotel and WLF MGX-USD1-Binance.** The cases v2.0 is designed to capture. Pakistan Roosevelt qualifies under v2.0 as appointee-channel through a Pakistani SOE counterparty with portfolio overlap (Witkoff's envoy duties cover Pakistan as Iran-talks venue and as ceasefire-context interlocutor). MGX-USD1-Binance qualifies under v1.x (Trump family interest in WLF, MGX as Abu Dhabi state-backed) with the convergent-interest flag attached because the Tahnoon transaction sent value simultaneously to Trump family entities and to Witkoff-associated entities. Reference: `docs/references/witkoff-methodology-reference.md`, methodology-assessment section.
+
+### Change-log note
+
+When v2.0 is adopted, a `docs/changelog.md` entry is added with:
+- Adoption date
+- Diff vs. v1.x (this section, plus any cross-references in README.md and the methodology page)
+- Rationale link (this section)
+- The two worked-example references that motivated the change
+- A list of previously-rejected records that should be re-examined under v2.0 (currently empty; the live tracker has not begun collection)
+
 ## Empirical foundation
 
 This tracker has the slowest cadence of the three projects in the portfolio. Many of the underlying records publish irregularly or only when triggered by litigation or media attention. The tracker discloses this honestly.
