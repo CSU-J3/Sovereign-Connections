@@ -49,4 +49,5 @@ export interface SovereignEntity {
   name: string;
   country: string;
   governance_note: string;
+  primary_sources?: PrimarySource[];
 }

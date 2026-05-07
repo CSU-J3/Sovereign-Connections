@@ -72,6 +72,40 @@ export default function SwfsPage() {
               >
                 {e.governance_note}
               </p>
+              {e.primary_sources && e.primary_sources.length > 0 ? (
+                <div className="mt-2">
+                  <div
+                    className="text-[10px] uppercase tracking-[0.5px]"
+                    style={{ color: "var(--text-dim)" }}
+                  >
+                    Primary sources
+                  </div>
+                  <ul className="mt-1 space-y-1 text-[11px]">
+                    {e.primary_sources.map((src, i) => (
+                      <li key={i}>
+                        {src.url ? (
+                          <a
+                            href={src.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="underline-offset-2 hover:underline"
+                            style={{ color: "var(--text-secondary)" }}
+                          >
+                            {src.label}
+                          </a>
+                        ) : (
+                          <span style={{ color: "var(--text-secondary)" }}>
+                            {src.label}
+                          </span>
+                        )}{" "}
+                        <span style={{ color: "var(--text-dim)" }}>
+                          · cat {src.category}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>
