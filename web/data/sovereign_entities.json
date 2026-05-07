@@ -40,5 +40,17 @@
     "name": "GIC Private Limited",
     "country": "Singapore",
     "governance_note": "Technocratic governance. Chairman traditionally the sitting prime minister. Operates with formal investment-committee structures and named CEOs. Sovereign character documented; institutional separation between fund and state intermediate."
+  },
+  {
+    "id": "ADQ",
+    "name": "Abu Dhabi Developmental Holding Company",
+    "country": "United Arab Emirates",
+    "governance_note": "One of three Abu Dhabi sovereign wealth funds, alongside ADIA and Mubadala. Founded 2018, focused on diversified holdings across food, utilities, healthcare, and logistics. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan, who simultaneously serves as UAE National Security Advisor. The overlap between investment portfolio and security and intelligence portfolio is material; institutional separation between fund and state apparatus is narrower than ADIA's."
+  },
+  {
+    "id": "MGX",
+    "name": "MGX",
+    "country": "United Arab Emirates",
+    "governance_note": "Abu Dhabi state-backed AI-focused investment vehicle launched 2024. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan; co-shareholders include Mubadala and G42, also Tahnoon-chaired. Sovereign-adjacent character is acknowledged in US congressional correspondence and WSJ reporting. Governance documentation is limited relative to longer-established Abu Dhabi funds; the fund is treated as sovereign-adjacent for tracker purposes pending fuller disclosure."
   }
 ]

@@ -68,5 +68,48 @@
     "evidence_category": [1, 2, 3],
     "summary": "Documented for methodology completeness as the case the framework excludes despite political salience. Burisma is a Cyprus-registered private holding company; no Ukrainian state ownership in the documented record. State ties run through the owner's prior ministerial tenure, not through ownership structure. The exclusion is symmetrical: a Republican-side analogue with the same facts would also fall outside scope.",
     "documented_amount": "~$3.4M to Rosemont Seneca Bohai LLC (entity-level inflows)"
+  },
+  {
+    "id": "SC-007",
+    "business": "World Liberty Financial",
+    "family_member": "Donald Trump (and family beneficial interests)",
+    "scope": "LIVE",
+    "source": "MULTI",
+    "period": "2024-PRES",
+    "frameworks": ["EMOL", "OGE", "208"],
+    "evidence_category": [1, 2, 3],
+    "summary": "Decentralized finance protocol and stablecoin issuer founded 2024 by Zachary Folkman, Chase Herro, the Witkoff family (Alex and Zach Witkoff), and Trump family members (Donald Trump Jr., Eric Trump, Barron Trump). Donald Trump and Steve Witkoff are listed in WLF corporate documentation as co-founders emeritus. Trump family entities receive 75% of net WLFI token-sale proceeds plus a cut of stablecoin profits. Two sovereign-adjacent transactions sit on the record. On January 16, 2025, four days before inauguration, Aryam (a vehicle identified in WSJ reporting as controlled by lieutenants of Sheikh Tahnoon bin Zayed Al Nahyan, UAE National Security Advisor and chair of ADQ, IHC, G42, and MGX) acquired 49% of WLF for $500M, with $187M flowing to Trump family entities and $31M flowing to Witkoff-associated entities at signing. The transaction was not publicly disclosed for over a year. On May 1, 2025, MGX (Abu Dhabi state-backed, Tahnoon chair) used WLF's USD1 stablecoin to settle a $2B Binance investment. The Tahnoon-Aryam transaction carries the v2.0 convergent-interest flag for Witkoff Group and WLF portfolio overlap; Steve Witkoff served as Middle East envoy from early 2025, with continuing equity exposures across Witkoff Group affiliates and WLF-related vehicles per his August 13, 2025 OGE Form 278e (New Entrant Report). Pre-v2.0 records are not re-examined; this is the worked v1.x case the v2.0 flag was developed against.",
+    "documented_amount": "$500M Aryam stake (Tahnoon, Jan 2025); $2B MGX-Binance via USD1 (May 2025)",
+    "primary_sources": [
+      {
+        "label": "Witkoff OGE Form 278e (New Entrant Report, August 13, 2025)",
+        "category": 1
+      },
+      {
+        "label": "WLF corporate documentation (capital structure, founders, profit-distribution terms)",
+        "category": 1
+      },
+      {
+        "label": "House Select Committee on the CCP, letter to Zach Witkoff, February 4, 2026",
+        "category": 1
+      },
+      {
+        "label": "Warren-Murphy letter on Witkoff OGE form ethics-officer signoff, November 2025",
+        "category": 1
+      },
+      {
+        "label": "NYT, 'Where Mideast Envoy Pitched Peace, His Son Pitched Investors' (Kamin & Hope, September 26, 2025; corrected October 5, 2025)",
+        "url": "https://www.nytimes.com/2025/09/26/business/witkoff-son-qatar-gaza.html",
+        "category": 3
+      },
+      {
+        "label": "WSJ, 'Spy Sheikh Secret Stake Trump Crypto Tahnoon' series, January 31, 2026",
+        "category": 3
+      },
+      {
+        "label": "Public Citizen analysis of WSJ-reported documents, January 2026",
+        "category": 4
+      }
+    ]
   }
 ]

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-05-07
+
+First LIVE record landed in the tracker. SC-007 covers World Liberty Financial and the Trump-family beneficial interest in WLF token-sale proceeds and stablecoin profits. The January 16, 2025 Tahnoon-Aryam transaction (a $500M acquisition of 49% of WLF by a Tahnoon-lieutenant vehicle, with $187M flowing to Trump-family entities and $31M to Witkoff-associated entities at signing) is the worked v1.x case carrying the v2.0 convergent-interest flag for Witkoff Group and WLF portfolio overlap. The May 1, 2025 MGX-USD1-Binance transaction is a separate v1.x record reference inside the same SC-007 entry without the flag.
+
+Two new entries added to the sovereign-entities registry: ADQ (Abu Dhabi Developmental Holding Company) and MGX, both Tahnoon-chaired Abu Dhabi state vehicles surfacing in the SC-007 record.
+
+Convergent-interest flag is expressed in the SC-007 summary prose. `web/lib/types.ts` is unchanged in this commit; v2.0 schema extension (a structured `flags` or `covered_intermediary` field) remains queued.
+
+Defined terms unchanged.
+
 ## 2026-05-05
 
 Covered-persons rule v2.0 adopted. The Witkoff fact pattern surfaced a structural gap in v1.x: senior administration appointees and designated envoys can hold retained financial interests in connected businesses receiving foreign sovereign or sovereign-adjacent money from governments whose policy portfolios overlap with the appointee's official duties, without any named family member on the cap table. v2.0 adds covered intermediaries bounded by a portfolio-overlap requirement. A record-level convergent-interest flag attaches where the same transaction sends documented value to both the intermediary and a named family member; the WLF Tahnoon-Aryam transaction is the worked v1.x case carrying the flag, and the Pakistan Roosevelt sequence is the worked v2.0 case. The Apollo-channel flows (Brook, and the Belgrove $100 million loan covered by the NYT's October 5, 2025 correction) are excluded by the controlling-interest-chain test under both versions. The Witkoff working reference is at `docs/references/witkoff-methodology-reference.md`; Burisma remains the symmetry-defining exclusion at `docs/references/burisma-methodology-reference.md`. Every v2.0 inclusion is checked against the symmetry test before logging. The change is forward-looking; pre-v2.0 records are not re-examined. Defined terms unchanged.

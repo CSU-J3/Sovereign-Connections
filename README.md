@@ -19,7 +19,7 @@ This repo currently contains only the project scope and methodology. Data collec
 | Data file                     | Seed records (6) and seed entities (7); collectors not yet wired |
 | Public dashboard              | [sovereign-connections.vercel.app](https://sovereign-connections.vercel.app) |
 | Methodology page              | Live at `/methodology` (v2.0 adopted 2026-05-05)                 |
-| First record collected        | None                                                             |
+| First record collected        | SC-007 (World Liberty Financial)                                 |
 
 The repo exists at this stage to document the scope publicly before any data collection begins.
 
