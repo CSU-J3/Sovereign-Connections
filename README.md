@@ -13,7 +13,7 @@ This repo currently contains only the project scope and methodology. Data collec
 | Scope statement               | Documented (this README)                                         |
 | Defined terms                 | Documented (see below)                                           |
 | Primary source list           | Documented (see below)                                           |
-| Sovereign wealth fund registry| 11 entries at `/swfs` (3 with primary_sources; seven seeds queued)|
+| Sovereign wealth fund registry| 11 entries at `/swfs`                                            |
 | Connected business registry   | Not built                                                        |
 | Collector code                | Stubs only                                                       |
 | Data file                     | 8 records (2 LIVE), 11 entities; collectors not yet wired        |
