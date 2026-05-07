@@ -78,7 +78,7 @@
     "period": "2024-PRES",
     "frameworks": ["EMOL", "OGE", "208"],
     "evidence_category": [1, 2, 3],
-    "summary": "Decentralized finance protocol and stablecoin issuer founded 2024 by Zachary Folkman, Chase Herro, the Witkoff family (Alex and Zach Witkoff), and Trump family members (Donald Trump Jr., Eric Trump, Barron Trump). Donald Trump and Steve Witkoff are listed in WLF corporate documentation as co-founders emeritus. Trump family entities receive 75% of net WLFI token-sale proceeds plus a cut of stablecoin profits. Two sovereign-adjacent transactions sit on the record. On January 16, 2025, four days before inauguration, Aryam (a vehicle identified in WSJ reporting as controlled by lieutenants of Sheikh Tahnoon bin Zayed Al Nahyan, UAE National Security Advisor and chair of ADQ, IHC, G42, and MGX) acquired 49% of WLF for $500M, with $187M flowing to Trump family entities and $31M flowing to Witkoff-associated entities at signing. The transaction was not publicly disclosed for over a year. On May 1, 2025, MGX (Abu Dhabi state-backed, Tahnoon chair) used WLF's USD1 stablecoin to settle a $2B Binance investment. The Tahnoon-Aryam transaction carries the v2.0 convergent-interest flag for Witkoff Group and WLF portfolio overlap; Steve Witkoff served as Middle East envoy from early 2025, with continuing equity exposures across Witkoff Group affiliates and WLF-related vehicles per his August 13, 2025 OGE Form 278e (New Entrant Report). Pre-v2.0 records are not re-examined; this is the worked v1.x case the v2.0 flag was developed against.",
+    "summary": "Decentralized finance protocol and stablecoin issuer founded 2024 by Zachary Folkman, Chase Herro, the Witkoff family (Alex and Zach Witkoff), and Trump family members (Donald Trump Jr., Eric Trump, Barron Trump). Donald Trump and Steve Witkoff are listed in WLF corporate documentation as co-founders emeritus. Trump family entities receive 75% of net WLFI token-sale proceeds plus a cut of stablecoin profits. Three sovereign-adjacent transactions sit on the record. On January 16, 2025, four days before inauguration, Aryam (a vehicle identified in WSJ reporting as controlled by lieutenants of Sheikh Tahnoon bin Zayed Al Nahyan, UAE National Security Advisor and chair of ADQ, IHC, G42, and MGX) acquired 49% of WLF for $500M, with $187M flowing to Trump family entities and $31M flowing to Witkoff-associated entities at signing. The transaction was not publicly disclosed for over a year. On May 1, 2025, MGX (Abu Dhabi state-backed, Tahnoon chair) used WLF's USD1 stablecoin to settle a $2B Binance investment. On January 14, 2026, the Pakistan Virtual Asset Regulatory Authority (PVARA) and the Pakistan Ministry of Finance signed a non-binding MOU with SC Financial Technologies (a Delaware-registered WLF affiliate that co-owns the USD1 stablecoin brand) to explore integrating USD1 into Pakistan's regulated cross-border payments framework. Pakistani Finance Minister Muhammad Aurangzeb signed for Pakistan; Zach Witkoff (CEO of both WLF and SC Financial Technologies) signed for the US side. The signing ceremony was attended by Prime Minister Shehbaz Sharif and Field Marshal Asim Munir. The MOU is non-binding and exploratory; no Pakistani-sovereign payment to SC Financial Technologies or WLF is documented as of this entry. The Tahnoon-Aryam transaction carries the v2.0 convergent-interest flag for Witkoff Group and WLF portfolio overlap; Steve Witkoff served as Middle East envoy from early 2025, with continuing equity exposures across Witkoff Group affiliates and WLF-related vehicles per his August 13, 2025 OGE Form 278e (New Entrant Report). Pre-v2.0 records are not re-examined; this is the worked v1.x case the v2.0 flag was developed against.",
     "documented_amount": "$500M Aryam stake (Tahnoon, Jan 2025); $2B MGX-Binance via USD1 (May 2025)",
     "primary_sources": [
       {
@@ -109,6 +109,60 @@
       {
         "label": "Public Citizen analysis of WSJ-reported documents, January 2026",
         "category": 4
+      },
+      {
+        "label": "PVARA official statement on SC Financial Technologies MOU, January 14, 2026",
+        "category": 1
+      },
+      {
+        "label": "Dawn (Pakistan), 'Pakistan signs MoU with Donald Trump-linked World Liberty Finance', January 14, 2026",
+        "url": "https://www.dawn.com/news/1966922",
+        "category": 3
+      },
+      {
+        "label": "CoinDesk, 'Pakistan regulator inks MoU with WLFI-linked crypto business for stablecoin-based payments', January 14, 2026",
+        "url": "https://www.coindesk.com/business/2026/01/14/pakistan-signs-deal-with-trump-linked-crypto-business-for-cross-border-payments",
+        "category": 3
+      }
+    ]
+  },
+  {
+    "id": "SC-008",
+    "business": "Witkoff Group · Roosevelt Hotel redevelopment",
+    "family_member": "Steve Witkoff (Special Envoy for the Middle East; covered intermediary under v2.0)",
+    "scope": "LIVE",
+    "source": "MULTI",
+    "period": "2026-PRES",
+    "frameworks": ["EMOL", "FIRRMA", "OGE", "208"],
+    "evidence_category": [1, 3],
+    "summary": "v2.0 covered-intermediary worked case. On February 19, 2026, the Pakistani Finance Ministry and the US General Services Administration signed a non-binding MOU to jointly redevelop the Roosevelt Hotel, a 22-story 1,025-room property in midtown Manhattan owned by Pakistan International Airlines. Per the Pakistani government statement, the agreement was 'negotiated and stewarded' by US Special Envoy for the Middle East Steve Witkoff. Pakistani officials estimate the asset value at over $1 billion. Under the proposed structure, Pakistan contributes the land while a development partner puts up roughly $1B equity and the joint venture takes on $2-3B in debt. PIA was privatized in December 2025 as part of Pakistan's IMF Extended Fund Facility restructuring; the Pakistani government retains a minority stake. Witkoff is the founder of Witkoff Group, a New York real estate firm whose Manhattan portfolio includes the Times Square Edition and the Faena, both luxury redevelopment projects in the same market segment as the Roosevelt. NY Post and Reuters reporting describes Witkoff as having potential post-diplomatic interest in Roosevelt-related deals; this is reporting speculation, not a contractual position. Witkoff Group is not a party to the MOU, and as of this entry no PIA-source flow to Witkoff Group is documented. The convergent interest is at the role-and-portfolio level: covered intermediary (envoy with foreign-policy portfolio overlapping the deal counterparty), Manhattan real estate firm whose sector aligns with the redevelopment plan, sovereign-adjacent counterparty (post-privatization PIA with Pakistani government minority stake). Witkoff's continuing equity exposures across Witkoff Group affiliates are documented on the August 13, 2025 OGE Form 278e referenced in SC-007. The record will be updated if Witkoff Group becomes a contractual party or a PIA-source flow is documented.",
+    "documented_amount": "$1B+ asset value (estimated by Pakistan); no documented Witkoff Group receipt as of February 2026",
+    "primary_sources": [
+      {
+        "label": "Pakistan Finance Division statement on Roosevelt Hotel MOU, February 19, 2026",
+        "category": 1
+      },
+      {
+        "label": "Witkoff OGE Form 278e (New Entrant Report, August 13, 2025)",
+        "category": 1
+      },
+      {
+        "label": "Warren-Murphy letter on Witkoff OGE form ethics-officer signoff, November 2025",
+        "category": 1
+      },
+      {
+        "label": "Reuters reporting on the Roosevelt Hotel MOU and Pakistan IMF context, February 2026",
+        "category": 3
+      },
+      {
+        "label": "Commercial Observer, 'Trump Envoy Steve Witkoff, Pakistani Government Plan Roosevelt Hotel Redevelopment', February 26, 2026",
+        "url": "https://commercialobserver.com/2026/02/trump-envoy-steve-witkoff-pakistan-roosevelt-hotel/",
+        "category": 3
+      },
+      {
+        "label": "Bisnow New York, 'Steve Witkoff Strikes U.S.-Pakistan Deal To Redevelop Manhattan Hotel', February 20, 2026",
+        "url": "https://www.bisnow.com/new-york/news/hotel/pakistan-reaches-agreement-with-us-to-redevelop-nyc-hotel-133331",
+        "category": 3
       }
     ]
   }

@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-05-07 (later)
+
+SC-008 lands as the second LIVE record and the worked v2.0 covered-intermediary case the methodology page references. The record covers the Pakistan-US Roosevelt Hotel redevelopment MOU signed February 19, 2026 between the Pakistani Finance Ministry and the US General Services Administration, negotiated by Special Envoy Steve Witkoff. The convergent interest sits at the role-and-portfolio level rather than at a documented direct flow: Witkoff (envoy with Pakistan-policy portfolio), Witkoff Group (Manhattan real estate firm with portfolio overlap on the redevelopment sector), and PIA (Pakistani airline, post-December-2025 privatization with government minority stake, owner of the Roosevelt Hotel). No PIA-source flow to Witkoff Group is documented as of this entry; the record's value is in capturing v2.0 portfolio-overlap convergence honestly, with disclosed-gap discipline on the flow status.
+
+SC-007 updated to add a third documented sovereign-adjacent transaction: the January 14, 2026 PVARA/Pakistan Ministry of Finance MOU with SC Financial Technologies (a Delaware-registered WLF affiliate that co-owns the USD1 stablecoin brand), signed by Pakistani Finance Minister Aurangzeb and WLF/SC CEO Zach Witkoff at a ceremony attended by Prime Minister Sharif and Field Marshal Munir. Three new primary_sources entries added to SC-007 covering the PVARA statement, Dawn reporting, and CoinDesk reporting.
+
+One new sovereign_entities registry entry: PIA (Pakistan International Airlines), with governance note covering the December 2025 privatization status and continued government minority stake.
+
+Convergent-interest flag for SC-008 expressed in summary prose. types.ts unchanged; v2.0 schema extension remains queued.
+
+Defined terms unchanged.
+
 ## 2026-05-07
 
 First LIVE record landed in the tracker. SC-007 covers World Liberty Financial and the Trump-family beneficial interest in WLF token-sale proceeds and stablecoin profits. The January 16, 2025 Tahnoon-Aryam transaction (a $500M acquisition of 49% of WLF by a Tahnoon-lieutenant vehicle, with $187M flowing to Trump-family entities and $31M to Witkoff-associated entities at signing) is the worked v1.x case carrying the v2.0 convergent-interest flag for Witkoff Group and WLF portfolio overlap. The May 1, 2025 MGX-USD1-Binance transaction is a separate v1.x record reference inside the same SC-007 entry without the flag.

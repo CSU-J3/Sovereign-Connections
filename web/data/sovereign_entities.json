@@ -52,5 +52,11 @@
     "name": "MGX",
     "country": "United Arab Emirates",
     "governance_note": "Abu Dhabi state-backed AI-focused investment vehicle launched 2024. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan; co-shareholders include Mubadala and G42, also Tahnoon-chaired. Sovereign-adjacent character is acknowledged in US congressional correspondence and WSJ reporting. Governance documentation is limited relative to longer-established Abu Dhabi funds; the fund is treated as sovereign-adjacent for tracker purposes pending fuller disclosure."
+  },
+  {
+    "id": "PIA",
+    "name": "Pakistan International Airlines",
+    "country": "Pakistan",
+    "governance_note": "Pakistan's national airline, historically a state-owned enterprise. Privatized in December 2025 as part of Pakistan's IMF Extended Fund Facility restructuring requirements; the Pakistani government retains a minority stake post-privatization. Owns the Roosevelt Hotel in Manhattan (acquired 1979) among other overseas assets. The state-owned-enterprise classification applied historically; post-December-2025 the entity is sovereign-adjacent through residual government minority stake and ownership of strategically positioned overseas real estate undergoing redevelopment. Treated as sovereign-adjacent for tracker purposes pending fuller post-privatization governance documentation."
   }
 ]
