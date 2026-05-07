@@ -13,10 +13,10 @@ This repo currently contains only the project scope and methodology. Data collec
 | Scope statement               | Documented (this README)                                         |
 | Defined terms                 | Documented (see below)                                           |
 | Primary source list           | Documented (see below)                                           |
-| Sovereign wealth fund registry| Seed registry (7 SWFs) shipped at `/swfs`                        |
+| Sovereign wealth fund registry| 10 entries at `/swfs`                                            |
 | Connected business registry   | Not built                                                        |
 | Collector code                | Stubs only                                                       |
-| Data file                     | Seed records (6) and seed entities (7); collectors not yet wired |
+| Data file                     | 8 records (2 LIVE), 10 entities; collectors not yet wired        |
 | Public dashboard              | [sovereign-connections.vercel.app](https://sovereign-connections.vercel.app) |
 | Methodology page              | Live at `/methodology` (v2.0 adopted 2026-05-05)                 |
 | Live records collected | SC-007 (World Liberty Financial), SC-008 (Witkoff Group · Roosevelt redevelopment) |
