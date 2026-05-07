@@ -576,11 +576,17 @@ export default function MethodologyPage() {
           Per-SWF appendix. Sovereign wealth funds operate with varying degrees
           of independence from their governments; treating the Public Investment
           Fund as identical to the Saudi state, or Mubadala as identical to the
-          UAE government, oversimplifies. PROJECT.md commits this page to a
-          per-SWF governance appendix that documents each fund's governance
-          structure, its relationship to its government, and the documentary
-          basis for treating it as sovereign-source. The appendix grows as the
-          registry grows.
+          UAE government, oversimplifies. PROJECT.md commits this page to a{" "}
+          <Link
+            href="/swfs"
+            className="underline underline-offset-2 transition hover:text-[var(--accent-amber-bright)]"
+            style={{ color: "var(--text-primary)" }}
+          >
+            per-SWF governance appendix
+          </Link>{" "}
+          that documents each fund's governance structure, its relationship to
+          its government, and the documentary basis for treating it as
+          sovereign-source. The appendix grows as the registry grows.
         </P>
 
         <H2>Disclosed gaps and cadence</H2>
