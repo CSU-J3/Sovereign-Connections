@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-05-07 (later +1)
+
+`SovereignEntity` schema extended with optional `primary_sources` field, mirroring the `SovereignRecord` pattern. Schema change is structural and reversible; existing entries without primary_sources continue to parse.
+
+Three sovereign-entities entries revised with primary-source verification: ADQ, MGX, PIA. ADQ governance_note now reflects the January 15, 2026 launch of L'imad Holding Company as a successor sovereign vehicle absorbing ADQ; pre-2026 ADQ-attributed transactions in SC-007 remain accurate as documented under ADQ's pre-L'imad governance structure. MGX governance_note refined with verified founding-partner, leadership, and partnership detail; Tahnoon's chairmanship continues post-transition. PIA governance_note corrected on two points: PIA itself was privatized December 23, 2025 with Pakistani government retaining a 25% stake, and the Roosevelt Hotel ownership chain runs through PIA Investment Limited (PIAIL) and Roosevelt Hotel Corporation as PIAIL's subsidiary, not directly through PIA; the Roosevelt and other overseas assets were ring-fenced from the airline privatization for separate joint-venture-model handling.
+
+One new sovereign-entities entry: L'imad Holding Company (LIMAD), with governance_note covering the January 15, 2026 launch and consolidation of ADQ, Modon, and CYVN under the Abu Dhabi crown prince's chairmanship.
+
+Seven seed entries (PIF, MUBADALA, ADIA, QIA, KIA, NBIM, GIC) queued for primary-source verification in a future session; their existing prose-only governance_notes remain in place pending that pass.
+
+Defined terms unchanged.
+
 ## 2026-05-07 (later)
 
 SC-008 lands as the second LIVE record and the worked v2.0 covered-intermediary case the methodology page references. The record covers the Pakistan-US Roosevelt Hotel redevelopment MOU signed February 19, 2026 between the Pakistani Finance Ministry and the US General Services Administration, negotiated by Special Envoy Steve Witkoff. The convergent interest sits at the role-and-portfolio level rather than at a documented direct flow: Witkoff (envoy with Pakistan-policy portfolio), Witkoff Group (Manhattan real estate firm with portfolio overlap on the redevelopment sector), and PIA (Pakistani airline, post-December-2025 privatization with government minority stake, owner of the Roosevelt Hotel). No PIA-source flow to Witkoff Group is documented as of this entry; the record's value is in capturing v2.0 portfolio-overlap convergence honestly, with disclosed-gap discipline on the flow status.

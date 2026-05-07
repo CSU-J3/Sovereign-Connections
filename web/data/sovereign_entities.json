@@ -45,18 +45,131 @@
     "id": "ADQ",
     "name": "Abu Dhabi Developmental Holding Company",
     "country": "United Arab Emirates",
-    "governance_note": "One of three Abu Dhabi sovereign wealth funds, alongside ADIA and Mubadala. Founded 2018, focused on diversified holdings across food, utilities, healthcare, and logistics. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan, who simultaneously serves as UAE National Security Advisor. The overlap between investment portfolio and security and intelligence portfolio is material; institutional separation between fund and state apparatus is narrower than ADIA's."
+    "governance_note": "Established 2018 (originally Abu Dhabi Developmental Holding Company / ADDH), rebranded ADQ in 2020. Diversified sovereign holdings across utilities, healthcare, food, transport, and logistics; assets variously reported at $159B-$263B by late 2025. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan (UAE National Security Advisor, Deputy Ruler of Abu Dhabi) through January 2026. On January 15, 2026 the Abu Dhabi Supreme Council for Financial and Economic Affairs launched L'imad Holding Company as a successor vehicle absorbing ADQ, with Crown Prince Sheikh Khaled bin Mohamed Al Nahyan as L'imad chair; takeover ongoing as of this entry. The Tahnoon-Aryam (January 2025) and MGX-Binance-WLF (May 2025) transactions referenced in SC-007 occurred under ADQ's pre-L'imad governance structure. Future ADQ-source flows route through L'imad governance, which represents continued direct sovereign control rather than greater institutional independence.",
+    "primary_sources": [
+      {
+        "label": "ADQ official 'Who we are' page",
+        "url": "https://www.adq.ae/about-adq/who-we-are/",
+        "category": 1
+      },
+      {
+        "label": "Abu Dhabi Media Office, 'Abu Dhabi Launches Comprehensive Global Investment Strategy on Artificial Intelligence', September 25, 2024 (establishes AIATC and Tahnoon's chairmanship of ADQ-adjacent vehicles)",
+        "url": "https://www.mediaoffice.abudhabi/en/technology/abu-dhabi-launches-comprehensive-global-investment-strategy-on-artificial-intelligence/",
+        "category": 1
+      },
+      {
+        "label": "Abu Dhabi Supreme Council for Financial and Economic Affairs statement on L'imad Holding Company, February 2, 2026",
+        "category": 1
+      },
+      {
+        "label": "Asia Asset Management, 'Abu Dhabi's newly minted wealth fund L'imad to take over US$263 billion peer ADQ', February 4, 2026",
+        "url": "https://www.asiaasset.com/post/30467-limadadq-gte-0203",
+        "category": 3
+      },
+      {
+        "label": "AGBI ADQ profile and reporting on L'imad consolidation",
+        "url": "https://www.agbi.com/companies/adq/",
+        "category": 3
+      }
+    ]
   },
   {
     "id": "MGX",
     "name": "MGX",
     "country": "United Arab Emirates",
-    "governance_note": "Abu Dhabi state-backed AI-focused investment vehicle launched 2024. Chaired by Sheikh Tahnoon bin Zayed Al Nahyan; co-shareholders include Mubadala and G42, also Tahnoon-chaired. Sovereign-adjacent character is acknowledged in US congressional correspondence and WSJ reporting. Governance documentation is limited relative to longer-established Abu Dhabi funds; the fund is treated as sovereign-adjacent for tracker purposes pending fuller disclosure."
+    "governance_note": "Abu Dhabi state-backed AI-focused investment vehicle launched March 2024 by the Artificial Intelligence and Advanced Technology Council (AIATC), itself established January 22, 2024 by UAE President Mohamed bin Zayed Al Nahyan. Foundational partners: Mubadala and G42 (the Abu Dhabi-headquartered AI conglomerate). Chaired by Sheikh Tahnoon bin Zayed Al Nahyan; Vice Chair is Khaldoon Al Mubarak (Mubadala Managing Director and Group CEO); CEO is Ahmed Yahia Al Idrissi (formerly CEO of Mubadala's direct investments platform). Target AUM up to $100 billion. Notable positions and partnerships include the Global AI Infrastructure Investment Partnership with BlackRock, Microsoft, and GIP (September 2024); the Stargate Project with OpenAI, SoftBank, and Oracle (January 2025); and significant positions in OpenAI, xAI, and Anthropic. Tahnoon's chairmanship continues post-ADQ-to-L'imad transition; he chaired MGX's first board meeting of 2026 in February 2026. Sovereign-adjacent character documented in House Select Committee on the CCP correspondence (February 4, 2026 letter to Zach Witkoff) and WSJ reporting on the WLF Tahnoon-Aryam-Binance sequence.",
+    "primary_sources": [
+      {
+        "label": "Abu Dhabi Media Office, 'Abu Dhabi Launches Comprehensive Global Investment Strategy on Artificial Intelligence', September 25, 2024",
+        "url": "https://www.mediaoffice.abudhabi/en/technology/abu-dhabi-launches-comprehensive-global-investment-strategy-on-artificial-intelligence/",
+        "category": 1
+      },
+      {
+        "label": "MGX official Leadership page",
+        "url": "https://www.mgx.ae/en/leadership",
+        "category": 1
+      },
+      {
+        "label": "Abu Dhabi Media Office, 'Tahnoon bin Zayed chairs MGX's first board meeting of 2026', February 27, 2026",
+        "url": "https://www.mediaoffice.abudhabi/en/technology/tahnoon-bin-zayed-chairs-mgxs-first-board-meeting-of-2026/",
+        "category": 1
+      },
+      {
+        "label": "Mubadala press release co-announcing MGX, September 2024",
+        "url": "https://www.mubadala.com/en/news/abu-dhabi-launches-comprehensive-global-investment-strategy-on-artificial-intelligence",
+        "category": 1
+      },
+      {
+        "label": "House Select Committee on the CCP, letter to Zach Witkoff, February 4, 2026",
+        "category": 1
+      },
+      {
+        "label": "WSJ, 'Spy Sheikh Secret Stake Trump Crypto Tahnoon' series, January 31, 2026",
+        "category": 3
+      }
+    ]
   },
   {
     "id": "PIA",
-    "name": "Pakistan International Airlines",
+    "name": "Pakistan International Airlines (PIA)",
     "country": "Pakistan",
-    "governance_note": "Pakistan's national airline, historically a state-owned enterprise. Privatized in December 2025 as part of Pakistan's IMF Extended Fund Facility restructuring requirements; the Pakistani government retains a minority stake post-privatization. Owns the Roosevelt Hotel in Manhattan (acquired 1979) among other overseas assets. The state-owned-enterprise classification applied historically; post-December-2025 the entity is sovereign-adjacent through residual government minority stake and ownership of strategically positioned overseas real estate undergoing redevelopment. Treated as sovereign-adjacent for tracker purposes pending fuller post-privatization governance documentation."
+    "governance_note": "Pakistan's national airline, historically a wholly state-owned enterprise. Privatized December 23, 2025: an Arif Habib-led consortium (with AKD Group Holdings, Fatima Fertilizer, City Schools, Lake City Holdings, and military-owned Fauji Fertilizer) acquired a 75% stake for Rs135 billion (~$482 million); the Pakistani government retains a 25% stake, with the consortium holding an option to acquire the remaining 25% within three months at a 12% premium. The Roosevelt Hotel and other PIA overseas real estate assets were ring-fenced from the airline privatization and are being privatized through a separate process under the Cabinet Committee on Privatisation's joint-venture model approved July 2025. The Roosevelt is held by PIA Investment Limited (PIAIL, the investment arm of PIA), with the asset titled to Roosevelt Hotel Corporation as a PIAIL subsidiary. PIAIL acquired the Roosevelt in 1979. The February 19, 2026 US-Pakistan Roosevelt redevelopment MOU referenced in SC-008 sits within this separate privatization process. Sovereign-adjacent through the residual government minority stake, the carve-out structure for foreign-held assets, and the broader IMF Extended Fund Facility privatization framework that retains state involvement in transactional decisions. Post-privatization structure remains in flux as transition mechanics complete.",
+    "primary_sources": [
+      {
+        "label": "Pakistan Privatisation Commission, transaction structure approval for PIA and Roosevelt Hotel, July 2025",
+        "category": 1
+      },
+      {
+        "label": "Pakistan Finance Division statement on Roosevelt Hotel MOU with US GSA, February 19, 2026",
+        "category": 1
+      },
+      {
+        "label": "Arab News, 'Pakistan prequalifies four investors for PIA, greenlights Roosevelt Hotel joint venture deal', July 9, 2025",
+        "url": "https://www.arabnews.com/node/2607397/pakistan",
+        "category": 3
+      },
+      {
+        "label": "Al Jazeera, 'Why is the sale of Pakistan's national airline stirring a political storm?', December 26, 2025",
+        "url": "https://www.aljazeera.com/news/2025/12/26/why-is-the-sale-of-pakistans-national-airline-stirring-a-political-storm",
+        "category": 3
+      },
+      {
+        "label": "Arab News, 'Pakistan says Roosevelt Hotel deal still being structured after PIA sale', December 24, 2025",
+        "url": "https://www.arabnews.com/node/2627307/pakistan",
+        "category": 3
+      },
+      {
+        "label": "Express Tribune, 'Arif Habib consortium wins PIA privatisation bid with Rs135b offer', December 24, 2025",
+        "url": "https://tribune.com.pk/story/2583719/govt-finally-cuts-loose-white-elephant-pia-1",
+        "category": 3
+      }
+    ]
+  },
+  {
+    "id": "LIMAD",
+    "name": "L'imad Holding Company",
+    "country": "United Arab Emirates",
+    "governance_note": "Sovereign investment entity launched January 15, 2026 by the Abu Dhabi Supreme Council for Financial and Economic Affairs to absorb ADQ and consolidate it with Modon (real estate) and CYVN (automotive) holdings. Chaired by Sheikh Khaled bin Mohamed Al Nahyan, Crown Prince of Abu Dhabi; CEO is Jassem Al Zaabi. Khaldoon Al Mubarak (Mubadala Managing Director and Group CEO) sits on the L'imad board. ADQ assets at the time of takeover announcement reported at $263 billion. The transition marks a generational shift in Abu Dhabi sovereign investment governance away from Sheikh Tahnoon's portfolio toward the crown prince's direct oversight; regional analysts cited in AGBI read this as the rise of a new generation of leaders preparing to take over political and economic stewardship of the UAE. Sovereign character is direct given the chairman's crown prince status. Treated as sovereign-adjacent for tracker purposes; no transactions documented in tracker records yet attribute to L'imad, but ADQ-source flows in pre-2026 records are expected to migrate to L'imad attribution as takeover mechanics complete.",
+    "primary_sources": [
+      {
+        "label": "Abu Dhabi Supreme Council for Financial and Economic Affairs statement on L'imad Holding Company, February 2, 2026",
+        "category": 1
+      },
+      {
+        "label": "Asia Asset Management, 'Abu Dhabi's newly minted wealth fund L'imad to take over US$263 billion peer ADQ', February 4, 2026",
+        "url": "https://www.asiaasset.com/post/30467-limadadq-gte-0203",
+        "category": 3
+      },
+      {
+        "label": "Global SWF, LIMAD fund profile",
+        "url": "https://globalswf.com/fund/ADQ",
+        "category": 3
+      },
+      {
+        "label": "AGBI reporting on the L'imad consolidation",
+        "url": "https://www.agbi.com/companies/adq/",
+        "category": 3
+      }
+    ]
   }
 ]
