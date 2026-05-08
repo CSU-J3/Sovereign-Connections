@@ -589,6 +589,34 @@ export default function MethodologyPage() {
           sovereign-source. The appendix grows as the registry grows.
         </P>
 
+        <P>
+          One pattern surfaced during the per-SWF appendix verification pass
+          that's worth naming. The Abu Dhabi sovereign cluster organises around
+          an individual rather than around fund-level governance. Sheikh Tahnoun
+          bin Zayed Al Nahyan chairs ADIA (the emirate's largest fund at roughly
+          USD 1 trillion), MGX, G42, and (until its January 2026 absorption into
+          L'imad) ADQ. Reading the appendix fund by fund understates this. A
+          Mubadala transaction and an MGX transaction sit inside a network that
+          traces back through individual chairmanships, not just through
+          corporate registry. The appendix cites the overlap on each affected
+          entry; methodology readers should weight it when interpreting
+          transaction patterns, particularly where SC-007's Aryam vehicle and
+          MGX both appear in the underlying record.
+        </P>
+
+        <P>
+          NBIM is treated here as the reference framework for what arm's-length
+          sovereign governance looks like. The November 2025 caveat: the
+          Storting suspended the established ethical framework pending review by
+          a public committee appointed by the King in Council, with the report
+          due 15 October 2026. The Council on Ethics is operating under
+          temporary guidelines and is not making observation or exclusion
+          recommendations. The reference framework remains useful as a
+          calibration point; the suspension is an active structural change, not
+          a settled rewrite, and the methodology page will be revisited once the
+          committee reports.
+        </P>
+
         <H2>Disclosed gaps and cadence</H2>
 
         <P>

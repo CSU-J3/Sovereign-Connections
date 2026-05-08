@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-05-08 (later)
+
+Methodology page absorbs the two structural findings from the Handoff #12 seed sovereign-entities verification pass.
+
+Section 7 gains a short paragraph on the Abu Dhabi sovereign cluster's individual-organised character: Sheikh Tahnoun bin Zayed Al Nahyan chairs ADIA, MGX, G42, and pre-L'imad ADQ, which means reading the per-SWF appendix fund by fund understates the network. The note tells methodology readers how to weight the chairmanship overlap, particularly where SC-007's Aryam vehicle and MGX both appear.
+
+The NBIM reference gains a November 2025 caveat. The Storting suspended the established ethical framework pending committee review (report due 15 October 2026); Council on Ethics operating under temporary guidelines without observation or exclusion recommendations. NBIM remains the calibration point for arm's-length sovereign governance, but the calibration point is itself in active structural change. The methodology page will be revisited once the committee reports. (Placement note: the page had no prior NBIM reference, so the caveat lands in Section 7 immediately after the Tahnoon-cluster paragraph rather than appended to an existing mention.)
+
+No rule change. v2.0 covered-persons definition unchanged. Defined terms unchanged.
+
 ## 2026-05-08
 
 Seven seed sovereign-entities entries (PIF, MUBADALA, ADIA, QIA, KIA, NBIM, GIC) revised with verified governance_notes and primary_sources arrays following the pattern established in Handoff #11. Two findings from the verification pass land in the new notes and warrant methodology-page absorption in a future session:
