@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-05-08
+
+Seven seed sovereign-entities entries (PIF, MUBADALA, ADIA, QIA, KIA, NBIM, GIC) revised with verified governance_notes and primary_sources arrays following the pattern established in Handoff #11. Two findings from the verification pass land in the new notes and warrant methodology-page absorption in a future session:
+
+ADIA's chairmanship is held by Sheikh Tahnoun bin Zayed Al Nahyan, the same individual at the centre of the SC-007 Tahnoon-Aryam transaction and concurrent chair of MGX, G42, and pre-L'imad ADQ. The new ADIA note surfaces this overlap and notes the tension between ADIA's official arm's-length governance language and the institutional reality of Tahnoon's cluster-wide leadership.
+
+NBIM's established ethical framework was suspended by the Storting in November 2025 pending a public committee review; the Council on Ethics is operating under temporary guidelines and is not recommending observation or exclusion. Committee report due 15 October 2026. The new NBIM note retains the fund's reference-framework status while marking the suspension as a live structural caveat. The methodology page's calibration-point treatment of NBIM should be revisited once the committee reports.
+
+Other notable updates absorbed: PIF 2026-2030 strategy approved 15 April 2026; QIA board reshuffled by Amiri Decision No. 14 of 25 March 2026 (chair Sheikh Bandar bin Mohammed bin Saud Al Thani); GIC chairmanship transitioned to Lawrence Wong with the Prime Minister handover; Mubadala AUM now USD 385 billion per its own disclosure; KIA AUM USD 1.029 trillion per March 2025 SWFI ranking.
+
+Defined terms unchanged.
+
 ## 2026-05-07 (later +1)
 
 `SovereignEntity` schema extended with optional `primary_sources` field, mirroring the `SovereignRecord` pattern. Schema change is structural and reversible; existing entries without primary_sources continue to parse.
