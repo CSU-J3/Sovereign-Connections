@@ -1,0 +1,12 @@
+# Python dependencies for the Sovereign Connections data collectors (Phase 5).
+#
+# Environment: a repo-local virtual environment at ./.venv (see collectors/README.md).
+#   python -m venv .venv
+#   .venv/Scripts/pip install -r collectors/requirements.txt   # Windows
+#   .venv/bin/pip install -r collectors/requirements.txt       # macOS / Linux
+#
+# pdfplumber is pinned exactly; it is the load-bearing dependency for the OGE
+# 278 parser (coordinate-aware PDF text extraction). Its own transitive
+# dependencies (pdfminer.six, pypdfium2, Pillow) are intentionally left
+# unpinned until a collector ships to production and a lockfile is warranted.
+pdfplumber==0.11.9
