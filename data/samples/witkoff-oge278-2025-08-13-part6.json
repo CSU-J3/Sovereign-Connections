@@ -1,0 +1,3422 @@
+{
+  "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+  "form": "OGE Form 278e (Updated 08/2024)",
+  "filer": "Witkoff, Steven C",
+  "report_type": "New Entrant Report",
+  "part": "6. Other Assets and Income",
+  "parser": "collectors/oge_278/parser.py (Handoff #18 Part 6 pilot)",
+  "entry_count": 271,
+  "entries": [
+    {
+      "entry_number": "1",
+      "parent_entry_number": null,
+      "entity_name": "M&A Management Company Ltd",
+      "eif": "No",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "1.1",
+          "parent_entry_number": "1",
+          "entity_name": "Motorized water vehicles",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "2",
+      "parent_entry_number": null,
+      "entity_name": "Sweet Tuna Boat Ltd",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "2.1",
+          "parent_entry_number": "2",
+          "entity_name": "Motorized water vehicle",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "3",
+      "parent_entry_number": null,
+      "entity_name": "Addition Three, LP",
+      "eif": "Yes",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "4",
+      "parent_entry_number": null,
+      "entity_name": "Atreides Foundation Fund, LP",
+      "eif": "Yes",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "5",
+      "parent_entry_number": null,
+      "entity_name": "BMW SPV 1 LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "5.1",
+          "parent_entry_number": "5",
+          "entity_name": "Moonpay LLC (financial technology)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "6",
+      "parent_entry_number": null,
+      "entity_name": "3G Investors LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "6.1",
+          "parent_entry_number": "6",
+          "entity_name": "SpaceX (space technology)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "7",
+      "parent_entry_number": null,
+      "entity_name": "Silverpeak Legacy Partners III, L.P.",
+      "eif": "No",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "7.1",
+          "parent_entry_number": "7",
+          "entity_name": "Residential real estate, New York, NY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "7.2",
+          "parent_entry_number": "7",
+          "entity_name": "Mixed use real estate, Marseille, France",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "7.3",
+          "parent_entry_number": "7",
+          "entity_name": "Land development, Mumbai, India",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "8",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Innovation Acquisition LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "8.1",
+          "parent_entry_number": "8",
+          "entity_name": "Built (construction and real estate finance technology)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "9",
+      "parent_entry_number": null,
+      "entity_name": "Brokerage Account #1",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "9.1",
+          "parent_entry_number": "9",
+          "entity_name": "Optima STAR Fund - Long-Only - Class B",
+          "eif": "Yes",
+          "value_range": "$1,000,001 - $5,000,000",
+          "income_type": null,
+          "income_range": "$100,001 - $1,000,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "10",
+      "parent_entry_number": null,
+      "entity_name": "Brokerage Account #2",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "10.1",
+          "parent_entry_number": "10",
+          "entity_name": "Financial Square Treasury Instruments Fund - FST Shares Moody's AAA (FTIXX)",
+          "eif": "Yes",
+          "value_range": "$100,001 - $250,000",
+          "income_type": null,
+          "income_range": "$5,001 - $15,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "11",
+      "parent_entry_number": null,
+      "entity_name": "Brokerage Account #3",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "11.1",
+          "parent_entry_number": "11",
+          "entity_name": "Escrow New York REIT Inc.",
+          "eif": "N/A",
+          "value_range": "$50,001 - $100,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "11.2",
+          "parent_entry_number": "11",
+          "entity_name": "Micron Technology Inc. (MU)",
+          "eif": "N/A",
+          "value_range": "$500,001 - $1,000,000",
+          "income_type": "Dividends",
+          "income_range": "$15,001 - $50,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "11.3",
+          "parent_entry_number": "11",
+          "entity_name": "US bank #4 (cash)",
+          "eif": "N/A",
+          "value_range": "$1,001 - $15,000",
+          "income_type": "Interest",
+          "income_range": "$50,001 - $100,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "12",
+      "parent_entry_number": null,
+      "entity_name": "Brokerage Account #4",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "12.1",
+          "parent_entry_number": "12",
+          "entity_name": "Escrow New York REIT Inc.",
+          "eif": "N/A",
+          "value_range": "$15,001 - $50,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.2",
+          "parent_entry_number": "12",
+          "entity_name": "Cisco Systems Inc. [CSCO]",
+          "eif": "N/A",
+          "value_range": "$1,000,001 - $5,000,000",
+          "income_type": "Dividends",
+          "income_range": "$15,001 - $50,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.3",
+          "parent_entry_number": "12",
+          "entity_name": "Nextracker Inc-CL A [NXT]",
+          "eif": "N/A",
+          "value_range": "$100,001 - $250,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.4",
+          "parent_entry_number": "12",
+          "entity_name": "Reddit Inc.-CL A [RDDT]",
+          "eif": "N/A",
+          "value_range": "$1,000,001 - $5,000,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.5",
+          "parent_entry_number": "12",
+          "entity_name": "Uber Technologies Inc. [UBER]",
+          "eif": "N/A",
+          "value_range": "$100,001 - $250,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.6",
+          "parent_entry_number": "12",
+          "entity_name": "Flex Ltd [FLEX]",
+          "eif": "N/A",
+          "value_range": "$1,000,001 - $5,000,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.7",
+          "parent_entry_number": "12",
+          "entity_name": "Coatue Fintech Fund I LP",
+          "eif": "No",
+          "value_range": "$1,000,001 - $5,000,000",
+          "income_type": "Dividends Interest",
+          "income_range": "$100,001 - $1,000,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "12.7.1",
+              "parent_entry_number": "12.7",
+              "entity_name": "Coatue Fintech Fund I LP - Class A - Cash Reserve (US/LATAM)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            },
+            {
+              "entry_number": "12.7.2",
+              "parent_entry_number": "12.7",
+              "entity_name": "Coatue Fintech Fund I LP - Class A - Private Portfolio (US/LATAM)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            },
+            {
+              "entry_number": "12.7.3",
+              "parent_entry_number": "12.7",
+              "entity_name": "Coatue Fintech Fund I LP - Class A - MGMT (US/LATAM - MVP Only)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "12.8",
+          "parent_entry_number": "12",
+          "entity_name": "Highbridge Convertible Dislocation Fund LP - Class A",
+          "eif": "Yes",
+          "value_range": "$500,001 - $1,000,000",
+          "income_type": null,
+          "income_range": "$100,001 - $1,000,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "12.9",
+          "parent_entry_number": "12",
+          "entity_name": "US bank #4 (cash)",
+          "eif": "No",
+          "value_range": "Over $50,000,000",
+          "income_type": "Interest",
+          "income_range": "$100,001 - $1,000,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "13",
+      "parent_entry_number": null,
+      "entity_name": "Spouse Brokerage Account #1",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "13.1",
+          "parent_entry_number": "13",
+          "entity_name": "Curbline PPTYS Corp (CURB)",
+          "eif": "N/A",
+          "value_range": "$1,001 - $15,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.2",
+          "parent_entry_number": "13",
+          "entity_name": "Healthpeak PPTYS Inc. (DOC)",
+          "eif": "N/A",
+          "value_range": "$15,001 - $50,000",
+          "income_type": "Dividends",
+          "income_range": "$1,001 - $2,500",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.3",
+          "parent_entry_number": "13",
+          "entity_name": "Kimco Realty Corp. (KIM)",
+          "eif": "N/A",
+          "value_range": "$1,001 - $15,000",
+          "income_type": "Dividends",
+          "income_range": "$201 - $1,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.4",
+          "parent_entry_number": "13",
+          "entity_name": "Merck & Co. Inc. (MRK)",
+          "eif": "N/A",
+          "value_range": "$15,001 - $50,000",
+          "income_type": "Dividends",
+          "income_range": "$1,001 - $2,500",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.5",
+          "parent_entry_number": "13",
+          "entity_name": "Shell PLC Spon ADR (SHEL)",
+          "eif": "N/A",
+          "value_range": "$15,001 - $50,000",
+          "income_type": "Dividends",
+          "income_range": "$1,001 - $2,500",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.6",
+          "parent_entry_number": "13",
+          "entity_name": "Simon PPTY Group Inc. SBI (SPG)",
+          "eif": "N/A",
+          "value_range": "$50,001 - $100,000",
+          "income_type": "Dividends",
+          "income_range": "$2,501 - $5,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.7",
+          "parent_entry_number": "13",
+          "entity_name": "W P Carey Inc. REIT (WPC)",
+          "eif": "N/A",
+          "value_range": "$1,001 - $15,000",
+          "income_type": "Dividends",
+          "income_range": "$201 - $1,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.8",
+          "parent_entry_number": "13",
+          "entity_name": "U.S. bank #4 (cash)",
+          "eif": "N/A",
+          "value_range": "$1,001 - $15,000",
+          "income_type": null,
+          "income_range": "None (or less than $201)",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "13.9",
+          "parent_entry_number": "13",
+          "entity_name": "UBS Select Treasury Institutional Fund (SETXX)",
+          "eif": "Yes",
+          "value_range": "$50,001 - $100,000",
+          "income_type": null,
+          "income_range": "$5,001 - $15,000",
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "14",
+      "parent_entry_number": null,
+      "entity_name": "Rex Real Estate LLC",
+      "eif": "No",
+      "value_range": "$25,000,001 - $50,000,000",
+      "income_type": "Interest",
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "14.1",
+          "parent_entry_number": "14",
+          "entity_name": "Residential real estate, Miami, FL",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "15",
+      "parent_entry_number": null,
+      "entity_name": "Rushing Dream Farm LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "15.1",
+          "parent_entry_number": "15",
+          "entity_name": "Farmland, Lexington, KY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "15.2",
+          "parent_entry_number": "15",
+          "entity_name": "Residential real estate, Lexington, KY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "16",
+      "parent_entry_number": null,
+      "entity_name": "SW Southampton LLC",
+      "eif": "No",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "16.1",
+          "parent_entry_number": "16",
+          "entity_name": "Residential real estate, Southampton, NY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "17",
+      "parent_entry_number": null,
+      "entity_name": "SCW 10 Corp.",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "18",
+      "parent_entry_number": null,
+      "entity_name": "SCW 10 Upper LLC",
+      "eif": "No",
+      "value_range": null,
+      "income_type": null,
+      "income_range": null,
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "19",
+      "parent_entry_number": null,
+      "entity_name": "SCW 10 Martin LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "19.1",
+          "parent_entry_number": "19",
+          "entity_name": "UDR, Inc. (UDR)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "20",
+      "parent_entry_number": null,
+      "entity_name": "SCW 10 Debt LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "20.1",
+          "parent_entry_number": "20",
+          "entity_name": "UDR, Inc. (UDR)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "21",
+      "parent_entry_number": null,
+      "entity_name": "SCW 10 LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "21.1",
+          "parent_entry_number": "21",
+          "entity_name": "UDR, Inc. (UDR)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "22",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Lender LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "22.1",
+          "parent_entry_number": "22",
+          "entity_name": "WBF LLC",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": true,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "22.2",
+          "parent_entry_number": "22",
+          "entity_name": "Next Generation Development LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "22.2.1",
+              "parent_entry_number": "22.2",
+              "entity_name": "Ten Hanover LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "22.2.1.1",
+                  "parent_entry_number": "22.2.1",
+                  "entity_name": "866 3rd Retail Owner LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "22.2.1.1.1",
+                      "parent_entry_number": "22.2.1.1",
+                      "entity_name": "Residential & commercial real estate, New York, NY",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "23",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Commercial Acquisition LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "24",
+      "parent_entry_number": null,
+      "entity_name": "SW 1107 Broadway LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "24.1",
+          "parent_entry_number": "24",
+          "entity_name": "WG 1107 LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "24.1.1",
+              "parent_entry_number": "24.1",
+              "entity_name": "WG/NV 1107 LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "24.1.1.1",
+                  "parent_entry_number": "24.1.1",
+                  "entity_name": "MS/WG 1107 Broadway Holdings LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "24.1.1.1.1",
+                      "parent_entry_number": "24.1.1.1",
+                      "entity_name": "MS/WG 1107 Broadway Owner LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "24.1.1.1.1.1",
+                          "parent_entry_number": "24.1.1.1.1",
+                          "entity_name": "Residential and commercial real estate, New York, NY",
+                          "eif": "N/A",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "25",
+      "parent_entry_number": null,
+      "entity_name": "WG 101 Murray Internal LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$3,225,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "25.1",
+          "parent_entry_number": "25",
+          "entity_name": "WG Murray LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "25.1.1",
+              "parent_entry_number": "25.1",
+              "entity_name": "WG/NV Murray 1 LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "25.1.1.1",
+                  "parent_entry_number": "25.1.1",
+                  "entity_name": "Henry V Murray LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "25.1.1.1.1",
+                      "parent_entry_number": "25.1.1.1",
+                      "entity_name": "111 Murray Owner LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "25.1.1.1.1.1",
+                          "parent_entry_number": "25.1.1.1.1",
+                          "entity_name": "Henry V Murray Mezz LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "25.1.1.1.1.1.1",
+                              "parent_entry_number": "25.1.1.1.1.1",
+                              "entity_name": "Henry V Murray Senior LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "25.1.1.1.1.1.1.1",
+                                  "parent_entry_number": "25.1.1.1.1.1.1",
+                                  "entity_name": "Residential real estate, New York NY",
+                                  "eif": "N/A",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "26",
+      "parent_entry_number": null,
+      "entity_name": "SW 150 Charles LLC",
+      "eif": "No",
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "26.1",
+          "parent_entry_number": "26",
+          "entity_name": "WG Internal Charles Street LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": true,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "26.1.1",
+              "parent_entry_number": "26.1",
+              "entity_name": "WG West Village LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "26.1.1.1",
+                  "parent_entry_number": "26.1.1",
+                  "entity_name": "WG Charles Street LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "26.1.1.1.1",
+                      "parent_entry_number": "26.1.1.1",
+                      "entity_name": "150 Charles Street Holdings LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "26.1.1.1.1.1",
+                          "parent_entry_number": "26.1.1.1.1",
+                          "entity_name": "Residential real estate, New York, NY",
+                          "eif": "N/A",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "27",
+      "parent_entry_number": null,
+      "entity_name": "Piano SW HTC LLC",
+      "eif": "No",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "27.1",
+          "parent_entry_number": "27",
+          "entity_name": "515 East 72nd Associates LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "27.1.1",
+              "parent_entry_number": "27.1",
+              "entity_name": "Residential condominium real estate, New York, NY",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "27.2",
+          "parent_entry_number": "27",
+          "entity_name": "WG NWT Internal LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "27.2.1",
+              "parent_entry_number": "27.2",
+              "entity_name": "Office building, Miami, FL",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "27.3",
+          "parent_entry_number": "27",
+          "entity_name": "WG Uniondale Internal LLC (holding company with no reportable assets)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "28",
+      "parent_entry_number": null,
+      "entity_name": "WG Leroy LLC",
+      "eif": "No",
+      "value_range": "$250,001 - $500,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "28.1",
+          "parent_entry_number": "28",
+          "entity_name": "NV Leroy LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "28.1.1",
+              "parent_entry_number": "28.1",
+              "entity_name": "Leroy Partners LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "28.1.1.1",
+                  "parent_entry_number": "28.1.1",
+                  "entity_name": "AP-ISC Leroy LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "28.1.1.1.1",
+                      "parent_entry_number": "28.1.1.1",
+                      "entity_name": "AP-ISC Leroy Property Owner LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "28.1.1.1.1.1",
+                          "parent_entry_number": "28.1.1.1.1",
+                          "entity_name": "Residential condominium real estate, New York, NY",
+                          "eif": "N/A",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "29",
+      "parent_entry_number": null,
+      "entity_name": "WG Chrystie Internal LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "29.1",
+          "parent_entry_number": "29",
+          "entity_name": "WG Chrystie LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "29.1.1",
+              "parent_entry_number": "29.1",
+              "entity_name": "Chrystie Associates LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "29.1.1.1",
+                  "parent_entry_number": "29.1.1",
+                  "entity_name": "215 Chrystie Venture LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "29.1.1.1.1",
+                      "parent_entry_number": "29.1.1.1",
+                      "entity_name": "215 Crystie Investors LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "29.1.1.1.1.1",
+                          "parent_entry_number": "29.1.1.1.1",
+                          "entity_name": "215 Chrystie Mezz LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "29.1.1.1.1.1.1",
+                              "parent_entry_number": "29.1.1.1.1.1",
+                              "entity_name": "215 Chrystie LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "29.1.1.1.1.1.1.1",
+                                  "parent_entry_number": "29.1.1.1.1.1.1",
+                                  "entity_name": "Hotel real estate, New York, NY",
+                                  "eif": "N/A",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "30",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Member LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "31",
+      "parent_entry_number": null,
+      "entity_name": "233 Next LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "31.1",
+          "parent_entry_number": "31",
+          "entity_name": "233 Broadway Next Generation LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "31.1.1",
+              "parent_entry_number": "31.1",
+              "entity_name": "233 Broadway Owners LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "31.1.1.1",
+                  "parent_entry_number": "31.1.1",
+                  "entity_name": "233 Broadway Mezz LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "31.1.1.1.1",
+                      "parent_entry_number": "31.1.1.1",
+                      "entity_name": "233 Broadway Borrower LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "31.1.1.1.1.1",
+                          "parent_entry_number": "31.1.1.1.1",
+                          "entity_name": "Commercial real estate, New York, NY",
+                          "eif": "N/A",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "32",
+      "parent_entry_number": null,
+      "entity_name": "WG Internal Holdings LLC",
+      "eif": "No",
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "32.1",
+          "parent_entry_number": "32",
+          "entity_name": "WG Holdco LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "32.1.1",
+              "parent_entry_number": "32.1",
+              "entity_name": "Redux Realty",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "32.1.1.1",
+                  "parent_entry_number": "32.1.1",
+                  "entity_name": "WG 27th Street LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "32.1.1.1.1",
+                      "parent_entry_number": "32.1.1.1",
+                      "entity_name": "Residential real estate, New York, NY",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entry_number": "32.1.2",
+              "parent_entry_number": "32.1",
+              "entity_name": "WG 234 SPE LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "32.1.2.1",
+                  "parent_entry_number": "32.1.2",
+                  "entity_name": "234 West 48th LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "32.1.2.1.1",
+                      "parent_entry_number": "32.1.2.1",
+                      "entity_name": "Hotel real estate, New York, NY",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "entry_number": "32.1.3",
+              "parent_entry_number": "32.1",
+              "entity_name": "Witkoff Columbus LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "32.1.3.1",
+                  "parent_entry_number": "32.1.3",
+                  "entity_name": "Columbus 95th Street LLC (holding company with no reportable assets)",
+                  "eif": "N/A",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "33",
+      "parent_entry_number": null,
+      "entity_name": "22 East 60th Street LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "33.1",
+          "parent_entry_number": "33",
+          "entity_name": "26 East 60th Street Hospitality LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "33.1.1",
+              "parent_entry_number": "33.1",
+              "entity_name": "Restaurant, New York, NY",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            },
+            {
+              "entry_number": "33.1.2",
+              "parent_entry_number": "33.1",
+              "entity_name": "Restaurant, Sag Harbor, NY",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            },
+            {
+              "entry_number": "33.1.3",
+              "parent_entry_number": "33.1",
+              "entity_name": "Restaurant, Palm Beach, FL",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "34",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff 485 Lex LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "34.1",
+          "parent_entry_number": "34",
+          "entity_name": "485 Lexington JV LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "34.1.1",
+              "parent_entry_number": "34.1",
+              "entity_name": "420 Associates LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "34.1.1.1",
+                  "parent_entry_number": "34.1.1",
+                  "entity_name": "420 Jr. Mezz LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "34.1.1.1.1",
+                      "parent_entry_number": "34.1.1.1",
+                      "entity_name": "420 Mezz LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "34.1.1.1.1.1",
+                          "parent_entry_number": "34.1.1.1.1",
+                          "entity_name": "420 Owner LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "34.1.1.1.1.1.1",
+                              "parent_entry_number": "34.1.1.1.1.1",
+                              "entity_name": "Commercial real estate, New York, NY",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entry_number": "34.2",
+          "parent_entry_number": "34",
+          "entity_name": "WG Hamstead Mezz LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "34.2.1",
+              "parent_entry_number": "34.2",
+              "entity_name": "485 Hampstead LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "34.2.1.1",
+                  "parent_entry_number": "34.2.1",
+                  "entity_name": "Commercial real estate, Hampstead, NH",
+                  "eif": "N/A",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entry_number": "34.3",
+          "parent_entry_number": "34",
+          "entity_name": "WG Windham Mezz LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "34.3.1",
+              "parent_entry_number": "34.3",
+              "entity_name": "485 Windham LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "34.3.1.1",
+                  "parent_entry_number": "34.3.1",
+                  "entity_name": "Commercial real estate, Windham, Mass",
+                  "eif": "N/A",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "35",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff TIC LLC",
+      "eif": "No",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "36",
+      "parent_entry_number": null,
+      "entity_name": "WG 420 LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "36.1",
+          "parent_entry_number": "36",
+          "entity_name": "420 WG Manager LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "36.1.1",
+              "parent_entry_number": "36.1",
+              "entity_name": "420 Fifth Associates LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "36.1.1.1",
+                  "parent_entry_number": "36.1.1",
+                  "entity_name": "420 Jr. Mezz LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "36.1.1.1.1",
+                      "parent_entry_number": "36.1.1.1",
+                      "entity_name": "420 Mezz LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "36.1.1.1.1.1",
+                          "parent_entry_number": "36.1.1.1.1",
+                          "entity_name": "420 Owner LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "36.1.1.1.1.1.1",
+                              "parent_entry_number": "36.1.1.1.1.1",
+                              "entity_name": "Office condominium, New York, NY",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "37",
+      "parent_entry_number": null,
+      "entity_name": "WG 55 LLC",
+      "eif": "No",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "37.1",
+          "parent_entry_number": "37",
+          "entity_name": "55 Wall Associates LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "37.1.1",
+              "parent_entry_number": "37.1",
+              "entity_name": "Residential real estate, New York, NY",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "38",
+      "parent_entry_number": null,
+      "entity_name": "WG 76 11th LLC",
+      "eif": "No",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "38.1",
+          "parent_entry_number": "38",
+          "entity_name": "WM 11 Ave Investor LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "38.1.1",
+              "parent_entry_number": "38.1",
+              "entity_name": "WAM 76 11th Holdings LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "38.1.1.1",
+                  "parent_entry_number": "38.1.1",
+                  "entity_name": "WAM 76 11th Mezz LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "38.1.1.1.1",
+                      "parent_entry_number": "38.1.1.1",
+                      "entity_name": "76 11th Lender LLC",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    },
+                    {
+                      "entry_number": "38.1.1.1.2",
+                      "parent_entry_number": "38.1.1.1",
+                      "entity_name": "XI Mezzanine Lender LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "38.1.1.1.2.1",
+                          "parent_entry_number": "38.1.1.1.2",
+                          "entity_name": "76 Eleventh Avenue Property Owner LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "38.1.1.1.2.1.1",
+                              "parent_entry_number": "38.1.1.1.2.1",
+                              "entity_name": "Residential and commercial real estate, New York, NY",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "39",
+      "parent_entry_number": null,
+      "entity_name": "866 Acquisition LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "39.1",
+          "parent_entry_number": "39",
+          "entity_name": "866 3rd Next Generation LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "39.1.1",
+              "parent_entry_number": "39.1",
+              "entity_name": "866 3rd Retail LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "39.1.1.1",
+                  "parent_entry_number": "39.1.1",
+                  "entity_name": "866 3rd Retail Owner LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "39.1.1.1.1",
+                      "parent_entry_number": "39.1.1.1",
+                      "entity_name": "Commercial real estate, New York, NY",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "40",
+      "parent_entry_number": null,
+      "entity_name": "866 Development Partners LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "40.1",
+          "parent_entry_number": "40",
+          "entity_name": "866 3rd Next Generation LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "40.1.1",
+              "parent_entry_number": "40.1",
+              "entity_name": "866 3rd Retail LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "40.1.1.1",
+                  "parent_entry_number": "40.1.1",
+                  "entity_name": "866 3rd Retail Owner LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "40.1.1.1.1",
+                      "parent_entry_number": "40.1.1.1",
+                      "entity_name": "Commercial real estate, New York, NY",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "41",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Holdings LLC",
+      "eif": "No",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "41.1",
+          "parent_entry_number": "41",
+          "entity_name": "WG Banyan LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.1.1",
+              "parent_entry_number": "41.1",
+              "entity_name": "WG PPG Banyan LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "41.1.1.1",
+                  "parent_entry_number": "41.1.1",
+                  "entity_name": "WG/NV Banyan LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "41.1.1.1.1",
+                      "parent_entry_number": "41.1.1.1",
+                      "entity_name": "2020 Banyan Holdings LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "41.1.1.1.1.1",
+                          "parent_entry_number": "41.1.1.1.1",
+                          "entity_name": "2020 Banyan Acquisitions LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.1.1.1.1.1.1",
+                              "parent_entry_number": "41.1.1.1.1.1",
+                              "entity_name": "USREC Banyan Cay Resort and Golf, LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "41.1.1.1.1.1.1.1",
+                                  "parent_entry_number": "41.1.1.1.1.1.1",
+                                  "entity_name": "Recreational and hotel property, West Palm Beach, FL",
+                                  "eif": "N/A",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "entry_number": "41.1.1.1.1.1.2",
+                              "parent_entry_number": "41.1.1.1.1.1",
+                              "entity_name": "USREC Banyan Cay Villas LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "41.1.1.1.1.1.2.1",
+                                  "parent_entry_number": "41.1.1.1.1.1.2",
+                                  "entity_name": "Residential real estate, West Palm Beach, FL",
+                                  "eif": "N/A",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "entry_number": "41.1.1.1.1.1.3",
+                              "parent_entry_number": "41.1.1.1.1.1",
+                              "entity_name": "USREC Banyan Cay Development LLC (property development)",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entry_number": "41.2",
+          "parent_entry_number": "41",
+          "entity_name": "WG/NV Ocean Terrace LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.2.1",
+              "parent_entry_number": "41.2",
+              "entity_name": "Ocean Terrace Owners LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "41.2.1.1",
+                  "parent_entry_number": "41.2.1",
+                  "entity_name": "Ocean Terrace Jr. Mezzanine LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "41.2.1.1.1",
+                      "parent_entry_number": "41.2.1.1",
+                      "entity_name": "Ocean Terrace Sr. Mazzanine LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "41.2.1.1.1.1",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "Ocean Terrace Trustee LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.1.1",
+                              "parent_entry_number": "41.2.1.1.1.1",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "entry_number": "41.2.1.1.1.2",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "Ocean Terrace Residential LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.2.1",
+                              "parent_entry_number": "41.2.1.1.1.2",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "entry_number": "41.2.1.1.1.3",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "Ocean Terrace Shared Facilities LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.3.1",
+                              "parent_entry_number": "41.2.1.1.1.3",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "entry_number": "41.2.1.1.1.4",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "Ocean Terrace Retail LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.4.1",
+                              "parent_entry_number": "41.2.1.1.1.4",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "entry_number": "41.2.1.1.1.5",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "7450 Ocean Terrace LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.5.1",
+                              "parent_entry_number": "41.2.1.1.1.5",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "entry_number": "41.2.1.1.1.6",
+                          "parent_entry_number": "41.2.1.1.1",
+                          "entity_name": "OTH Streetscape LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "41.2.1.1.1.6.1",
+                              "parent_entry_number": "41.2.1.1.1.6",
+                              "entity_name": "Mixed use development, Miami Beach, FL",
+                              "eif": "N/A",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entry_number": "41.3",
+          "parent_entry_number": "41",
+          "entity_name": "Maltese JV Manager LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.3.1",
+              "parent_entry_number": "41.3",
+              "entity_name": "PPG WG Golf Investors LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "41.3.1.1",
+                  "parent_entry_number": "41.3.1",
+                  "entity_name": "Members club, marina, hotel and hotel condo development, Hallandale, FL",
+                  "eif": "N/A",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "entry_number": "41.4",
+          "parent_entry_number": "41",
+          "entity_name": "WG Shore LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.4.1",
+              "parent_entry_number": "41.4",
+              "entity_name": "Mixed use real estate development, Miami Beach, FL",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "41.5",
+          "parent_entry_number": "41",
+          "entity_name": "WG FB LLC (food & beverage operating business)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "41.6",
+          "parent_entry_number": "41",
+          "entity_name": "WG GM LLC (golf management operating business)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "41.7",
+          "parent_entry_number": "41",
+          "entity_name": "WG HM LLC (hotel management operating business)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "41.8",
+          "parent_entry_number": "41",
+          "entity_name": "WC Digital Fi LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.8.1",
+              "parent_entry_number": "41.8",
+              "entity_name": "World Liberty Financial (cryptocurrency)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "41.9",
+          "parent_entry_number": "41",
+          "entity_name": "WC Digital SC LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "41.9.1",
+              "parent_entry_number": "41.9",
+              "entity_name": "SC Financial Technologies LLC (stablecoin)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "42",
+      "parent_entry_number": null,
+      "entity_name": "WG 700 NM LLC",
+      "eif": "No",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "42.1",
+          "parent_entry_number": "42",
+          "entity_name": "WG/Monroe 700 JV LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "42.1.1",
+              "parent_entry_number": "42.1",
+              "entity_name": "WG 700 North Miami Mezz LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "42.1.1.1",
+                  "parent_entry_number": "42.1.1",
+                  "entity_name": "WG 700 North Miami LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "42.1.1.1.1",
+                      "parent_entry_number": "42.1.1.1",
+                      "entity_name": "Undeveloped land entitled for residential development, Miami, FL",
+                      "eif": "N/A",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "43",
+      "parent_entry_number": null,
+      "entity_name": "WG Sadie LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Sale proceeds",
+      "income_range": "$15,873,533",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "43.1",
+          "parent_entry_number": "43",
+          "entity_name": "Sadie Real Estate LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "43.1.1",
+              "parent_entry_number": "43.1",
+              "entity_name": "Undeveloped land, Miami, FL",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "44",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff 44 LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "44.1",
+          "parent_entry_number": "44",
+          "entity_name": "WG/NV WEHO LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "44.1.1",
+              "parent_entry_number": "44.1",
+              "entity_name": "WEHO JV LLC",
+              "eif": "No",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": true,
+              "reporting_period": null,
+              "children": [
+                {
+                  "entry_number": "44.1.1.1",
+                  "parent_entry_number": "44.1.1",
+                  "entity_name": "WEHO Holding Co LLC",
+                  "eif": "No",
+                  "value_range": null,
+                  "income_type": null,
+                  "income_range": null,
+                  "has_endnote": false,
+                  "reporting_period": null,
+                  "children": [
+                    {
+                      "entry_number": "44.1.1.1.1",
+                      "parent_entry_number": "44.1.1.1",
+                      "entity_name": "9040 WEHO III Member Inc.",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "44.1.1.1.1.1",
+                          "parent_entry_number": "44.1.1.1.1",
+                          "entity_name": "WEHO III LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "44.1.1.1.1.1.1",
+                              "parent_entry_number": "44.1.1.1.1.1",
+                              "entity_name": "WEHO III Mezz LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "44.1.1.1.1.1.1.1",
+                                  "parent_entry_number": "44.1.1.1.1.1.1",
+                                  "entity_name": "West Hollywood Sunset LLC",
+                                  "eif": "No",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": [
+                                    {
+                                      "entry_number": "44.1.1.1.1.1.1.1.1",
+                                      "parent_entry_number": "44.1.1.1.1.1.1.1",
+                                      "entity_name": "Hospitality real estate, Los Angeles, CA",
+                                      "eif": "N/A",
+                                      "value_range": null,
+                                      "income_type": null,
+                                      "income_range": null,
+                                      "has_endnote": false,
+                                      "reporting_period": null,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "entry_number": "44.1.1.1.2",
+                      "parent_entry_number": "44.1.1.1",
+                      "entity_name": "WEHO I LLC",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "44.1.1.1.2.1",
+                          "parent_entry_number": "44.1.1.1.2",
+                          "entity_name": "9040 Sunset Jr. Mezz LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "44.1.1.1.2.1.1",
+                              "parent_entry_number": "44.1.1.1.2.1",
+                              "entity_name": "9040 Sunset Mezz LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "44.1.1.1.2.1.1.1",
+                                  "parent_entry_number": "44.1.1.1.2.1.1",
+                                  "entity_name": "9040 Sunset LLC",
+                                  "eif": "No",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": [
+                                    {
+                                      "entry_number": "44.1.1.1.2.1.1.1.1",
+                                      "parent_entry_number": "44.1.1.1.2.1.1.1",
+                                      "entity_name": "Hospitality real estate, Los Angeles, CA",
+                                      "eif": "N/A",
+                                      "value_range": null,
+                                      "income_type": null,
+                                      "income_range": null,
+                                      "has_endnote": false,
+                                      "reporting_period": null,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "entry_number": "44.1.1.1.3",
+                      "parent_entry_number": "44.1.1.1",
+                      "entity_name": "9040 WEHO II Member Inc.",
+                      "eif": "No",
+                      "value_range": null,
+                      "income_type": null,
+                      "income_range": null,
+                      "has_endnote": false,
+                      "reporting_period": null,
+                      "children": [
+                        {
+                          "entry_number": "44.1.1.1.3.1",
+                          "parent_entry_number": "44.1.1.1.3",
+                          "entity_name": "WEHO II LLC",
+                          "eif": "No",
+                          "value_range": null,
+                          "income_type": null,
+                          "income_range": null,
+                          "has_endnote": false,
+                          "reporting_period": null,
+                          "children": [
+                            {
+                              "entry_number": "44.1.1.1.3.1.1",
+                              "parent_entry_number": "44.1.1.1.3.1",
+                              "entity_name": "WHO II Mezz LLC",
+                              "eif": "No",
+                              "value_range": null,
+                              "income_type": null,
+                              "income_range": null,
+                              "has_endnote": false,
+                              "reporting_period": null,
+                              "children": [
+                                {
+                                  "entry_number": "44.1.1.1.3.1.1.1",
+                                  "parent_entry_number": "44.1.1.1.3.1.1",
+                                  "entity_name": "West Hollywood Hotel LLC",
+                                  "eif": "No",
+                                  "value_range": null,
+                                  "income_type": null,
+                                  "income_range": null,
+                                  "has_endnote": false,
+                                  "reporting_period": null,
+                                  "children": [
+                                    {
+                                      "entry_number": "44.1.1.1.3.1.1.1.1",
+                                      "parent_entry_number": "44.1.1.1.3.1.1.1",
+                                      "entity_name": "Commercial real estate, Los Angeles, CA",
+                                      "eif": "N/A",
+                                      "value_range": null,
+                                      "income_type": null,
+                                      "income_range": null,
+                                      "has_endnote": false,
+                                      "reporting_period": null,
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "45",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff 44 Partners LLC",
+      "eif": "No",
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "46",
+      "parent_entry_number": null,
+      "entity_name": "125 Broad Unit A Corp.",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "46.1",
+          "parent_entry_number": "46",
+          "entity_name": "SCW Recipient A LLC",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "46.1.1",
+              "parent_entry_number": "46.1",
+              "entity_name": "SL Green Realty Corp. (SLG)",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "47",
+      "parent_entry_number": null,
+      "entity_name": "150 PH-B LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "47.1",
+          "parent_entry_number": "47",
+          "entity_name": "Residential real estate, Los Angeles, CA",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "48",
+      "parent_entry_number": null,
+      "entity_name": "SCW 150 Corp.",
+      "eif": "No",
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "49",
+      "parent_entry_number": null,
+      "entity_name": "Stomber & Witkoff LLC (law firm)",
+      "eif": "N/A",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "50",
+      "parent_entry_number": null,
+      "entity_name": "WG 1745 Internal LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "50.1",
+          "parent_entry_number": "50",
+          "entity_name": "SL Green Realty Corp. (SLG)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "51",
+      "parent_entry_number": null,
+      "entity_name": "WG 36 CPS Internal LLC (holding company with no current reportable assets)",
+      "eif": "N/A",
+      "value_range": "None (or less than $1,001)",
+      "income_type": "Sale proceeds and distribution",
+      "income_range": "$3,350,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "52",
+      "parent_entry_number": null,
+      "entity_name": "WG Materials LLC",
+      "eif": "No",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "52.1",
+          "parent_entry_number": "52",
+          "entity_name": "Material Bank (material sourcing company)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "53",
+      "parent_entry_number": null,
+      "entity_name": "WG Investments LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "53.1",
+          "parent_entry_number": "53",
+          "entity_name": "Residential real estate, Santa Monica, CA",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "54",
+      "parent_entry_number": null,
+      "entity_name": "WG TS Hotel LLC",
+      "eif": "No",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,056,250",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "54.1",
+          "parent_entry_number": "54",
+          "entity_name": "Hospitality real estate, New York, NY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "55",
+      "parent_entry_number": null,
+      "entity_name": "US bank #1 (cash)",
+      "eif": "N/A",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Interest",
+      "income_range": "$1,000,001 - $5,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "56",
+      "parent_entry_number": null,
+      "entity_name": "US bank #2 (cash)",
+      "eif": "N/A",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": "Interest",
+      "income_range": "$5,001 - $15,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "57",
+      "parent_entry_number": null,
+      "entity_name": "US bank #3 (cash)",
+      "eif": "N/A",
+      "value_range": "$100,001 - $250,000",
+      "income_type": "Interest",
+      "income_range": "$201 - $1,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": []
+    },
+    {
+      "entry_number": "58",
+      "parent_entry_number": null,
+      "entity_name": "WG Bowtie LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "58.1",
+          "parent_entry_number": "58",
+          "entity_name": "Brook NY Residential LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "58.1.1",
+              "parent_entry_number": "58.1",
+              "entity_name": "Residential and retail real estate, New York, NY",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "entry_number": "59",
+      "parent_entry_number": null,
+      "entity_name": "East 78th Garage LLC",
+      "eif": "No",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "59.1",
+          "parent_entry_number": "59",
+          "entity_name": "Residential real estate, New York, NY",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "60",
+      "parent_entry_number": null,
+      "entity_name": "WG WALG Holdings LLC",
+      "eif": "No",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,210,055",
+      "has_endnote": true,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "60.1",
+          "parent_entry_number": "60",
+          "entity_name": "Portfolio of net leased Walgreen Drugstores throughout the United States",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "61",
+      "parent_entry_number": null,
+      "entity_name": "Witkoff Telegraph Partners LLC",
+      "eif": "No",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "61.1",
+          "parent_entry_number": "61",
+          "entity_name": "Real property, Bingham Hills, MI",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "entry_number": "62",
+      "parent_entry_number": null,
+      "entity_name": "WG Las Vegas ICA LLC",
+      "eif": "No",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "62.1",
+          "parent_entry_number": "62",
+          "entity_name": "2755 Las Vegas ICA LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "62.1.1",
+              "parent_entry_number": "62.1",
+              "entity_name": "Formerly a Casino Development, Las Vegas, NV",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
