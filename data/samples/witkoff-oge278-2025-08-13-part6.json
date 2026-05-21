@@ -4,7 +4,8 @@
   "filer": "Witkoff, Steven C",
   "report_type": "New Entrant Report",
   "part": "6. Other Assets and Income",
-  "parser": "collectors/oge_278/parser.py (Handoff #18 Part 6 pilot)",
+  "parser": "collectors/oge_278/parser.py (Handoffs #18, #19)",
+  "parsed": true,
   "entry_count": 271,
   "entries": [
     {

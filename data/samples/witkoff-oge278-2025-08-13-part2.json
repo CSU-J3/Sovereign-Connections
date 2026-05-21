@@ -1,0 +1,87 @@
+{
+  "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+  "form": "OGE Form 278e (Updated 08/2024)",
+  "filer": "Witkoff, Steven C",
+  "report_type": "New Entrant Report",
+  "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
+  "parser": "collectors/oge_278/parser.py (Handoffs #18, #19)",
+  "parsed": true,
+  "entry_count": 6,
+  "entries": [
+    {
+      "entry_number": "1",
+      "parent_entry_number": null,
+      "entity_name": "The Witkoff Group LLC (real estate management company)",
+      "eif": "N/A",
+      "value_range": "Over $50,000,000",
+      "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
+      "income_range": "$120,000,000",
+      "has_endnote": false,
+      "reporting_period": null,
+      "children": [
+        {
+          "entry_number": "1.1",
+          "parent_entry_number": "1",
+          "entity_name": "WG Development LLC (development management)",
+          "eif": "N/A",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": []
+        },
+        {
+          "entry_number": "1.2",
+          "parent_entry_number": "1",
+          "entity_name": "WG Aviation V LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "1.2.1",
+              "parent_entry_number": "1.2",
+              "entity_name": "Aircraft",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        },
+        {
+          "entry_number": "1.3",
+          "parent_entry_number": "1",
+          "entity_name": "WG Aviation Heli I LLC",
+          "eif": "No",
+          "value_range": null,
+          "income_type": null,
+          "income_range": null,
+          "has_endnote": false,
+          "reporting_period": null,
+          "children": [
+            {
+              "entry_number": "1.3.1",
+              "parent_entry_number": "1.3",
+              "entity_name": "Aircraft",
+              "eif": "N/A",
+              "value_range": null,
+              "income_type": null,
+              "income_range": null,
+              "has_endnote": false,
+              "reporting_period": null,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,23 @@
-"""OGE Form 278e parser — Part 6 (Other Assets and Income) pilot.
+"""OGE Form 278e parser — Parts 2, 5, and 6.
 
-Coordinate-aware extraction via pdfplumber. Handoff #18.
+Coordinate-aware extraction via pdfplumber. Handoffs #18 (Part 6) and #19
+(Parts 2 and 5).
 
-Part 6 is the section that feeds the most financial-interest records into the
-tracker, and it carries the form's worst layout problem: deeply nested entries
-whose entity name, valuation range, and income fields each wrap across multiple
-physical lines, with entry numbers themselves wrapping inside a narrow column.
+Parts 2, 5, and 6 of OGE Form 278e share an identical six-column asset layout
+(#, Description, EIF, Value, Income type, Income amount) with the same column
+x-anchors, so a single section parser handles all three — only the section
+title markers differ. The form's hard problem is the same throughout: entity
+names, valuation ranges, income fields, and even entry numbers wrap across
+multiple physical lines.
 
-This module extracts Part 6 only, as a faithfully nested structure. Other parts
-and the mapping to the tracker's canonical record schema are later handoffs.
+- Part 2 — Filer's Employment Assets & Income and Retirement Accounts. Holds
+  the $120M Witkoff Group LLC divestiture (entry #1's income line).
+- Part 5 — Spouse's Employment Assets & Income and Retirement Accounts. Where
+  18 USC 208(a)(2) imputed spousal interests surface.
+- Part 6 — Other Assets and Income. The bulk of the holdings.
 
-See docs/collectors/oge-278-parser.md for strategy and known limits.
+Part 1 (a different column set, with From/To date columns) and Parts 3, 4, and
+7-12 are not parsed; see docs/collectors/oge-278-parser.md.
 
 Run:  .venv/Scripts/python -m collectors.oge_278.parser
 """
@@ -28,7 +35,8 @@ import pdfplumber
 # --- Layout constants -------------------------------------------------------
 #
 # Column x0 boundaries, calibrated against the OGE Form 278e "Updated 08/2024"
-# revision (A4 landscape, 842 pt wide). Header anchors observed in the pilot:
+# revision (A4 landscape, 842 pt wide). Header anchors observed in the pilot,
+# identical across Parts 2, 5, and 6:
 #   #@35  DESCRIPTION@78  EIF@383  VALUE@469  INCOME TYPE@556  INCOME AMOUNT@643
 # Boundaries are set in the gaps between anchors so a word's x0 maps cleanly.
 COL_NUM_MAX = 70      # x0 < 70           -> "#" (entry number)
@@ -43,20 +51,46 @@ ROW_Y_TOLERANCE = 5   # pt; words whose `top` differ by <= this share a row
 # An entry-number token: dotted integers, optionally left incomplete with a
 # trailing dot when the number wrapped onto the next line (e.g. "41.3.1.").
 ENTRY_NUM_RE = re.compile(r"^\d+(?:\.\d+)*\.?$")
+# A part-title row: starts "N. " and carries the part's name.
+PART_TITLE_RE = re.compile(r"^\s*\d+\.\s")
 
 # Rows that are page furniture, not data.
 HEADER_WORDS = {"#", "DESCRIPTION", "EIF", "VALUE", "INCOME", "TYPE", "AMOUNT"}
 EIF_VALUES = {"Yes", "No", "N/A"}
 
 PILOT_PDF = Path("data/samples/witkoff-oge278-2025-08-13.pdf")
-PILOT_OUT = Path("data/samples/witkoff-oge278-2025-08-13-part6.json")
+
+# Section configuration. `start`/`end` are substrings of the part-title rows
+# that bound each section's data. The data-side titles appear before the
+# "Summary of Contents" restatement, so matching the *first* occurrence and
+# stopping at the *first* end title isolates the data section.
+SECTIONS = {
+    "part2": {
+        "label": "2. Filer's Employment Assets & Income and Retirement Accounts",
+        "start": "Filer's Employment Assets",
+        "end": "Employment Agreements and Arrangements",
+        "out": "witkoff-oge278-2025-08-13-part2.json",
+    },
+    "part5": {
+        "label": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+        "start": "Spouse's Employment Assets",
+        "end": "Other Assets and Income",
+        "out": "witkoff-oge278-2025-08-13-part5.json",
+    },
+    "part6": {
+        "label": "6. Other Assets and Income",
+        "start": "Other Assets and Income",
+        "end": "Transactions",
+        "out": "witkoff-oge278-2025-08-13-part6.json",
+    },
+}
 
 
 # --- Data model -------------------------------------------------------------
 
 @dataclass
 class Entry:
-    """One Part 6 line item, before tree assembly."""
+    """One asset-section line item, before tree assembly."""
 
     entry_number: str
     parent_entry_number: str | None = None
@@ -66,8 +100,8 @@ class Entry:
     income_type: str | None = None
     income_range: str | None = None
     has_endnote: bool = False
-    # Part 6 prints no per-entry reporting-period dates (those live in Part 1).
-    # The field is kept for schema parity across parts; always None here.
+    # Parts 2/5/6 print no per-entry reporting-period dates (those live in
+    # Part 1). The field is kept for schema parity across parts; always None.
     reporting_period: str | None = None
 
     # Working accumulators (not serialized).
@@ -130,13 +164,22 @@ def _is_footer(cols: dict[str, list[str]]) -> bool:
     return "Page" in texts and any(t.startswith("Witkoff") for t in texts)
 
 
-# --- Part 6 parse -----------------------------------------------------------
+def _is_part_title(joined: str, marker: str) -> bool:
+    """True if `joined` is a part-title row ("N. ...") carrying `marker`."""
+    return marker in joined and PART_TITLE_RE.match(joined) is not None
 
-def parse_part6(pdf_path: Path) -> list[Entry]:
-    """Extract Part 6 entries from an OGE 278e PDF, in document order."""
+
+# --- Section parse ----------------------------------------------------------
+
+def parse_section(pdf_path: Path, start_marker: str, end_marker: str) -> list[Entry]:
+    """Extract one six-column asset section's entries, in document order.
+
+    `start_marker` / `end_marker` are substrings of the bounding part-title
+    rows. Parsing begins after the start title and stops at the end title.
+    """
     entries: list[Entry] = []
     current: Entry | None = None
-    in_part6 = False
+    in_section = False
     expect_number_continuation = False
 
     with pdfplumber.open(pdf_path) as pdf:
@@ -145,13 +188,11 @@ def parse_part6(pdf_path: Path) -> list[Entry]:
                 cols = _columns(row)
                 joined = " ".join(t for c in cols.values() for t in c)
 
-                # Section boundaries. The data-side Part 6 title appears once,
-                # before any entry; the Part 7 title ends the section.
-                if not in_part6:
-                    if "Other Assets and Income" in joined:
-                        in_part6 = True
+                if not in_section:
+                    if _is_part_title(joined, start_marker):
+                        in_section = True
                     continue
-                if joined.lstrip().startswith("7.") and "Transactions" in joined:
+                if _is_part_title(joined, end_marker):
                     return entries
 
                 if _is_header(cols) or _is_footer(cols):
@@ -164,7 +205,7 @@ def parse_part6(pdf_path: Path) -> list[Entry]:
                 if expect_number_continuation and current is not None and num_tokens:
                     current.entry_number += num_tokens[0]
                     expect_number_continuation = current.entry_number.endswith(".")
-                    _append_continuation(current, cols, skip_num=True)
+                    _append_continuation(current, cols)
                     continue
 
                 # A fresh entry-number token in the "#" column starts an entry.
@@ -172,17 +213,17 @@ def parse_part6(pdf_path: Path) -> list[Entry]:
                     current = Entry(entry_number=num_tokens[0])
                     entries.append(current)
                     expect_number_continuation = num_tokens[0].endswith(".")
-                    _append_continuation(current, cols, skip_num=True)
+                    _append_continuation(current, cols)
                     continue
 
                 # Otherwise: a wrapped description / value / income line.
                 if current is not None:
-                    _append_continuation(current, cols, skip_num=True)
+                    _append_continuation(current, cols)
 
     return entries
 
 
-def _append_continuation(entry: Entry, cols: dict[str, list[str]], skip_num: bool) -> None:
+def _append_continuation(entry: Entry, cols: dict[str, list[str]]) -> None:
     for tok in cols["desc"]:
         if tok in ("See", "Endnote"):
             entry.has_endnote = True
@@ -250,47 +291,68 @@ def build_tree(entries: list[Entry]) -> list[dict]:
     return roots
 
 
+def parse_part(pdf_path: Path, section_key: str) -> dict:
+    """Parse one configured section into a serializable document dict."""
+    cfg = SECTIONS[section_key]
+    entries = _finalize(parse_section(pdf_path, cfg["start"], cfg["end"]))
+    return {
+        "source_pdf": str(pdf_path).replace("\\", "/"),
+        "form": "OGE Form 278e (Updated 08/2024)",
+        "filer": "Witkoff, Steven C",
+        "report_type": "New Entrant Report",
+        "part": cfg["label"],
+        "parser": "collectors/oge_278/parser.py (Handoffs #18, #19)",
+        # `parsed` distinguishes "section parsed, no entries" from a section
+        # that was never run — see Handoff #19 Step 2.
+        "parsed": True,
+        "entry_count": len(entries),
+        "entries": build_tree(entries),
+    }
+
+
 # --- Entry point ------------------------------------------------------------
+
+def _flatten(nodes: list[dict]):
+    for n in nodes:
+        yield n
+        yield from _flatten(n["children"])
+
 
 def main() -> None:
     pdf_path = Path(sys.argv[1]) if len(sys.argv) > 1 else PILOT_PDF
     if not pdf_path.exists():
         raise SystemExit(f"PDF not found: {pdf_path}")
 
-    entries = _finalize(parse_part6(pdf_path))
-    tree = build_tree(entries)
+    docs: dict[str, dict] = {}
+    for key, cfg in SECTIONS.items():
+        doc = parse_part(pdf_path, key)
+        docs[key] = doc
+        if pdf_path == PILOT_PDF:
+            out = PILOT_PDF.with_name(cfg["out"])
+        else:
+            out = pdf_path.with_name(f"{pdf_path.stem}-{key}.json")
+        out.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
+        print(f"{key}: {doc['entry_count']:>3} entries -> {out}")
 
-    document = {
-        "source_pdf": str(pdf_path).replace("\\", "/"),
-        "form": "OGE Form 278e (Updated 08/2024)",
-        "filer": "Witkoff, Steven C",
-        "report_type": "New Entrant Report",
-        "part": "6. Other Assets and Income",
-        "parser": "collectors/oge_278/parser.py (Handoff #18 Part 6 pilot)",
-        "entry_count": len(entries),
-        "entries": tree,
-    }
+    # Correctness checks.
+    p2 = {n["entry_number"]: n for n in _flatten(docs["part2"]["entries"])}
+    print("\nPart 2 correctness check ($120M Witkoff Group divestiture):")
+    for num in ("1", "1.1", "1.2", "1.2.1", "1.3", "1.3.1"):
+        n = p2.get(num)
+        print(f"  MISSING {num}" if n is None else
+              f"  {num:<6} {n['entity_name']!r}"
+              f" eif={n['eif']} value={n['value_range']!r}"
+              f" income={n['income_type']!r}/{n['income_range']!r}"
+              f" parent={n['parent_entry_number']}")
 
-    out = PILOT_OUT if pdf_path == PILOT_PDF else pdf_path.with_name(
-        pdf_path.stem + "-part6.json"
-    )
-    out.write_text(json.dumps(document, indent=2) + "\n", encoding="utf-8")
-    print(f"Parsed {len(entries)} Part 6 entries -> {out}")
-
-    # Correctness check: the WLF interest chain the methodology cites.
-    by_num = {e.entry_number: e for e in entries}
-    print("\nCorrectness check (WLF interest chain):")
-    for num in ("41", "41.8", "41.8.1", "41.9", "41.9.1"):
-        e = by_num.get(num)
-        if e is None:
-            print(f"  MISSING {num}")
-            continue
-        print(
-            f"  {num:<8} {e.entity_name!r}"
-            f"  eif={e.eif} value={e.value_range!r}"
-            f" income={e.income_type!r}/{e.income_range!r}"
-            f" parent={e.parent_entry_number}"
-        )
+    print("\nPart 5 correctness check (spouse's employment assets):")
+    p5 = docs["part5"]
+    print(f"  parsed={p5['parsed']}  entry_count={p5['entry_count']}")
+    for n in _flatten(p5["entries"]):
+        print(f"  {n['entry_number']:<6} {n['entity_name']!r}"
+              f" eif={n['eif']} value={n['value_range']!r}"
+              f" income={n['income_type']!r}/{n['income_range']!r}"
+              f" parent={n['parent_entry_number']}")
 
 
 if __name__ == "__main__":
