@@ -172,6 +172,14 @@ exactly, as expected.
   is not extracted.
 - **Reporting-period dates** — Parts 2/5/6 print none at the entry level;
   `reporting_period` is always `null`.
+- **Cover-page certification block** — the parser reads only the Part 2/5/6
+  asset tables, not the 278e cover page, so it emits **no**
+  `certification_status` / `filing_type`. The part docs carry `report_type`
+  ("New Entrant Report") and `form` as the closest available provenance, and the
+  OGE-278 candidate records (Handoff #23) attach those under `source_filing`.
+  Extracting the cover-page ethics-officer signoff is **deferred until a
+  promotion decision (`CAND-###` → `SC-###`) actually needs it** — see PR #1
+  deferral #1 (https://github.com/CSU-J3/Sovereign-Connections/pull/1).
 - **Canonical record schema mapping** and **5 CFR 2640.103(a) category
   inference** — separate design work (Handoff #23).
 - **Range normalization** — ranges are emitted as printed strings, not numeric
