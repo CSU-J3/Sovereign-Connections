@@ -173,15 +173,17 @@ exactly, as expected.
 - **Reporting-period dates** — Parts 2/5/6 print none at the entry level;
   `reporting_period` is always `null`.
 - **Canonical record schema mapping** and **5 CFR 2640.103(a) category
-  inference** — separate design work (Handoff #20).
+  inference** — separate design work (Handoff #23).
 - **Range normalization** — ranges are emitted as printed strings, not numeric
   bounds.
 
-## Recommended Handoff #20
+## Recommended Handoff #23
 
-Canonical record schema design. The parser now reads every Part of OGE 278e that
-maps to the tracker's financial-interest definition (2, 5, 6); the open design
-questions — how a parsed entry becomes an SC-### record, how the 5 CFR
+Canonical record schema design — landed as Handoff #23
+(`docs/handoffs/2026-05-28-handoff-23-oge-278-candidate-schema.md`; numbering is
+global-sequential across lineages). The parser now reads every Part of OGE 278e
+that maps to the tracker's financial-interest definition (2, 5, 6); the open
+design questions — how a parsed entry becomes an SC-### record, how the 5 CFR
 2640.103(a) category is inferred, how `certification_status` and imputed spousal
 interests are represented, where the nested structure is preserved versus
 flattened — are substantive and want Corey-level input, not Code-only execution.
