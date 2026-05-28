@@ -1,1 +1,112 @@
-[]
+[
+  {
+    "id": "CAND-001",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part2.json",
+      "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "The Witkoff Group LLC (real estate management company)",
+    "business_id": null,
+    "disclosure_type": "filer_employment_asset",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
+      "income_range": "$120,000,000"
+    },
+    "scope_hypothesis": "Filer reports $120,000,000 in proceeds from the sale of an interest in The Witkoff Group as part of divestiture planning. OGE Form 278e Part 2 prints the amount but no acquirer/counterparty (those would live in a separate OGE ethics agreement). Research whether the divested interest was acquired by a sovereign-linked entity — unverified; no buyer is named in the parsed filing.",
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-002",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "M&A Management Company Ltd",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": "Holding entity carries a 'Ltd' suffix (a non-US corporate form) and its only sub-asset is motorized water vehicles (a yacht-holding pattern). Research the entity's domicile and whether any foreign/sovereign counterparty is involved in its financing or ownership — unverified; the parsed row shows only a US-range value.",
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-003",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Sweet Tuna Boat Ltd",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": "Same 'Ltd' yacht-holding pattern as M&A Management Company Ltd, at a $1M-$5M value range. Research domicile and whether any foreign/sovereign counterparty is involved — unverified; nothing in the parsed row asserts a foreign source.",
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-004",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "7"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Silverpeak Legacy Partners III, L.P.",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": "Private-equity fund interest whose parsed sub-entries include foreign-located assets — 'Mixed use real estate, Marseille, France' (7.2) and 'Land development, Mumbai, India' (7.3). Research the fund's limited-partner base and co-investors for any sovereign participation — unverified; the fund holding alone does not establish a sovereign source.",
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-005",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "9.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Optima STAR Fund - Long-Only - Class B",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": "Pooled-investment-fund holding with an offshore-style share-class designation, held inside a brokerage account. Research the fund's domicile and sponsor and whether any sovereign limited partner is present — unverified; the parsed row identifies only a fund name and US-range values.",
+    "promotion_status": "unreviewed"
+  }
+]
