@@ -2,7 +2,8 @@
 
 Reads the parsed OGE Form 278e part files produced by
 ``collectors/oge_278/parser.py`` and emits pre-promotion candidate records into
-``data/candidates.json``.
+``web/data/candidates.json`` (beside ``web/data/records.json``, the records they
+promote into).
 
 A *candidate* is a parsed financial-disclosure row that **might** describe a
 sovereign-source connection, before any human research has confirmed scope.
@@ -32,7 +33,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SAMPLES = REPO_ROOT / "data" / "samples"
-OUTPUT = REPO_ROOT / "data" / "candidates.json"
+OUTPUT = REPO_ROOT / "web" / "data" / "candidates.json"
 
 # The parsed OGE 278e part files, in parse order (Parts 2, 5, 6). disclosure_type
 # is drawn from the part — NOT inferred from the row. The handoff's example set

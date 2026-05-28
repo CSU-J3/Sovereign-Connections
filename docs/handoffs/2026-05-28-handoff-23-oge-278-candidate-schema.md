@@ -1,17 +1,24 @@
-# Handoff #20 — OGE 278 Candidate Record Schema
+# Handoff #23 — OGE 278 Candidate Record Schema
 
 **Repo:** Sovereign-Connections
-**Path target:** `docs/handoffs/oge-278-record-schema.md`
+**Path target:** `docs/handoffs/2026-05-28-handoff-23-oge-278-candidate-schema.md`
+**Lineage:** OGE-278 (a body tag, not the number). Handoff numbers are global-sequential across all lineages, not per-lineage. This work was originally filed as "#20," colliding with the evidence_refs #20; renumbered to **#23** by Handoff #24 (path-align). "OGE-278" stays a tag only — never the number.
 **Depends on:** OGE 278 parser (`collectors/oge_278_collector.py`, parse stage done in prior handoff)
-**Blocks:** `data/candidates.json` population, OGE 278 collector wrapper
+**Blocks:** `web/data/candidates.json` population, OGE 278 collector wrapper
+
+> **Path note (Handoff #24, 2026-05-28):** candidate records now live at
+> `web/data/candidates.json` (beside `web/data/records.json`) and records at
+> `web/data/records.json`. Operational path references below were updated to
+> match. The one exception is the "Divergences" note, which deliberately records
+> the pre-move state as it was found.
 
 ## Goal
 
-Define the candidate record schema that sits between raw OGE 278 parser output and promoted `SC-###` records in `data/records.json`, then validate it by emitting the first 4-6 candidates from Witkoff's already-parsed OGE 278 filing into `data/candidates.json`. Candidates are pre-promotion: parsed financial-disclosure rows that *might* describe a sovereign-source connection, before any human research has confirmed scope.
+Define the candidate record schema that sits between raw OGE 278 parser output and promoted `SC-###` records in `web/data/records.json`, then validate it by emitting the first 4-6 candidates from Witkoff's already-parsed OGE 278 filing into `web/data/candidates.json`. Candidates are pre-promotion: parsed financial-disclosure rows that *might* describe a sovereign-source connection, before any human research has confirmed scope.
 
 Schema design plus one worked pass. No research. No invented dockets, dates, URLs, or sponsor identities. Every field on every emitted candidate traces to a row that exists in the parsed Witkoff output. If a field can't be filled from parsed data, leave it null — do not infer it.
 
-This is a Python/JSON repo (no TypeScript). The schema is a JSON shape, documented in this handoff and enforced by the collector that writes it — not a TS interface. Match the JSON conventions already used in `data/sovereign_entities.json` and `data/records.json` (field naming, ID style, how primary sources are referenced). Read those two files first and align to them; don't invent a parallel style.
+This is a Python/JSON repo (no TypeScript). The schema is a JSON shape, documented in this handoff and enforced by the collector that writes it — not a TS interface. Match the JSON conventions already used in `data/sovereign_entities.json` and `web/data/records.json` (field naming, ID style, how primary sources are referenced). Read those two files first and align to them; don't invent a parallel style.
 
 ## Three decisions already made (apply, don't re-litigate)
 
@@ -23,7 +30,7 @@ This is a Python/JSON repo (no TypeScript). The schema is a JSON shape, document
 
 ## Schema to define
 
-`data/candidates.json` is an array of candidate objects. Document the shape in this handoff and align field-naming to the existing `data/` JSON files. At minimum each candidate carries:
+`web/data/candidates.json` is an array of candidate objects. Document the shape in this handoff and align field-naming to the existing `data/` JSON files. At minimum each candidate carries:
 
 - `id` — `CAND-###`, sequential, parse order
 - `source_filing` — provenance pointer back to the parser output for this filing. Use whatever the parser already writes as its output identifier/path; if the parser doesn't currently emit a stable pointer, that's a flag-back, not an invention (see below).
@@ -39,7 +46,7 @@ If the parsed 278 carries a certification field (`filing_type` / `certification_
 
 ## Worked pass: Witkoff
 
-Run the schema over the parsed Witkoff OGE 278 output the parser already produced. Emit 4-6 candidates into `data/candidates.json`. Constraints:
+Run the schema over the parsed Witkoff OGE 278 output the parser already produced. Emit 4-6 candidates into `web/data/candidates.json`. Constraints:
 
 - Every emitted candidate's `raw_value`, `business_name`, `filer`, and `disclosure_type` is a verbatim or near-verbatim lift from a row that exists in the parsed file. If you're typing a value that isn't in the parse, stop — that's the invented-data failure this tracker exists to prevent.
 - `scope_hypothesis` is the only freeform field. Keep each one hedged, pointing at what research would confirm. Never assert a sovereign connection.
@@ -50,7 +57,7 @@ If you can't locate the parsed Witkoff output in the repo, stop and flag it rath
 
 ## Verify before reporting back
 
-- `data/candidates.json` is valid JSON and every object carries the required fields.
+- `web/data/candidates.json` is valid JSON and every object carries the required fields.
 - Every candidate ID is sequential from `CAND-001`, no gaps.
 - Every `business_id` is null. Every `promotion_status` is `"unreviewed"`.
 - Spot-check 2 candidates back to their source rows in the parsed Witkoff output — confirm `raw_value` and `business_name` match the parse, not a paraphrase that drifted.
@@ -64,13 +71,13 @@ If you can't locate the parsed Witkoff output in the repo, stop and flag it rath
 
 ## Commit
 
-Single commit: the schema documentation (this handoff in `docs/handoffs/`) + `data/candidates.json` with the Witkoff worked pass + any collector changes needed to emit it. Match the existing commit-message convention. Don't push unless asked.
+Single commit: the schema documentation (this handoff in `docs/handoffs/`) + `web/data/candidates.json` with the Witkoff worked pass + any collector changes needed to emit it. Match the existing commit-message convention. Don't push unless asked.
 
 ---
 
 # Schema as built (2026-05-28)
 
-`data/candidates.json` is a JSON array of candidate objects. Each is emitted by
+`web/data/candidates.json` is a JSON array of candidate objects. Each is emitted by
 `collectors/oge_278/candidates.py`, which reads the parsed part files
 (`data/samples/witkoff-oge278-2025-08-13-part{2,5,6}.json`) and copies the
 verbatim fields directly from the parse — they are never retyped, so they cannot
@@ -144,15 +151,17 @@ no `scope_hypothesis` asserts a sovereign connection as fact.
 
 ## Divergences from the handoff (followed the repo, noting it)
 
-1. **`data/records.json` no longer exists.** It was removed at root (commit
+1. **Root `data/records.json` no longer exists.** It was removed at root (commit
    `c374bcb`, "remove stale root data/records.json") and now lives at
    **`web/data/records.json`**. Conventions were aligned to that file:
    snake_case fields, `SC-###` IDs, `primary_sources` as an array of
    `{label, url?, category:int}`.
-2. **`data/candidates.json` and `data/connected_businesses.json` already
-   existed** as empty arrays (`[]`), where the handoff treated both as not-yet
-   built. `candidates.json` is now populated; `connected_businesses.json` stays
-   empty per decision 3.
+2. **Root `data/candidates.json` and `data/connected_businesses.json` already
+   existed** as empty arrays (`[]`) when this work started, where the handoff
+   treated both as not-yet built. `candidates.json` was populated and then
+   **moved to `web/data/candidates.json` by Handoff #24** (it sits beside
+   records); `connected_businesses.json` stays empty at root `data/` per
+   decision 3.
 3. **`raw_value` is a structured object, not a single string.** The handoff
    phrased it as "the value/amount/description string." A 278e row carries three
    distinct printed value fields (`value_range`, `income_type`, `income_range`);
@@ -173,10 +182,11 @@ no `scope_hypothesis` asserts a sovereign connection as fact.
   pass is emitted by the new `collectors/oge_278/candidates.py`, which reads the
   already-parsed part files. Wiring the stub collector to drive
   parse → candidate emission end-to-end is its own handoff.
-- **Handoff-number collision.** This doc is labeled "Handoff #20", but a
-  *different* "Handoff #20" exists in the `evidence_refs` lineage
-  (`2026-05-21-handoff-20-apply-evidence-refs.md`, since superseded by #21). The
-  parser doc (`docs/collectors/oge-278-parser.md`) also calls the candidate-schema
-  work "Handoff #20", so this is the OGE-278 lineage's #20. Two live lineages are
-  reusing the same numbers — worth picking one numbering scheme before it
-  collides again.
+- **Handoff-number collision — RESOLVED by Handoff #24.** This doc was
+  originally labeled "Handoff #20," colliding with the `evidence_refs` #20
+  (`2026-05-21-handoff-20-apply-evidence-refs.md`, since superseded by #21).
+  Handoff numbering is **global-sequential across all lineages**, so this
+  candidate-schema work was renumbered to **#23** and the path-align cleanup
+  itself took **#24**. The parser doc (`docs/collectors/oge-278-parser.md`) still
+  refers to "Handoff #20" for this work and should be updated to "#23" on its
+  next edit (a stale cross-reference, not a blocker).
