@@ -123,6 +123,18 @@
         "label": "CoinDesk, 'Pakistan regulator inks MoU with WLFI-linked crypto business for stablecoin-based payments', January 14, 2026",
         "url": "https://www.coindesk.com/business/2026/01/14/pakistan-signs-deal-with-trump-linked-crypto-business-for-cross-border-payments",
         "category": 3
+      },
+      {
+        "label": "Binance announcement of $2B MGX investment (first institutional investment in Binance history), X, March 12, 2025",
+        "category": 1
+      },
+      {
+        "label": "Zach Witkoff statement that MGX's Binance investment settled in WLF's USD1 stablecoin, Token2049 Dubai, c. May 1, 2025",
+        "category": 1
+      },
+      {
+        "label": "Warren-Merkley letter to the MGX and Binance CEOs (Senate Banking Committee, June 11, 2025), reporting WLF's confirmation the transaction would likely have settled in foreign fiat absent USD1",
+        "category": 1
       }
     ]
   },
