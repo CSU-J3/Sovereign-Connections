@@ -215,3 +215,60 @@ the case that missed World Liberty Financial (`41.8.1`). Three fields were added
 the original Handoff #23 worked rows, whose hedged prompts are preserved via a
 `(part, entry_number)`-keyed override. The Witkoff re-run yields **168**
 candidates (part2 4, part5 8, part6 156).
+
+## Schema extension (Handoff #27 — candidate lifecycle)
+
+`promotion_status` becomes a constrained **four-state lifecycle** (was a free
+`"unreviewed"`). The mechanical walk emits `unreviewed`; the other three are
+review dispositions. Four sibling fields carry the disposition (canonical shape:
+the module docstring):
+
+| state | meaning | conditional-required |
+|-------|---------|----------------------|
+| `unreviewed` | default; no decision yet | — |
+| `hold_pending_research` | worth checking; awaiting off-session primary-source work | — (`disposition_reason` optional, kept for the trail) |
+| `killed_out_of_scope` | reviewed, fails the sovereign-adjacent bar | **`disposition_reason` (string) required** |
+| `promoted` | became an SC record | **`promoted_to` (`SC-###`) required** |
+
+- `disposition_reason` — nullable string; **required** when `killed_out_of_scope`.
+  The logged reason is the audit trail that the bar was applied symmetrically; a
+  silent drop looks like nobody looked.
+- `promoted_to` — nullable `SC-###` ref; **required** when `promoted`.
+- `reviewed_at` — nullable ISO date the disposition was recorded.
+- `scope_hypothesis_superseded` — boolean; `true` when a killed row also carried
+  a worked `scope_hypothesis`. The hypothesis text is **kept, not deleted** — the
+  kill reason explains why it didn't hold, which is itself the trail.
+
+`apply_disposition()` enforces the conditional-required rules at emit time
+(raises if a kill has no reason or a promotion no target).
+
+### Dispositions key on row identity, not `CAND-###`
+
+The #26 re-run regenerates every `CAND-###` from scratch (WLF went from absent to
+`CAND-130`); any future re-run shifts them again. So dispositions are recorded in
+a `DISPOSITIONS` registry keyed on **stable `(part, entry_number)`**, and the
+emitter re-associates each to whatever `CAND-###` the row lands on this run — a
+re-run never orphans a review decision. `build()` runs a **re-association
+integrity check**: every `DISPOSITIONS` key must match an emitted row, else it
+raises (a disposition keyed on a row the parse no longer produces is a stale
+decision to fix, not silently orphan). `CAND-###` stays a display handle only.
+
+### First dispositions applied (2026-05-29)
+
+168 candidates: 162 `unreviewed`, 4 `killed_out_of_scope`, 1 `hold_pending_research`,
+1 `promoted`. Keyed by `(part, entry_number)`:
+
+| (part, entry) | entity | state | target / reason source |
+|---------------|--------|-------|------------------------|
+| (2, 1) | The Witkoff Group LLC | `killed_out_of_scope` | divested clean asset, no sovereign counterparty |
+| (6, 1) | M&A Management Company Ltd | `killed_out_of_scope` | Cayman yacht holder |
+| (6, 2) | Sweet Tuna Boat Ltd | `killed_out_of_scope` | yacht holder |
+| (6, 7) | Silverpeak Legacy Partners III, L.P. | `killed_out_of_scope` | fund in liquidation, no LP visibility |
+| (6, 9.1) | Optima STAR Fund – Long-Only – Class B | `hold_pending_research` | offshore share class, weakest signal |
+| (6, 41.8.1) | World Liberty Financial | `promoted` | `promoted_to: SC-007` |
+
+WLF (`41.8.1`) was **folded into the existing WLF record `SC-007`**, not minted
+as a new SC record — `SC-007` already documents the same MGX→USD1 relationship.
+Reasons are sourced from `docs/references/collector-gap-finding-oge278.md` and
+`docs/references/wlf-research-target.md`. The four kills' `scope_hypothesis`
+strings are retained with `scope_hypothesis_superseded: true`.

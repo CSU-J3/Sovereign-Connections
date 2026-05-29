@@ -1,4 +1,4 @@
-"""OGE 278 candidate emitter (Handoffs #23 schema, #26 deep-leaf flatten).
+"""OGE 278 candidate emitter (Handoffs #23 schema, #26 deep-leaf, #27 lifecycle).
 
 Reads the parsed OGE Form 278e part files produced by
 ``collectors/oge_278/parser.py`` and emits pre-promotion candidate records into
@@ -47,6 +47,29 @@ signal-keyed logic that missed WLF). ``scope_hypothesis`` is the only
 hand-authored field; the mechanical walk leaves it ``null`` except on the small
 set of worked rows in ``HYPOTHESES`` (the Handoff #23 pass), where the original
 hedged research prompt is preserved.
+
+Lifecycle (Handoff #27 — four states, row-identity keying):
+  ``promotion_status`` is a constrained four-state lifecycle:
+    - ``unreviewed`` (default) — mechanical emission, no decision yet.
+    - ``hold_pending_research`` — worth checking; awaiting off-session work.
+    - ``killed_out_of_scope`` — reviewed, fails the sovereign-adjacent bar;
+      **requires ``disposition_reason``** (the logged reason is the audit trail
+      that the bar was applied symmetrically — a silent drop looks like nobody
+      looked).
+    - ``promoted`` — became an SC record; **requires ``promoted_to``** (the
+      ``SC-###`` it became).
+  Sibling fields ``disposition_reason`` (nullable), ``promoted_to`` (nullable
+  ``SC-###``), and ``reviewed_at`` (nullable ISO date) carry the disposition.
+
+  Dispositions are keyed on **stable row identity ``(part, entry_number)``**, not
+  on ``CAND-###``. The #26 re-run regenerated every ``CAND-###`` from scratch
+  (WLF went from absent to ``CAND-130``); any future re-run shifts them again. By
+  keying ``DISPOSITIONS`` on ``(part, entry_number)`` the emitter re-associates a
+  recorded disposition to whatever ``CAND-###`` the row lands on this run — a
+  re-run never orphans a review decision. The ``CAND-###`` stays a display handle
+  only. When a killed row also carried a worked ``scope_hypothesis``, that text
+  is kept (not deleted) and flagged ``scope_hypothesis_superseded: true`` — the
+  kill reason explains why the hypothesis didn't hold, which is itself the trail.
 
 Run: ``.venv/Scripts/python -m collectors.oge_278.candidates`` (Windows) /
 ``.venv/bin/python -m collectors.oge_278.candidates`` (macOS/Linux).
@@ -117,6 +140,83 @@ HYPOTHESES = {
     ),
 }
 
+# The four lifecycle states (Handoff #27). `unreviewed` is the mechanical
+# default; the other three are review dispositions recorded in DISPOSITIONS.
+STATES = (
+    "unreviewed",
+    "hold_pending_research",
+    "killed_out_of_scope",
+    "promoted",
+)
+
+# Review dispositions, keyed on stable row identity (part_key, entry_number) so
+# they survive the re-run that regenerates every CAND-### (Handoff #27). Each
+# value is {status, reviewed_at, and the conditional-required sibling}:
+#   - killed_out_of_scope -> requires "reason"
+#   - promoted            -> requires "promoted_to"
+#   - hold_pending_research -> "reason" optional (rationale kept for the trail)
+# Reasons are lifted from docs/references/collector-gap-finding-oge278.md and the
+# Handoff #27 disposition table. apply_disposition() enforces the required slots.
+DISPOSITIONS = {
+    ("2", "1"): {
+        "status": "killed_out_of_scope",
+        "reviewed_at": "2026-05-29",
+        "reason": (
+            "Divested clean asset; reporting confirms real-estate holdings were "
+            "divested while the WLF crypto was retained. No sovereign "
+            "counterparty named in the filing. Not the target."
+        ),
+    },
+    ("6", "1"): {
+        "status": "killed_out_of_scope",
+        "reviewed_at": "2026-05-29",
+        "reason": (
+            "Cayman yacht-holding entity (Part 1 entries 76-77, George Town, "
+            "Grand Cayman; sub-asset is motorized water vehicles). Foreign "
+            "domicile on a boat-holding vehicle is not a sovereign tie."
+        ),
+    },
+    ("6", "2"): {
+        "status": "killed_out_of_scope",
+        "reviewed_at": "2026-05-29",
+        "reason": (
+            "Yacht holder (motorized water vehicle). Same pattern as M&A "
+            "Management Company Ltd."
+        ),
+    },
+    ("6", "7"): {
+        "status": "killed_out_of_scope",
+        "reviewed_at": "2026-05-29",
+        "reason": (
+            "Fund in liquidation (endnote 6.7); Marseille/Mumbai entries are "
+            "underlying properties, not counterparties; a $15K-$50K interest "
+            "gives no limited-partner visibility."
+        ),
+    },
+    ("6", "9.1"): {
+        "status": "hold_pending_research",
+        "reviewed_at": "2026-05-29",
+        "reason": (
+            "Offshore-style share class, no named sovereign limited partner; "
+            "weakest signal. Hold, low priority."
+        ),
+    },
+    ("6", "41.8.1"): {
+        "status": "promoted",
+        "reviewed_at": "2026-05-29",
+        "promoted_to": "SC-007",
+        "reason": (
+            "Promoted as a documented financial relationship into the existing "
+            "World Liberty Financial record SC-007 (not a new record): Abu "
+            "Dhabi state-owned MGX -> $2B Binance investment settled in WLF's "
+            "USD1 stablecoin; WLF held at 41.8.1, co-founded by the filer's "
+            "son. Causal claims (UAE AI-chip decision, CZ pardon) are held as "
+            "explicitly unverified and are NOT asserted by the record. See "
+            "docs/references/wlf-research-target.md."
+        ),
+    },
+}
+
 # A trailing or embedded parenthetical descriptor, e.g. "World Liberty Financial
 # (cryptocurrency)" -> "cryptocurrency". The last group wins when more than one.
 DESCRIPTOR_RE = re.compile(r"\(([^()]+)\)")
@@ -163,10 +263,40 @@ def _rollup_value(ancestors):
     return None
 
 
+def apply_disposition(candidate, part_key, entry_number):
+    """Attach the lifecycle state for this row, keyed on (part, entry_number).
+
+    Defaults to ``unreviewed`` with null siblings. Enforces the conditional-
+    required rules: ``killed_out_of_scope`` needs a reason, ``promoted`` needs a
+    ``promoted_to``. A killed row that carried a worked ``scope_hypothesis`` is
+    flagged superseded (the hypothesis text is kept; the kill reason is the
+    audit trail). Mutates and returns ``candidate``.
+    """
+    disp = DISPOSITIONS.get((part_key, entry_number), {})
+    status = disp.get("status", "unreviewed")
+    if status not in STATES:
+        raise SystemExit(f"unknown lifecycle state {status!r} for ({part_key}, {entry_number})")
+    reason = disp.get("reason")
+    promoted_to = disp.get("promoted_to")
+    if status == "killed_out_of_scope" and not reason:
+        raise SystemExit(f"killed_out_of_scope requires a reason: ({part_key}, {entry_number})")
+    if status == "promoted" and not promoted_to:
+        raise SystemExit(f"promoted requires promoted_to: ({part_key}, {entry_number})")
+
+    candidate["promotion_status"] = status
+    candidate["disposition_reason"] = reason
+    candidate["promoted_to"] = promoted_to
+    candidate["reviewed_at"] = disp.get("reviewed_at")
+    candidate["scope_hypothesis_superseded"] = bool(
+        status == "killed_out_of_scope" and candidate["scope_hypothesis"]
+    )
+    return candidate
+
+
 def _candidate(node, ancestors, doc, filename, disclosure_type, part_key):
     entry_number = node["entry_number"]
     path = " > ".join([a["entry_number"] for a in ancestors] + [entry_number])
-    return {
+    candidate = {
         # id is assigned after the full walk, once parse order is fixed.
         "id": None,
         "source_filing": {
@@ -203,8 +333,15 @@ def _candidate(node, ancestors, doc, filename, disclosure_type, part_key):
         # when the row carries its own value. Never fabricated onto the leaf.
         "rollup_value": _rollup_value(ancestors),
         "scope_hypothesis": HYPOTHESES.get((part_key, entry_number)),
+        # Lifecycle fields are filled by apply_disposition below, keyed on
+        # (part, entry_number) so a re-run re-associates recorded decisions.
         "promotion_status": "unreviewed",
+        "disposition_reason": None,
+        "promoted_to": None,
+        "reviewed_at": None,
+        "scope_hypothesis_superseded": False,
     }
+    return apply_disposition(candidate, part_key, entry_number)
 
 
 def build():
@@ -225,6 +362,19 @@ def build():
                 walk(node.get("children", []), ancestors + [node])
 
         walk(doc["entries"], [])
+
+    # Re-association integrity: every recorded disposition must have landed on an
+    # emitted row. A miss means a disposition is keyed on a (part, entry_number)
+    # the current parse no longer produces — a stale decision to fix, not orphan.
+    emitted_keys = {
+        (k, c["source_filing"]["entry_number"])
+        for c in candidates
+        for k in PART_FILES
+        if c["source_filing"]["parsed_file"].endswith(PART_FILES[k][0])
+    }
+    stale = [key for key in DISPOSITIONS if key not in emitted_keys]
+    if stale:
+        raise SystemExit(f"dispositions key rows that were not emitted: {stale}")
 
     for index, candidate in enumerate(candidates, start=1):
         candidate["id"] = f"CAND-{index:03d}"
