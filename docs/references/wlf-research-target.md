@@ -1,9 +1,9 @@
 # Research target — World Liberty Financial (Witkoff retained asset)
 
-**Status:** VERIFIED — promotion-ready as a relationship record (see Promotion status below). Transaction facts primary-anchored 2026-05-29.
+**Status:** RECONCILED 2026-05-29 — WLF is already recorded as **SC-007** (scope LIVE), which predates this note. CAND-130 → `promoted_to: SC-007`. This doc's earlier "new record" framing was stale and is corrected below; it now serves as the evidence-enrichment record for SC-007.
 **Owner:** Corey (off-session, per disclosed-gap principle)
 **Source filing:** Witkoff OGE Form 278e, New Entrant, filed 2025-08-13 (`whitehouse.gov/wp-content/uploads/2025/09/Witkoff-Steven.pdf`)
-**Candidate status:** NOT in `candidates.json` — the collector never emitted it (see collector-gap finding)
+**Candidate status:** in `candidates.json` as **CAND-130** (emitted by the #26 deep-leaf re-run; not present before that). State: `promoted`, `promoted_to: SC-007`.
 
 ## What the filing shows
 
@@ -56,14 +56,22 @@ The record is promotable **only as a documented financial relationship.** It mus
 - **Drift mode 2 (sovereign source → sovereign government).** MGX is state-owned, which is sovereign-adjacent. The record documents MGX as the actor, not "the UAE government," unless a primary source establishes direct government direction of the transaction.
 - The Senate letters are primary *correspondence* but *advocacy* in framing — usable for transaction facts (dates, parties, the WLF admission), not for the causal conclusions the senators draw.
 
-## Promotion status: READY (relationship record)
+## Disposition: enriched SC-007 (not a new record)
 
-WLF clears for promotion as a record documenting the MGX/USD1 financial relationship, with causal questions held as explicitly-unverified allegations. It would be:
-- the first SC record from a **retained** (not divested) holding;
-- the first where the sovereign tie is established **entirely off-filing** (the 278e shows the holding; the connection lives in the transaction record);
-- a methodology data point: the disclosure form under-captures by design, so the tracker's value is the off-filing verification, not the parse.
+WLF was already recorded as **SC-007** in a prior session (scope LIVE), documenting the MGX→$2B→USD1 chain plus material this note didn't have: the Aryam/Tahnoon ~$500M stake and the Pakistan PVARA MOU. The 2026-05-29 verification pass added value not by minting a record but by **enriching SC-007's `primary_sources`** with three anchors it lacked:
 
-Hand back to Claude/Code for an SC-record draft when ready; the relationship facts above are the evidence base.
+- Binance announcement, 2025-03-12 (party statement)
+- Zach Witkoff @ Token2049, ~2025-05-01 (party statement)
+- Warren-Merkley Senate Banking letter, 2025-06-11 (primary correspondence)
+
+SC-007 went from 10 to 13 primary sources. No restructure; the Aryam/Tahnoon and PVARA content was untouched; no causal claim was added.
+
+The methodology points still stand and are worth a one-line note on the methodology page (not yet written):
+- SC-007 is sourced in part from a **retained** (not divested) holding;
+- its sovereign tie is established **entirely off-filing** (the 278e shows the holding at 41.8.1; the connection lives in the transaction record);
+- the disclosure form under-captures by design, so the tracker's value is the off-filing verification, not the parse.
+
+**Correction note:** earlier drafts of this doc called WLF "promotion-ready as a new record" and "the first SC record from a retained holding." Both were wrong — SC-007 predates this note. The retained-holding/off-filing observations are still true *about SC-007*; they were never grounds for a new record.
 
 ## Supersedes
 
