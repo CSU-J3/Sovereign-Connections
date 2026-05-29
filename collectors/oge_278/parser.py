@@ -318,11 +318,16 @@ def _flatten(nodes: list[dict]):
         yield from _flatten(n["children"])
 
 
-def main() -> None:
-    pdf_path = Path(sys.argv[1]) if len(sys.argv) > 1 else PILOT_PDF
-    if not pdf_path.exists():
-        raise SystemExit(f"PDF not found: {pdf_path}")
+def parse_all(pdf_path: Path) -> dict[str, dict]:
+    """Parse every configured section, write the per-part JSON, return the docs.
 
+    Output path matches the prior ``main()`` behaviour exactly: the pilot PDF
+    writes to the fixed sample filenames (``data/samples/...-partN.json``, the
+    paths the candidate emitter reads); any other PDF writes beside it as
+    ``<stem>-<key>.json``. Extracted from ``main()`` (Handoff #28) so the
+    collector wrapper can drive the parse without going through the CLI;
+    ``main()`` now calls it and keeps the correctness-check printing.
+    """
     docs: dict[str, dict] = {}
     for key, cfg in SECTIONS.items():
         doc = parse_part(pdf_path, key)
@@ -333,6 +338,15 @@ def main() -> None:
             out = pdf_path.with_name(f"{pdf_path.stem}-{key}.json")
         out.write_text(json.dumps(doc, indent=2) + "\n", encoding="utf-8")
         print(f"{key}: {doc['entry_count']:>3} entries -> {out}")
+    return docs
+
+
+def main() -> None:
+    pdf_path = Path(sys.argv[1]) if len(sys.argv) > 1 else PILOT_PDF
+    if not pdf_path.exists():
+        raise SystemExit(f"PDF not found: {pdf_path}")
+
+    docs = parse_all(pdf_path)
 
     # Correctness checks.
     p2 = {n["entry_number"]: n for n in _flatten(docs["part2"]["entries"])}

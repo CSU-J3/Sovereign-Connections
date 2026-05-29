@@ -381,11 +381,23 @@ def build():
     return candidates
 
 
-def main():
-    candidates = build()
+def write_candidates(candidates):
+    """Serialize the candidate list to ``web/data/candidates.json``, return the path.
+
+    Extracted from ``main()`` (Handoff #28) so the collector wrapper can write
+    the same output the CLI does without duplicating the serialization. The
+    serialization is unchanged: 2-space indent, ``ensure_ascii=False``, trailing
+    newline — keeping re-runs byte-identical.
+    """
     OUTPUT.write_text(
         json.dumps(candidates, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
+    return OUTPUT
+
+
+def main():
+    candidates = build()
+    write_candidates(candidates)
     print(f"wrote {len(candidates)} candidates -> {OUTPUT.relative_to(REPO_ROOT)}")
 
 
