@@ -190,3 +190,28 @@ no `scope_hypothesis` asserts a sovereign connection as fact.
   itself took **#24**. The parser doc (`docs/collectors/oge-278-parser.md`) still
   refers to "Handoff #20" for this work and should be updated to "#23" on its
   next edit (a stale cross-reference, not a blocker).
+
+## Schema extension (Handoff #26 — deep-leaf flatten)
+
+The emitter was changed from a curated selection of specific rows to a full
+tree walk (Gap 1 fix, `collectors/oge_278/candidates.py`). It now emits every
+node that is **either a leaf entity or carries its own value/income**, which
+surfaces deep holdings whose own value is N/A because it rolls up to a parent —
+the case that missed World Liberty Financial (`41.8.1`). Three fields were added
+(the canonical shape is the module docstring):
+
+- `source_filing.ancestry_path` — full dotted chain root → this node, e.g.
+  `"41 > 41.8 > 41.8.1"`. Lets review trace tree position.
+- `rollup_value` — nullable object pointing at the nearest value/income-carrying
+  ancestor (`entry_number`, `entity_name`, the three value fields), so a leaf
+  with N/A own-value shows where its dollar figure lives. Never fabricated onto
+  the leaf; `raw_value` stays the row's own (possibly all-null) parse.
+- `descriptor` — nullable parenthetical lifted verbatim from `business_name`
+  (e.g. `"cryptocurrency"`, `"stablecoin"`). A weak scope signal passed through,
+  **not** filtered on at collection (hard-coding "crypto = interesting" is the
+  brittle signal-keying that missed WLF in the first place).
+
+`scope_hypothesis` is now `null` on every mechanically-emitted candidate except
+the original Handoff #23 worked rows, whose hedged prompts are preserved via a
+`(part, entry_number)`-keyed override. The Witkoff re-run yields **168**
+candidates (part2 4, part5 8, part6 156).

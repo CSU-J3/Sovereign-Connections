@@ -7,10 +7,12 @@
       "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
       "report_type": "New Entrant Report",
       "form": "OGE Form 278e (Updated 08/2024)",
-      "entry_number": "1"
+      "entry_number": "1",
+      "ancestry_path": "1"
     },
     "filer": "Witkoff, Steven C",
     "business_name": "The Witkoff Group LLC (real estate management company)",
+    "descriptor": "real estate management company",
     "business_id": null,
     "disclosure_type": "filer_employment_asset",
     "raw_value": {
@@ -18,6 +20,7 @@
       "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
       "income_range": "$120,000,000"
     },
+    "rollup_value": null,
     "scope_hypothesis": "Filer reports $120,000,000 in proceeds from the sale of an interest in The Witkoff Group as part of divestiture planning. OGE Form 278e Part 2 prints the amount but no acquirer/counterparty (those would live in a separate OGE ethics agreement). Research whether the divested interest was acquired by a sovereign-linked entity — unverified; no buyer is named in the parsed filing.",
     "promotion_status": "unreviewed"
   },
@@ -25,14 +28,309 @@
     "id": "CAND-002",
     "source_filing": {
       "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part2.json",
+      "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.1",
+      "ancestry_path": "1 > 1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Development LLC (development management)",
+    "descriptor": "development management",
+    "business_id": null,
+    "disclosure_type": "filer_employment_asset",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "1",
+      "entity_name": "The Witkoff Group LLC (real estate management company)",
+      "value_range": "Over $50,000,000",
+      "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
+      "income_range": "$120,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-003",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part2.json",
+      "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.2.1",
+      "ancestry_path": "1 > 1.2 > 1.2.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Aircraft",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "filer_employment_asset",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "1",
+      "entity_name": "The Witkoff Group LLC (real estate management company)",
+      "value_range": "Over $50,000,000",
+      "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
+      "income_range": "$120,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-004",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part2.json",
+      "part": "2. Filer's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.3.1",
+      "ancestry_path": "1 > 1.3 > 1.3.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Aircraft",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "filer_employment_asset",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "1",
+      "entity_name": "The Witkoff Group LLC (real estate management company)",
+      "value_range": "Over $50,000,000",
+      "income_type": "Proceeds from the sale of an interest in the company as part of divestiture planning",
+      "income_range": "$120,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-005",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.1",
+      "ancestry_path": "1 > 1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Macerich Company (MAC)",
+    "descriptor": "MAC",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": "Dividends",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-006",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.2",
+      "ancestry_path": "1 > 1.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Net Lease Office PPTYS (NLOP)",
+    "descriptor": "NLOP",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-007",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.3",
+      "ancestry_path": "1 > 1.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Regency Centers Corp. (REG)",
+    "descriptor": "REG",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": "Dividends",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-008",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.4",
+      "ancestry_path": "1 > 1.4"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Sabra Health Care REIT, Inc. (SBRA)",
+    "descriptor": "SBRA",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-009",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.5",
+      "ancestry_path": "1 > 1.5"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Ventas, Inc. (VTR)",
+    "descriptor": "VTR",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": "Dividends",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-010",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.6",
+      "ancestry_path": "1 > 1.6"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "W P Carey Inc. REIT (WPC)",
+    "descriptor": "WPC",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": "Dividends",
+      "income_range": "$1,001 - $2,500"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-011",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.7",
+      "ancestry_path": "1 > 1.7"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "U.S. bank #4 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-012",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part5.json",
+      "part": "5. Spouse's Employment Assets & Income and Retirement Accounts",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "1.8",
+      "ancestry_path": "1 > 1.8"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "UBS Select Treasury Institutional Fund (SETXX)",
+    "descriptor": "SETXX",
+    "business_id": null,
+    "disclosure_type": "spouse_employment_asset",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "$1,001 - $2,500"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-013",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
       "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
       "part": "6. Other Assets and Income",
       "report_type": "New Entrant Report",
       "form": "OGE Form 278e (Updated 08/2024)",
-      "entry_number": "1"
+      "entry_number": "1",
+      "ancestry_path": "1"
     },
     "filer": "Witkoff, Steven C",
     "business_name": "M&A Management Company Ltd",
+    "descriptor": null,
     "business_id": null,
     "disclosure_type": "other_asset_income",
     "raw_value": {
@@ -40,21 +338,55 @@
       "income_type": null,
       "income_range": "None (or less than $201)"
     },
+    "rollup_value": null,
     "scope_hypothesis": "Holding entity carries a 'Ltd' suffix (a non-US corporate form) and its only sub-asset is motorized water vehicles (a yacht-holding pattern). Research the entity's domicile and whether any foreign/sovereign counterparty is involved in its financing or ownership — unverified; the parsed row shows only a US-range value.",
     "promotion_status": "unreviewed"
   },
   {
-    "id": "CAND-003",
+    "id": "CAND-014",
     "source_filing": {
       "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
       "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
       "part": "6. Other Assets and Income",
       "report_type": "New Entrant Report",
       "form": "OGE Form 278e (Updated 08/2024)",
-      "entry_number": "2"
+      "entry_number": "1.1",
+      "ancestry_path": "1 > 1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Motorized water vehicles",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "1",
+      "entity_name": "M&A Management Company Ltd",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-015",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "2",
+      "ancestry_path": "2"
     },
     "filer": "Witkoff, Steven C",
     "business_name": "Sweet Tuna Boat Ltd",
+    "descriptor": null,
     "business_id": null,
     "disclosure_type": "other_asset_income",
     "raw_value": {
@@ -62,21 +394,217 @@
       "income_type": null,
       "income_range": "None (or less than $201)"
     },
+    "rollup_value": null,
     "scope_hypothesis": "Same 'Ltd' yacht-holding pattern as M&A Management Company Ltd, at a $1M-$5M value range. Research domicile and whether any foreign/sovereign counterparty is involved — unverified; nothing in the parsed row asserts a foreign source.",
     "promotion_status": "unreviewed"
   },
   {
-    "id": "CAND-004",
+    "id": "CAND-016",
     "source_filing": {
       "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
       "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
       "part": "6. Other Assets and Income",
       "report_type": "New Entrant Report",
       "form": "OGE Form 278e (Updated 08/2024)",
-      "entry_number": "7"
+      "entry_number": "2.1",
+      "ancestry_path": "2 > 2.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Motorized water vehicle",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "2",
+      "entity_name": "Sweet Tuna Boat Ltd",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-017",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "3",
+      "ancestry_path": "3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Addition Three, LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-018",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "4",
+      "ancestry_path": "4"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Atreides Foundation Fund, LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-019",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "5",
+      "ancestry_path": "5"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "BMW SPV 1 LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-020",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "5.1",
+      "ancestry_path": "5 > 5.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Moonpay LLC (financial technology)",
+    "descriptor": "financial technology",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "5",
+      "entity_name": "BMW SPV 1 LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-021",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "6",
+      "ancestry_path": "6"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "3G Investors LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-022",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "6.1",
+      "ancestry_path": "6 > 6.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SpaceX (space technology)",
+    "descriptor": "space technology",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "6",
+      "entity_name": "3G Investors LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-023",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "7",
+      "ancestry_path": "7"
     },
     "filer": "Witkoff, Steven C",
     "business_name": "Silverpeak Legacy Partners III, L.P.",
+    "descriptor": null,
     "business_id": null,
     "disclosure_type": "other_asset_income",
     "raw_value": {
@@ -84,21 +612,173 @@
       "income_type": null,
       "income_range": "None (or less than $201)"
     },
+    "rollup_value": null,
     "scope_hypothesis": "Private-equity fund interest whose parsed sub-entries include foreign-located assets — 'Mixed use real estate, Marseille, France' (7.2) and 'Land development, Mumbai, India' (7.3). Research the fund's limited-partner base and co-investors for any sovereign participation — unverified; the fund holding alone does not establish a sovereign source.",
     "promotion_status": "unreviewed"
   },
   {
-    "id": "CAND-005",
+    "id": "CAND-024",
     "source_filing": {
       "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
       "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
       "part": "6. Other Assets and Income",
       "report_type": "New Entrant Report",
       "form": "OGE Form 278e (Updated 08/2024)",
-      "entry_number": "9.1"
+      "entry_number": "7.1",
+      "ancestry_path": "7 > 7.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "7",
+      "entity_name": "Silverpeak Legacy Partners III, L.P.",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-025",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "7.2",
+      "ancestry_path": "7 > 7.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use real estate, Marseille, France",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "7",
+      "entity_name": "Silverpeak Legacy Partners III, L.P.",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-026",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "7.3",
+      "ancestry_path": "7 > 7.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Land development, Mumbai, India",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "7",
+      "entity_name": "Silverpeak Legacy Partners III, L.P.",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-027",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "8",
+      "ancestry_path": "8"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Innovation Acquisition LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-028",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "8.1",
+      "ancestry_path": "8 > 8.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Built (construction and real estate finance technology)",
+    "descriptor": "construction and real estate finance technology",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "8",
+      "entity_name": "Witkoff Innovation Acquisition LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-029",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "9.1",
+      "ancestry_path": "9 > 9.1"
     },
     "filer": "Witkoff, Steven C",
     "business_name": "Optima STAR Fund - Long-Only - Class B",
+    "descriptor": null,
     "business_id": null,
     "disclosure_type": "other_asset_income",
     "raw_value": {
@@ -106,7 +786,3891 @@
       "income_type": null,
       "income_range": "$100,001 - $1,000,000"
     },
+    "rollup_value": null,
     "scope_hypothesis": "Pooled-investment-fund holding with an offshore-style share-class designation, held inside a brokerage account. Research the fund's domicile and sponsor and whether any sovereign limited partner is present — unverified; the parsed row identifies only a fund name and US-range values.",
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-030",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "10.1",
+      "ancestry_path": "10 > 10.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Financial Square Treasury Instruments Fund - FST Shares Moody's AAA (FTIXX)",
+    "descriptor": "FTIXX",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "$5,001 - $15,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-031",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "11.1",
+      "ancestry_path": "11 > 11.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Escrow New York REIT Inc.",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$50,001 - $100,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-032",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "11.2",
+      "ancestry_path": "11 > 11.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Micron Technology Inc. (MU)",
+    "descriptor": "MU",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": "Dividends",
+      "income_range": "$15,001 - $50,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-033",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "11.3",
+      "ancestry_path": "11 > 11.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "US bank #4 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": "Interest",
+      "income_range": "$50,001 - $100,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-034",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.1",
+      "ancestry_path": "12 > 12.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Escrow New York REIT Inc.",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-035",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.2",
+      "ancestry_path": "12 > 12.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Cisco Systems Inc. [CSCO]",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$15,001 - $50,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-036",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.3",
+      "ancestry_path": "12 > 12.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Nextracker Inc-CL A [NXT]",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-037",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.4",
+      "ancestry_path": "12 > 12.4"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Reddit Inc.-CL A [RDDT]",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-038",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.5",
+      "ancestry_path": "12 > 12.5"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Uber Technologies Inc. [UBER]",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-039",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.6",
+      "ancestry_path": "12 > 12.6"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Flex Ltd [FLEX]",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-040",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.7",
+      "ancestry_path": "12 > 12.7"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Coatue Fintech Fund I LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends Interest",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-041",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.7.1",
+      "ancestry_path": "12 > 12.7 > 12.7.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Coatue Fintech Fund I LP - Class A - Cash Reserve (US/LATAM)",
+    "descriptor": "US/LATAM",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "12.7",
+      "entity_name": "Coatue Fintech Fund I LP",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends Interest",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-042",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.7.2",
+      "ancestry_path": "12 > 12.7 > 12.7.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Coatue Fintech Fund I LP - Class A - Private Portfolio (US/LATAM)",
+    "descriptor": "US/LATAM",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "12.7",
+      "entity_name": "Coatue Fintech Fund I LP",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends Interest",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-043",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.7.3",
+      "ancestry_path": "12 > 12.7 > 12.7.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Coatue Fintech Fund I LP - Class A - MGMT (US/LATAM - MVP Only)",
+    "descriptor": "US/LATAM - MVP Only",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "12.7",
+      "entity_name": "Coatue Fintech Fund I LP",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends Interest",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-044",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.8",
+      "ancestry_path": "12 > 12.8"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Highbridge Convertible Dislocation Fund LP - Class A",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-045",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "12.9",
+      "ancestry_path": "12 > 12.9"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "US bank #4 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": "Interest",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-046",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.1",
+      "ancestry_path": "13 > 13.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Curbline PPTYS Corp (CURB)",
+    "descriptor": "CURB",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-047",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.2",
+      "ancestry_path": "13 > 13.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Healthpeak PPTYS Inc. (DOC)",
+    "descriptor": "DOC",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": "Dividends",
+      "income_range": "$1,001 - $2,500"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-048",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.3",
+      "ancestry_path": "13 > 13.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Kimco Realty Corp. (KIM)",
+    "descriptor": "KIM",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": "Dividends",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-049",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.4",
+      "ancestry_path": "13 > 13.4"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Merck & Co. Inc. (MRK)",
+    "descriptor": "MRK",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": "Dividends",
+      "income_range": "$1,001 - $2,500"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-050",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.5",
+      "ancestry_path": "13 > 13.5"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Shell PLC Spon ADR (SHEL)",
+    "descriptor": "SHEL",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": "Dividends",
+      "income_range": "$1,001 - $2,500"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-051",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.6",
+      "ancestry_path": "13 > 13.6"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Simon PPTY Group Inc. SBI (SPG)",
+    "descriptor": "SPG",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$50,001 - $100,000",
+      "income_type": "Dividends",
+      "income_range": "$2,501 - $5,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-052",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.7",
+      "ancestry_path": "13 > 13.7"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "W P Carey Inc. REIT (WPC)",
+    "descriptor": "WPC",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": "Dividends",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-053",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.8",
+      "ancestry_path": "13 > 13.8"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "U.S. bank #4 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-054",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "13.9",
+      "ancestry_path": "13 > 13.9"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "UBS Select Treasury Institutional Fund (SETXX)",
+    "descriptor": "SETXX",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$50,001 - $100,000",
+      "income_type": null,
+      "income_range": "$5,001 - $15,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-055",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "14",
+      "ancestry_path": "14"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Rex Real Estate LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$25,000,001 - $50,000,000",
+      "income_type": "Interest",
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-056",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "14.1",
+      "ancestry_path": "14 > 14.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, Miami, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "14",
+      "entity_name": "Rex Real Estate LLC",
+      "value_range": "$25,000,001 - $50,000,000",
+      "income_type": "Interest",
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-057",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "15",
+      "ancestry_path": "15"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Rushing Dream Farm LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-058",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "15.1",
+      "ancestry_path": "15 > 15.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Farmland, Lexington, KY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "15",
+      "entity_name": "Rushing Dream Farm LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-059",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "15.2",
+      "ancestry_path": "15 > 15.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, Lexington, KY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "15",
+      "entity_name": "Rushing Dream Farm LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-060",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "16",
+      "ancestry_path": "16"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SW Southampton LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-061",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "16.1",
+      "ancestry_path": "16 > 16.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, Southampton, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "16",
+      "entity_name": "SW Southampton LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-062",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "17",
+      "ancestry_path": "17"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 10 Corp.",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-063",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "18",
+      "ancestry_path": "18"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 10 Upper LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-064",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "19",
+      "ancestry_path": "19"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 10 Martin LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-065",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "19.1",
+      "ancestry_path": "19 > 19.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "UDR, Inc. (UDR)",
+    "descriptor": "UDR",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "19",
+      "entity_name": "SCW 10 Martin LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-066",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "20",
+      "ancestry_path": "20"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 10 Debt LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-067",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "20.1",
+      "ancestry_path": "20 > 20.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "UDR, Inc. (UDR)",
+    "descriptor": "UDR",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "20",
+      "entity_name": "SCW 10 Debt LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-068",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "21",
+      "ancestry_path": "21"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 10 LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-069",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "21.1",
+      "ancestry_path": "21 > 21.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "UDR, Inc. (UDR)",
+    "descriptor": "UDR",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "21",
+      "entity_name": "SCW 10 LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-070",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "22",
+      "ancestry_path": "22"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Lender LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-071",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "22.1",
+      "ancestry_path": "22 > 22.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WBF LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "22",
+      "entity_name": "Witkoff Lender LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-072",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "22.2.1.1.1",
+      "ancestry_path": "22 > 22.2 > 22.2.1 > 22.2.1.1 > 22.2.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential & commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "22",
+      "entity_name": "Witkoff Lender LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-073",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "23",
+      "ancestry_path": "23"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Commercial Acquisition LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-074",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "24",
+      "ancestry_path": "24"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SW 1107 Broadway LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-075",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "24.1.1.1.1.1",
+      "ancestry_path": "24 > 24.1 > 24.1.1 > 24.1.1.1 > 24.1.1.1.1 > 24.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential and commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "24",
+      "entity_name": "SW 1107 Broadway LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-076",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "25",
+      "ancestry_path": "25"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 101 Murray Internal LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$3,225,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-077",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "25.1.1.1.1.1.1.1",
+      "ancestry_path": "25 > 25.1 > 25.1.1 > 25.1.1.1 > 25.1.1.1.1 > 25.1.1.1.1.1 > 25.1.1.1.1.1.1 > 25.1.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "25",
+      "entity_name": "WG 101 Murray Internal LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$3,225,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-078",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "26",
+      "ancestry_path": "26"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SW 150 Charles LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-079",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "26.1.1.1.1.1",
+      "ancestry_path": "26 > 26.1 > 26.1.1 > 26.1.1.1 > 26.1.1.1.1 > 26.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "26",
+      "entity_name": "SW 150 Charles LLC",
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-080",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "27",
+      "ancestry_path": "27"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Piano SW HTC LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-081",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "27.1.1",
+      "ancestry_path": "27 > 27.1 > 27.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential condominium real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "27",
+      "entity_name": "Piano SW HTC LLC",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-082",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "27.2.1",
+      "ancestry_path": "27 > 27.2 > 27.2.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Office building, Miami, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "27",
+      "entity_name": "Piano SW HTC LLC",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-083",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "27.3",
+      "ancestry_path": "27 > 27.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Uniondale Internal LLC (holding company with no reportable assets)",
+    "descriptor": "holding company with no reportable assets",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "27",
+      "entity_name": "Piano SW HTC LLC",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-084",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "28",
+      "ancestry_path": "28"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Leroy LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$250,001 - $500,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-085",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "28.1.1.1.1.1",
+      "ancestry_path": "28 > 28.1 > 28.1.1 > 28.1.1.1 > 28.1.1.1.1 > 28.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential condominium real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "28",
+      "entity_name": "WG Leroy LLC",
+      "value_range": "$250,001 - $500,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-086",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "29",
+      "ancestry_path": "29"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Chrystie Internal LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-087",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "29.1.1.1.1.1.1.1",
+      "ancestry_path": "29 > 29.1 > 29.1.1 > 29.1.1.1 > 29.1.1.1.1 > 29.1.1.1.1.1 > 29.1.1.1.1.1.1 > 29.1.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Hotel real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "29",
+      "entity_name": "WG Chrystie Internal LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-088",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "30",
+      "ancestry_path": "30"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Member LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-089",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "31",
+      "ancestry_path": "31"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "233 Next LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-090",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "31.1.1.1.1.1",
+      "ancestry_path": "31 > 31.1 > 31.1.1 > 31.1.1.1 > 31.1.1.1.1 > 31.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "31",
+      "entity_name": "233 Next LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-091",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "32",
+      "ancestry_path": "32"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Internal Holdings LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-092",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "32.1.1.1.1",
+      "ancestry_path": "32 > 32.1 > 32.1.1 > 32.1.1.1 > 32.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "32",
+      "entity_name": "WG Internal Holdings LLC",
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-093",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "32.1.2.1.1",
+      "ancestry_path": "32 > 32.1 > 32.1.2 > 32.1.2.1 > 32.1.2.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Hotel real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "32",
+      "entity_name": "WG Internal Holdings LLC",
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-094",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "32.1.3.1",
+      "ancestry_path": "32 > 32.1 > 32.1.3 > 32.1.3.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Columbus 95th Street LLC (holding company with no reportable assets)",
+    "descriptor": "holding company with no reportable assets",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "32",
+      "entity_name": "WG Internal Holdings LLC",
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-095",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "33",
+      "ancestry_path": "33"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "22 East 60th Street LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-096",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "33.1.1",
+      "ancestry_path": "33 > 33.1 > 33.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Restaurant, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "33",
+      "entity_name": "22 East 60th Street LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-097",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "33.1.2",
+      "ancestry_path": "33 > 33.1 > 33.1.2"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Restaurant, Sag Harbor, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "33",
+      "entity_name": "22 East 60th Street LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-098",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "33.1.3",
+      "ancestry_path": "33 > 33.1 > 33.1.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Restaurant, Palm Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "33",
+      "entity_name": "22 East 60th Street LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,218,905"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-099",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "34",
+      "ancestry_path": "34"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff 485 Lex LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-100",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "34.1.1.1.1.1.1",
+      "ancestry_path": "34 > 34.1 > 34.1.1 > 34.1.1.1 > 34.1.1.1.1 > 34.1.1.1.1.1 > 34.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "34",
+      "entity_name": "Witkoff 485 Lex LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-101",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "34.2.1.1",
+      "ancestry_path": "34 > 34.2 > 34.2.1 > 34.2.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, Hampstead, NH",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "34",
+      "entity_name": "Witkoff 485 Lex LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-102",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "34.3.1.1",
+      "ancestry_path": "34 > 34.3 > 34.3.1 > 34.3.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, Windham, Mass",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "34",
+      "entity_name": "Witkoff 485 Lex LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-103",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "35",
+      "ancestry_path": "35"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff TIC LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-104",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "36",
+      "ancestry_path": "36"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 420 LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-105",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "36.1.1.1.1.1.1",
+      "ancestry_path": "36 > 36.1 > 36.1.1 > 36.1.1.1 > 36.1.1.1.1 > 36.1.1.1.1.1 > 36.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Office condominium, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "36",
+      "entity_name": "WG 420 LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-106",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "37",
+      "ancestry_path": "37"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 55 LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-107",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "37.1.1",
+      "ancestry_path": "37 > 37.1 > 37.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "37",
+      "entity_name": "WG 55 LLC",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-108",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "38",
+      "ancestry_path": "38"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 76 11th LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-109",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "38.1.1.1.1",
+      "ancestry_path": "38 > 38.1 > 38.1.1 > 38.1.1.1 > 38.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "76 11th Lender LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "38",
+      "entity_name": "WG 76 11th LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-110",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "38.1.1.1.2.1.1",
+      "ancestry_path": "38 > 38.1 > 38.1.1 > 38.1.1.1 > 38.1.1.1.2 > 38.1.1.1.2.1 > 38.1.1.1.2.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential and commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "38",
+      "entity_name": "WG 76 11th LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-111",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "39",
+      "ancestry_path": "39"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "866 Acquisition LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-112",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "39.1.1.1.1",
+      "ancestry_path": "39 > 39.1 > 39.1.1 > 39.1.1.1 > 39.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "39",
+      "entity_name": "866 Acquisition LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-113",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "40",
+      "ancestry_path": "40"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "866 Development Partners LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-114",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "40.1.1.1.1",
+      "ancestry_path": "40 > 40.1 > 40.1.1 > 40.1.1.1 > 40.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "40",
+      "entity_name": "866 Development Partners LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-115",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41",
+      "ancestry_path": "41"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Holdings LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-116",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.1.1.1.1.1.1.1",
+      "ancestry_path": "41 > 41.1 > 41.1.1 > 41.1.1.1 > 41.1.1.1.1 > 41.1.1.1.1.1 > 41.1.1.1.1.1.1 > 41.1.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Recreational and hotel property, West Palm Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-117",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.1.1.1.1.1.2.1",
+      "ancestry_path": "41 > 41.1 > 41.1.1 > 41.1.1.1 > 41.1.1.1.1 > 41.1.1.1.1.1 > 41.1.1.1.1.1.2 > 41.1.1.1.1.1.2.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, West Palm Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-118",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.1.1.1.1.1.3",
+      "ancestry_path": "41 > 41.1 > 41.1.1 > 41.1.1.1 > 41.1.1.1.1 > 41.1.1.1.1.1 > 41.1.1.1.1.1.3"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "USREC Banyan Cay Development LLC (property development)",
+    "descriptor": "property development",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-119",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.1.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.1 > 41.2.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-120",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.2.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.2 > 41.2.1.1.1.2.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-121",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.3.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.3 > 41.2.1.1.1.3.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-122",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.4.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.4 > 41.2.1.1.1.4.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-123",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.5.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.5 > 41.2.1.1.1.5.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-124",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.2.1.1.1.6.1",
+      "ancestry_path": "41 > 41.2 > 41.2.1 > 41.2.1.1 > 41.2.1.1.1 > 41.2.1.1.1.6 > 41.2.1.1.1.6.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-125",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.3.1.1",
+      "ancestry_path": "41 > 41.3 > 41.3.1 > 41.3.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Members club, marina, hotel and hotel condo development, Hallandale, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-126",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.4.1",
+      "ancestry_path": "41 > 41.4 > 41.4.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Mixed use real estate development, Miami Beach, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-127",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.5",
+      "ancestry_path": "41 > 41.5"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG FB LLC (food & beverage operating business)",
+    "descriptor": "food & beverage operating business",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-128",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.6",
+      "ancestry_path": "41 > 41.6"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG GM LLC (golf management operating business)",
+    "descriptor": "golf management operating business",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-129",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.7",
+      "ancestry_path": "41 > 41.7"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG HM LLC (hotel management operating business)",
+    "descriptor": "hotel management operating business",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-130",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.8.1",
+      "ancestry_path": "41 > 41.8 > 41.8.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "World Liberty Financial (cryptocurrency)",
+    "descriptor": "cryptocurrency",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-131",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "41.9.1",
+      "ancestry_path": "41 > 41.9 > 41.9.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SC Financial Technologies LLC (stablecoin)",
+    "descriptor": "stablecoin",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "41",
+      "entity_name": "Witkoff Holdings LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": "Distributions",
+      "income_range": "$34,363,535"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-132",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "42",
+      "ancestry_path": "42"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 700 NM LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-133",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "42.1.1.1.1",
+      "ancestry_path": "42 > 42.1 > 42.1.1 > 42.1.1.1 > 42.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Undeveloped land entitled for residential development, Miami, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "42",
+      "entity_name": "WG 700 NM LLC",
+      "value_range": "Over $50,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-134",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "43",
+      "ancestry_path": "43"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Sadie LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Sale proceeds",
+      "income_range": "$15,873,533"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-135",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "43.1.1",
+      "ancestry_path": "43 > 43.1 > 43.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Undeveloped land, Miami, FL",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "43",
+      "entity_name": "WG Sadie LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Sale proceeds",
+      "income_range": "$15,873,533"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-136",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "44",
+      "ancestry_path": "44"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff 44 LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-137",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "44.1.1.1.1.1.1.1.1",
+      "ancestry_path": "44 > 44.1 > 44.1.1 > 44.1.1.1 > 44.1.1.1.1 > 44.1.1.1.1.1 > 44.1.1.1.1.1.1 > 44.1.1.1.1.1.1.1 > 44.1.1.1.1.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Hospitality real estate, Los Angeles, CA",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "44",
+      "entity_name": "Witkoff 44 LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-138",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "44.1.1.1.2.1.1.1.1",
+      "ancestry_path": "44 > 44.1 > 44.1.1 > 44.1.1.1 > 44.1.1.1.2 > 44.1.1.1.2.1 > 44.1.1.1.2.1.1 > 44.1.1.1.2.1.1.1 > 44.1.1.1.2.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Hospitality real estate, Los Angeles, CA",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "44",
+      "entity_name": "Witkoff 44 LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-139",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "44.1.1.1.3.1.1.1.1",
+      "ancestry_path": "44 > 44.1 > 44.1.1 > 44.1.1.1 > 44.1.1.1.3 > 44.1.1.1.3.1 > 44.1.1.1.3.1.1 > 44.1.1.1.3.1.1.1 > 44.1.1.1.3.1.1.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Commercial real estate, Los Angeles, CA",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "44",
+      "entity_name": "Witkoff 44 LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-140",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "45",
+      "ancestry_path": "45"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff 44 Partners LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,001 - $15,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-141",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "46",
+      "ancestry_path": "46"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "125 Broad Unit A Corp.",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-142",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "46.1.1",
+      "ancestry_path": "46 > 46.1 > 46.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SL Green Realty Corp. (SLG)",
+    "descriptor": "SLG",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "46",
+      "entity_name": "125 Broad Unit A Corp.",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$100,001 - $1,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-143",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "47",
+      "ancestry_path": "47"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "150 PH-B LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-144",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "47.1",
+      "ancestry_path": "47 > 47.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, Los Angeles, CA",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "47",
+      "entity_name": "150 PH-B LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-145",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "48",
+      "ancestry_path": "48"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SCW 150 Corp.",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-146",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "49",
+      "ancestry_path": "49"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Stomber & Witkoff LLC (law firm)",
+    "descriptor": "law firm",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-147",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "50",
+      "ancestry_path": "50"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 1745 Internal LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-148",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "50.1",
+      "ancestry_path": "50 > 50.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "SL Green Realty Corp. (SLG)",
+    "descriptor": "SLG",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "50",
+      "entity_name": "WG 1745 Internal LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Dividends",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-149",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "51",
+      "ancestry_path": "51"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG 36 CPS Internal LLC (holding company with no current reportable assets)",
+    "descriptor": "holding company with no current reportable assets",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": "Sale proceeds and distribution",
+      "income_range": "$3,350,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-150",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "52",
+      "ancestry_path": "52"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Materials LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-151",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "52.1",
+      "ancestry_path": "52 > 52.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Material Bank (material sourcing company)",
+    "descriptor": "material sourcing company",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "52",
+      "entity_name": "WG Materials LLC",
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-152",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "53",
+      "ancestry_path": "53"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Investments LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-153",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "53.1",
+      "ancestry_path": "53 > 53.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, Santa Monica, CA",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "53",
+      "entity_name": "WG Investments LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-154",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "54",
+      "ancestry_path": "54"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG TS Hotel LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,056,250"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-155",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "54.1",
+      "ancestry_path": "54 > 54.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Hospitality real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "54",
+      "entity_name": "WG TS Hotel LLC",
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,056,250"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-156",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "55",
+      "ancestry_path": "55"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "US bank #1 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$5,000,001 - $25,000,000",
+      "income_type": "Interest",
+      "income_range": "$1,000,001 - $5,000,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-157",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "56",
+      "ancestry_path": "56"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "US bank #2 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$500,001 - $1,000,000",
+      "income_type": "Interest",
+      "income_range": "$5,001 - $15,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-158",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "57",
+      "ancestry_path": "57"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "US bank #3 (cash)",
+    "descriptor": "cash",
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$100,001 - $250,000",
+      "income_type": "Interest",
+      "income_range": "$201 - $1,000"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-159",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "58",
+      "ancestry_path": "58"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Bowtie LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-160",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "58.1.1",
+      "ancestry_path": "58 > 58.1 > 58.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential and retail real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "58",
+      "entity_name": "WG Bowtie LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-161",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "59",
+      "ancestry_path": "59"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "East 78th Garage LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-162",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "59.1",
+      "ancestry_path": "59 > 59.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Residential real estate, New York, NY",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "59",
+      "entity_name": "East 78th Garage LLC",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-163",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "60",
+      "ancestry_path": "60"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG WALG Holdings LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,210,055"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-164",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "60.1",
+      "ancestry_path": "60 > 60.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Portfolio of net leased Walgreen Drugstores throughout the United States",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "60",
+      "entity_name": "WG WALG Holdings LLC",
+      "value_range": "$1,000,001 - $5,000,000",
+      "income_type": "Distributions",
+      "income_range": "$1,210,055"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-165",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "61",
+      "ancestry_path": "61"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Witkoff Telegraph Partners LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-166",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "61.1",
+      "ancestry_path": "61 > 61.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Real property, Bingham Hills, MI",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "61",
+      "entity_name": "Witkoff Telegraph Partners LLC",
+      "value_range": "$15,001 - $50,000",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-167",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "62",
+      "ancestry_path": "62"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "WG Las Vegas ICA LLC",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "rollup_value": null,
+    "scope_hypothesis": null,
+    "promotion_status": "unreviewed"
+  },
+  {
+    "id": "CAND-168",
+    "source_filing": {
+      "source_pdf": "data/samples/witkoff-oge278-2025-08-13.pdf",
+      "parsed_file": "data/samples/witkoff-oge278-2025-08-13-part6.json",
+      "part": "6. Other Assets and Income",
+      "report_type": "New Entrant Report",
+      "form": "OGE Form 278e (Updated 08/2024)",
+      "entry_number": "62.1.1",
+      "ancestry_path": "62 > 62.1 > 62.1.1"
+    },
+    "filer": "Witkoff, Steven C",
+    "business_name": "Formerly a Casino Development, Las Vegas, NV",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "other_asset_income",
+    "raw_value": {
+      "value_range": null,
+      "income_type": null,
+      "income_range": null
+    },
+    "rollup_value": {
+      "entry_number": "62",
+      "entity_name": "WG Las Vegas ICA LLC",
+      "value_range": "None (or less than $1,001)",
+      "income_type": null,
+      "income_range": "None (or less than $201)"
+    },
+    "scope_hypothesis": null,
     "promotion_status": "unreviewed"
   }
 ]
