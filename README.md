@@ -147,30 +147,40 @@ sovereign-connections/
 ├── PROJECT.md                         # full project instructions for Claude Projects
 ├── docs/
 │   ├── changelog.md                   # versioned methodology changes
-│   └── handoffs/                      # per-session handoff docs
-├── data/                              # collector write target (Python); for v0 hand-edited seed
-│   ├── records.json                   # canonical records (seeded)
-│   ├── candidates.json                # pending review (empty for v0)
-│   ├── sovereign_entities.json        # sovereign-adjacent entity registry (seeded)
-│   └── connected_businesses.json      # entity registry with sourced ties (empty for v0)
-├── collectors/                        # Python, stubs only
-│   ├── oge_278_collector.py
-│   ├── sec_edgar_collector.py
-│   ├── pacer_collector.py
-│   ├── fara_collector.py
-│   ├── cfius_collector.py
-│   └── foreign_registry_collector.py
-├── web/                               # Next.js 15 dashboard, Vercel project root
+│   ├── collectors/                    # collector & parser design/behavior docs
+│   ├── drafts/                        # Substack drafts
+│   ├── handoffs/                      # per-session handoff docs
+│   └── references/                    # research worksheets and reference notes
+├── data/                              # Python-side tree: parser I/O + collector-maintained registries
+│   ├── sovereign_entities.json        # sovereign-adjacent entity registry (seed)
+│   ├── connected_businesses.json      # entity registry with sourced ties (empty for v0)
+│   └── samples/                       # source filings + parsed OGE 278e output
+│       ├── witkoff-oge278-2025-08-13.pdf
+│       └── witkoff-oge278-2025-08-13-part{2,5,6}.json
+├── collectors/                        # Python; stubs, plus the working OGE 278e parser
+│   ├── oge_278/                       # OGE 278e package (not a stub)
+│   │   ├── parser.py                  # OGE Form 278e PDF -> parsed part JSON
+│   │   └── candidates.py              # parsed parts -> web/data/candidates.json
+│   ├── oge_278_collector.py           # stub
+│   ├── sec_edgar_collector.py         # stub
+│   ├── pacer_collector.py             # stub
+│   ├── fara_collector.py              # stub
+│   ├── cfius_collector.py             # stub
+│   └── foreign_registry_collector.py  # stub
+├── web/                               # Next.js dashboard, Vercel project root
 │   ├── app/                           # /, /swfs, /record/[id], /methodology
 │   ├── components/                    # PascalCase, mirrors cbt convention
-│   ├── data/                          # seed JSON read by the dashboard at build time
+│   ├── data/                          # canonical JSON read by the dashboard at build time
+│   │   ├── records.json               # promoted SC-### records
+│   │   ├── candidates.json            # pre-promotion CAND-### candidates
+│   │   └── sovereign_entities.json    # sovereign-adjacent entity registry
 │   ├── lib/                           # types, data loader, constants, format helpers
 │   ├── package.json
 │   └── README.md                      # local dev and Vercel deploy notes
-└── .github/workflows/                 # collector + deploy automation (stub)
+└── .github/workflows/                 # collector + deploy automation (empty)
 ```
 
-The Python and TypeScript halves run on separate lifecycles and on opposite sides of the deploy boundary. Vercel builds only files under `web/`, so the dashboard reads from `web/data/*.json`. The repo-root `data/` directory is the collector write target: Python writes there, and a sync step copies `data/*.json` into `web/data/*.json` before each build. For v0 both locations hold the same hand-edited seed. There is no shared `package.json` and no runtime API between the two. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
+The Python and TypeScript halves run on separate lifecycles and on opposite sides of the deploy boundary. Vercel builds only files under `web/`, so the dashboard reads exclusively from `web/data/*.json` — that tree is canonical for the JSON the site renders (`records.json`, `candidates.json`, `sovereign_entities.json`). The candidate emitter (`collectors/oge_278/candidates.py`) writes straight to `web/data/candidates.json`. The repo-root `data/` tree holds the Python side's working files: the parser's PDF inputs and parsed output under `data/samples/`, and the collector-maintained registries (`connected_businesses.json`, and a `sovereign_entities.json` that currently duplicates the `web/` copy). The stale root `data/records.json` was removed in `c374bcb`; `web/data/records.json` is the single source for records. There is no shared `package.json` and no runtime API between the two halves. The data contract is the JSON shape itself, defined in `web/lib/types.ts` and mirrored in collector outputs.
 
 ## License
 

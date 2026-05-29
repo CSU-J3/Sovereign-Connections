@@ -203,7 +203,7 @@ export interface SovereignEntity {
 ]
 ```
 
-`data/candidates.json` and `data/connected_businesses.json` stay as `[]` for v0. Candidate-review and standalone business-registry workflows aren't needed pre-launch.
+`web/data/candidates.json` is now populated with the OGE-278 worked-pass candidates (Handoff #23; moved beside `web/data/records.json` by Handoff #24); `data/connected_businesses.json` stays as `[]` for v0. Standalone business-registry workflows aren't needed pre-launch.
 
 ## Notes
 

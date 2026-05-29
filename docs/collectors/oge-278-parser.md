@@ -172,16 +172,26 @@ exactly, as expected.
   is not extracted.
 - **Reporting-period dates** — Parts 2/5/6 print none at the entry level;
   `reporting_period` is always `null`.
+- **Cover-page certification block** — the parser reads only the Part 2/5/6
+  asset tables, not the 278e cover page, so it emits **no**
+  `certification_status` / `filing_type`. The part docs carry `report_type`
+  ("New Entrant Report") and `form` as the closest available provenance, and the
+  OGE-278 candidate records (Handoff #23) attach those under `source_filing`.
+  Extracting the cover-page ethics-officer signoff is **deferred until a
+  promotion decision (`CAND-###` → `SC-###`) actually needs it** — see PR #1
+  deferral #1 (https://github.com/CSU-J3/Sovereign-Connections/pull/1).
 - **Canonical record schema mapping** and **5 CFR 2640.103(a) category
-  inference** — separate design work (Handoff #20).
+  inference** — separate design work (Handoff #23).
 - **Range normalization** — ranges are emitted as printed strings, not numeric
   bounds.
 
-## Recommended Handoff #20
+## Recommended Handoff #23
 
-Canonical record schema design. The parser now reads every Part of OGE 278e that
-maps to the tracker's financial-interest definition (2, 5, 6); the open design
-questions — how a parsed entry becomes an SC-### record, how the 5 CFR
+Canonical record schema design — landed as Handoff #23
+(`docs/handoffs/2026-05-28-handoff-23-oge-278-candidate-schema.md`; numbering is
+global-sequential across lineages). The parser now reads every Part of OGE 278e
+that maps to the tracker's financial-interest definition (2, 5, 6); the open
+design questions — how a parsed entry becomes an SC-### record, how the 5 CFR
 2640.103(a) category is inferred, how `certification_status` and imputed spousal
 interests are represented, where the nested structure is preserved versus
 flattened — are substantive and want Corey-level input, not Code-only execution.
