@@ -53,11 +53,53 @@ that matters here.
 the `reviewed_at` dates are recorded constants in the disposition registry, so a
 second run against the same PDF produces a **byte-identical** file.
 
+## Regression guard
+
+`regression_guard.py` re-generates the candidate output and fails if it drifts
+from the committed `web/data/candidates.json`. It catches the case where a
+future code change silently changes collector output (Handoff #31).
+
+    python -m collectors.oge_278.regression_guard
+
+It **compares, it never writes**. Rather than re-run the PDF parse (which writes
+to committed `data/samples/*.json` paths), the guard calls `candidates.build()`
+— which reads the committed parsed samples and *returns a list*, writing nothing
+— then serializes that list in memory with the exact same call
+`write_candidates()` uses and byte-compares it to the committed file. That
+exercises the emit + disposition stage, which is where output actually drifts,
+and where the orphan-raise lives: a stale `DISPOSITIONS` key makes `build()`
+raise and the guard fails before any comparison. The guard also asserts the
+disposition tally hasn't moved (0 unreviewed / 1 hold / 165 killed / 2 promoted
+= 168) for a clearer message than a raw diff when a bucket shifts.
+
+The GitHub Actions workflow `.github/workflows/cron-regression.yml` runs the
+guard on three triggers: a daily `schedule` (06:00 **UTC**), every
+`pull_request` (so drift is caught before merge), and manual `workflow_dispatch`.
+A final step asserts `data/samples/` and `web/data/` are clean after the run,
+proving nothing was written back.
+
+**Reading a drift failure:** the unified diff shows committed (`---`) vs
+regenerated (`+++`). If the change is *unintended*, a code change broke output
+stability — fix the code. If it is *intended*, regenerate and commit
+`candidates.json` yourself (`python -m collectors.oge_278.collector`); the guard
+will never write it for you.
+
+### Discovery is stubbed
+
+The guard runs over whatever `discover.py`'s `discover_filings()` returns — the
+seam between *finding* filings and *collecting* them. Today it is a **stub**
+returning the one known Witkoff filing, so the guard validates that single
+snapshot. Handoff #32 replaces the stub body with a real source (OGE disclosure
+polling or a filer watchlist) without changing its signature; once it returns
+more than the stub, the scheduled job shifts from pure regression guard to a
+backfilling collector.
+
 ## Deferred (downstream of this handoff)
 
-- **Cron wiring** — running the collector on a schedule (the first cron
-  validation event). Comes after the wrapper exists and is trusted; not part of
-  this pass.
+- **Cron wiring** — *done (Handoff #31):* see [Regression guard](#regression-guard)
+  above. The scheduled job is a drift guard today; it becomes the first real
+  cron validation event (a backfilling collect) once filing discovery is real
+  (Handoff #32).
 - **Multi-filing batch** — one filing per run is the current contract. The
   emitter's `PART_FILES` and the parser's pilot-path handling are keyed to the
   single Witkoff sample; batch handling is a future extension.
