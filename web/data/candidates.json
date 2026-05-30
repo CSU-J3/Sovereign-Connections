@@ -24,6 +24,7 @@
     "scope_hypothesis": "Filer reports $120,000,000 in proceeds from the sale of an interest in The Witkoff Group as part of divestiture planning. OGE Form 278e Part 2 prints the amount but no acquirer/counterparty (those would live in a separate OGE ethics agreement). Research whether the divested interest was acquired by a sovereign-linked entity — unverified; no buyer is named in the parsed filing.",
     "promotion_status": "killed_out_of_scope",
     "disposition_reason": "Divested clean asset; reporting confirms real-estate holdings were divested while the WLF crypto was retained. No sovereign counterparty named in the filing. Not the target.",
+    "disposition_rule": "PRE pre-bucket disposition (Handoff #27)",
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": true
@@ -57,10 +58,11 @@
       "income_range": "$120,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -92,10 +94,11 @@
       "income_range": "$120,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -127,10 +130,11 @@
       "income_range": "$120,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -156,10 +160,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -185,10 +190,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -214,10 +220,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -243,10 +250,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -272,10 +280,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -301,10 +310,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -330,10 +340,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -359,10 +370,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -390,6 +402,7 @@
     "scope_hypothesis": "Holding entity carries a 'Ltd' suffix (a non-US corporate form) and its only sub-asset is motorized water vehicles (a yacht-holding pattern). Research the entity's domicile and whether any foreign/sovereign counterparty is involved in its financing or ownership — unverified; the parsed row shows only a US-range value.",
     "promotion_status": "killed_out_of_scope",
     "disposition_reason": "Cayman yacht-holding entity (Part 1 entries 76-77, George Town, Grand Cayman; sub-asset is motorized water vehicles). Foreign domicile on a boat-holding vehicle is not a sovereign tie.",
+    "disposition_rule": "PRE pre-bucket disposition (Handoff #27)",
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": true
@@ -423,10 +436,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Sub-entry of an out-of-scope parent (see parent disposition); property/asset inside a killed holding, not a counterparty.",
+    "disposition_rule": "B6 leaf under killed parent",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -454,6 +468,7 @@
     "scope_hypothesis": "Same 'Ltd' yacht-holding pattern as M&A Management Company Ltd, at a $1M-$5M value range. Research domicile and whether any foreign/sovereign counterparty is involved — unverified; nothing in the parsed row asserts a foreign source.",
     "promotion_status": "killed_out_of_scope",
     "disposition_reason": "Yacht holder (motorized water vehicle). Same pattern as M&A Management Company Ltd.",
+    "disposition_rule": "PRE pre-bucket disposition (Handoff #27)",
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": true
@@ -487,10 +502,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Sub-entry of an out-of-scope parent (see parent disposition); property/asset inside a killed holding, not a counterparty.",
+    "disposition_rule": "B6 leaf under killed parent",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -516,10 +532,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -545,10 +562,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -574,10 +592,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -609,10 +628,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -638,10 +658,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -673,10 +694,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -704,6 +726,7 @@
     "scope_hypothesis": "Private-equity fund interest whose parsed sub-entries include foreign-located assets — 'Mixed use real estate, Marseille, France' (7.2) and 'Land development, Mumbai, India' (7.3). Research the fund's limited-partner base and co-investors for any sovereign participation — unverified; the fund holding alone does not establish a sovereign source.",
     "promotion_status": "killed_out_of_scope",
     "disposition_reason": "Fund in liquidation (endnote 6.7); Marseille/Mumbai entries are underlying properties, not counterparties; a $15K-$50K interest gives no limited-partner visibility.",
+    "disposition_rule": "PRE pre-bucket disposition (Handoff #27)",
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": true
@@ -737,10 +760,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Sub-entry of an out-of-scope parent (see parent disposition); property/asset inside a killed holding, not a counterparty.",
+    "disposition_rule": "B6 leaf under killed parent",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -772,10 +796,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Sub-entry of an out-of-scope parent (see parent disposition); property/asset inside a killed holding, not a counterparty.",
+    "disposition_rule": "B6 leaf under killed parent",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -807,10 +832,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Sub-entry of an out-of-scope parent (see parent disposition); property/asset inside a killed holding, not a counterparty.",
+    "disposition_rule": "B6 leaf under killed parent",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -836,10 +862,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -871,10 +898,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -902,6 +930,7 @@
     "scope_hypothesis": "Pooled-investment-fund holding with an offshore-style share-class designation, held inside a brokerage account. Research the fund's domicile and sponsor and whether any sovereign limited partner is present — unverified; the parsed row identifies only a fund name and US-range values.",
     "promotion_status": "hold_pending_research",
     "disposition_reason": "Offshore-style share class, no named sovereign limited partner; weakest signal. Hold, low priority.",
+    "disposition_rule": null,
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
@@ -929,10 +958,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -958,10 +988,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -987,10 +1018,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1016,10 +1048,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1045,10 +1078,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1074,10 +1108,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1103,10 +1138,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1132,10 +1168,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1161,10 +1198,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1190,10 +1228,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Publicly-traded foreign-listed equity held as an ordinary position; foreign listing is not a sovereign tie.",
+    "disposition_rule": "B4 foreign-listed public equity",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1219,10 +1258,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1254,10 +1294,11 @@
       "income_range": "$100,001 - $1,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1289,10 +1330,11 @@
       "income_range": "$100,001 - $1,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1324,10 +1366,11 @@
       "income_range": "$100,001 - $1,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1353,10 +1396,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "US-managed fund LP interest; no sovereign limited partner identified and the interest size gives no LP-roster visibility.",
+    "disposition_rule": "B5 US fund LP, no sovereign LP",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1382,10 +1426,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1411,10 +1456,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1440,10 +1486,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1469,10 +1516,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1498,10 +1546,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1527,10 +1576,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Publicly-traded foreign-listed equity held as an ordinary position; foreign listing is not a sovereign tie.",
+    "disposition_rule": "B4 foreign-listed public equity",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1556,10 +1606,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1585,10 +1636,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1614,10 +1666,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1643,10 +1696,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1672,10 +1726,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1707,10 +1762,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1736,10 +1792,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1771,10 +1828,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1806,10 +1864,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1835,10 +1894,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1870,10 +1930,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1899,10 +1960,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1928,10 +1990,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1957,10 +2020,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -1992,10 +2056,11 @@
       "income_range": "$100,001 - $1,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2021,10 +2086,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2056,10 +2122,11 @@
       "income_range": "$1,000,001 - $5,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2085,10 +2152,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2120,10 +2188,11 @@
       "income_range": "$1,000,001 - $5,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2149,10 +2218,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2184,10 +2254,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2219,10 +2290,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2248,10 +2320,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2277,10 +2350,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2312,10 +2386,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2341,10 +2416,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2376,10 +2452,11 @@
       "income_range": "$3,225,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2405,10 +2482,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2440,10 +2518,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2469,10 +2548,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2504,10 +2584,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2539,10 +2620,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2574,10 +2656,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2603,10 +2686,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2638,10 +2722,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2667,10 +2752,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2702,10 +2788,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2731,10 +2818,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2760,10 +2848,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2795,10 +2884,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2824,10 +2914,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2859,10 +2950,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2894,10 +2986,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2929,10 +3022,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2958,10 +3052,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -2993,10 +3088,11 @@
       "income_range": "$1,218,905"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3028,10 +3124,11 @@
       "income_range": "$1,218,905"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3063,10 +3160,11 @@
       "income_range": "$1,218,905"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3092,10 +3190,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3127,10 +3226,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3162,10 +3262,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3197,10 +3298,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3226,10 +3328,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3255,10 +3358,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3290,10 +3394,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3319,10 +3424,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3354,10 +3460,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3383,10 +3490,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3418,10 +3526,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3453,10 +3562,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3482,10 +3592,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3517,10 +3628,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3546,10 +3658,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3581,10 +3694,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3610,10 +3724,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3645,10 +3760,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3680,10 +3796,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3715,10 +3832,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3750,10 +3868,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3785,10 +3904,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3820,10 +3940,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3855,10 +3976,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3890,10 +4012,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3925,10 +4048,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3960,10 +4084,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -3995,10 +4120,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4030,10 +4156,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4065,10 +4192,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4100,10 +4228,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4137,6 +4266,7 @@
     "scope_hypothesis": null,
     "promotion_status": "promoted",
     "disposition_reason": "Promoted as a documented financial relationship into the existing World Liberty Financial record SC-007 (not a new record): Abu Dhabi state-owned MGX -> $2B Binance investment settled in WLF's USD1 stablecoin; WLF held at 41.8.1, co-founded by the filer's son. Causal claims (UAE AI-chip decision, CZ pardon) are held as explicitly unverified and are NOT asserted by the record. See docs/references/wlf-research-target.md.",
+    "disposition_rule": null,
     "promoted_to": "SC-007",
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
@@ -4170,10 +4300,11 @@
       "income_range": "$34,363,535"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
-    "promoted_to": null,
-    "reviewed_at": null,
+    "promotion_status": "promoted",
+    "disposition_reason": "Promoted into the existing World Liberty Financial record SC-007 as the second retained-holding leg of the USD1 stack: SC Financial Technologies LLC (stablecoin), held at 41.9.1 under WC Digital SC LLC, co-owns the USD1 stablecoin brand alongside WLF (41.8.1) and is the SC Financial Technologies signatory of the exploratory Pakistan PVARA MOU. Documented financial relationship only; the MGX/UAE and Pakistan legs stay distinct and no causal claim is asserted. See docs/references/wlf-research-target.md.",
+    "disposition_rule": null,
+    "promoted_to": "SC-007",
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4199,10 +4330,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4234,10 +4366,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4263,10 +4396,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4298,10 +4432,11 @@
       "income_range": "$15,873,533"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4327,10 +4462,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4362,10 +4498,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4397,10 +4534,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4432,10 +4570,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4461,10 +4600,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4490,10 +4630,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4525,10 +4666,11 @@
       "income_range": "$100,001 - $1,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4554,10 +4696,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4589,10 +4732,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4618,10 +4762,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4647,10 +4792,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4676,10 +4822,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4711,10 +4858,11 @@
       "income_range": "$1,000,001 - $5,000,000"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic US-listed security or money-market fund; no sovereign counterparty.",
+    "disposition_rule": "B2 domestic public securities",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4740,10 +4888,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4769,10 +4918,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4804,10 +4954,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4833,10 +4984,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4868,10 +5020,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4897,10 +5050,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4932,10 +5086,11 @@
       "income_range": "$1,056,250"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4961,10 +5116,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -4990,10 +5146,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5019,10 +5176,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic bank cash; no sovereign counterparty.",
+    "disposition_rule": "B3 domestic cash",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5048,10 +5206,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5083,10 +5242,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5112,10 +5272,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5147,10 +5308,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5176,10 +5338,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5211,10 +5374,11 @@
       "income_range": "$1,210,055"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5240,10 +5404,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5275,10 +5440,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5304,10 +5470,11 @@
     },
     "rollup_value": null,
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   },
   {
@@ -5339,10 +5506,11 @@
       "income_range": "None (or less than $201)"
     },
     "scope_hypothesis": null,
-    "promotion_status": "unreviewed",
-    "disposition_reason": null,
+    "promotion_status": "killed_out_of_scope",
+    "disposition_reason": "Domestic Witkoff operating business or US real-estate/holding structure; no foreign or sovereign counterparty.",
+    "disposition_rule": "B1 domestic operating / RE structure",
     "promoted_to": null,
-    "reviewed_at": null,
+    "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
   }
 ]
