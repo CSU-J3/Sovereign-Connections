@@ -1,0 +1,49 @@
+name: cron regression guard
+
+# Regenerates the OGE 278 collector output and fails if it drifts from the
+# committed web/data/candidates.json. Catches the case where a code change
+# silently changes collector output. It compares only — it never writes back.
+#
+# Discovery is stubbed (collectors/oge_278/discover.py): the guard runs against
+# the one known Witkoff filing today. Handoff #32 replaces the stub with a real
+# source, at which point this job also starts backfilling.
+
+on:
+  schedule:
+    # 06:00 UTC daily — a low-traffic hour. Times on GitHub Actions are UTC.
+    - cron: "0 6 * * *"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  regression-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        # Mirror how the repo installs. The guard itself imports only stdlib +
+        # the emit module, but install the project deps for parity / future use.
+        run: pip install -r collectors/requirements.txt
+
+      - name: Run regression guard
+        run: python -m collectors.oge_278.regression_guard
+
+      - name: Assert committed data untouched
+        # Belt-and-suspenders: the guard regenerates in memory, so the tree must
+        # stay clean. A dirty data/samples/ or web/data/ here means something
+        # wrote back — fail.
+        run: |
+          dirty="$(git status --porcelain data/samples/ web/data/)"
+          if [ -n "$dirty" ]; then
+            echo "error: committed data was modified by the guard run:"
+            echo "$dirty"
+            exit 1
+          fi
+          echo "data/samples/ and web/data/ clean — guard wrote nothing."
