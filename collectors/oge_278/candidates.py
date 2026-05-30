@@ -61,6 +61,14 @@ Lifecycle (Handoff #27 — four states, row-identity keying):
   Sibling fields ``disposition_reason`` (nullable), ``promoted_to`` (nullable
   ``SC-###``), and ``reviewed_at`` (nullable ISO date) carry the disposition.
 
+  ``disposition_rule`` (Handoff #30, nullable string) names the bucket rule a
+  ``killed_out_of_scope`` row matched (``B1``..``B6``; ``PRE`` for the four kills
+  carried forward from #27), so a reader can audit why the row was killed. It is
+  required on every kill and null on ``promoted``/``hold_pending_research``/
+  ``unreviewed``. The bucket rules and the frozen ``(part, entry_number)`` -> bucket
+  map live in ``BUCKETS`` / ``_BUCKET_KILLS`` below; a row matching no rule is left
+  ``unreviewed`` and flagged, never default-killed.
+
   Dispositions are keyed on **stable row identity ``(part, entry_number)``**, not
   on ``CAND-###``. The #26 re-run regenerated every ``CAND-###`` from scratch
   (WLF went from absent to ``CAND-130``); any future re-run shifts them again. By
@@ -149,18 +157,124 @@ STATES = (
     "promoted",
 )
 
-# Review dispositions, keyed on stable row identity (part_key, entry_number) so
-# they survive the re-run that regenerates every CAND-### (Handoff #27). Each
-# value is {status, reviewed_at, and the conditional-required sibling}:
-#   - killed_out_of_scope -> requires "reason"
-#   - promoted            -> requires "promoted_to"
-#   - hold_pending_research -> "reason" optional (rationale kept for the trail)
-# Reasons are lifted from docs/references/collector-gap-finding-oge278.md and the
-# Handoff #27 disposition table. apply_disposition() enforces the required slots.
-DISPOSITIONS = {
+# Bucket kill scheme (Handoff #30). The 2026-05-29 review dispositioned every
+# remaining `unreviewed` candidate as `killed_out_of_scope` by bucket. Each
+# killed row carries `disposition_reason` (the bucket reason) AND
+# `disposition_rule` (the rule that matched) so a reader can audit why the row
+# landed in its bucket. The rules, applied to the reviewed set in this precedence
+# (first match wins):
+#   B6  sub-entry of a killed holding -- (6,1)/(6,2)/(6,7) -- inherits the kill
+#   B4  foreign-listed public equity   -- foreign corporate suffix + ticker/ADR
+#   B5  US fund LP interest            -- LP form, no sovereign LP identified
+#   B3  domestic bank cash             -- descriptor == "cash"
+#   B2  domestic US-listed security    -- US-listed ticker or money-market fund
+#   B1  domestic operating / RE        -- residual; no foreign/sovereign signal
+# A row matching no rule is NOT killed -- it stays `unreviewed` and is flagged for
+# human review (a fall-through is a review gap, never a default kill, Handoff #30).
+BUCKETS = {
+    "B1": (
+        "Domestic Witkoff operating business or US real-estate/holding "
+        "structure; no foreign or sovereign counterparty.",
+        "B1 domestic operating / RE structure",
+    ),
+    "B2": (
+        "Domestic US-listed security or money-market fund; no sovereign "
+        "counterparty.",
+        "B2 domestic public securities",
+    ),
+    "B3": (
+        "Domestic bank cash; no sovereign counterparty.",
+        "B3 domestic cash",
+    ),
+    "B4": (
+        "Publicly-traded foreign-listed equity held as an ordinary position; "
+        "foreign listing is not a sovereign tie.",
+        "B4 foreign-listed public equity",
+    ),
+    "B5": (
+        "US-managed fund LP interest; no sovereign limited partner identified "
+        "and the interest size gives no LP-roster visibility.",
+        "B5 US fund LP, no sovereign LP",
+    ),
+    "B6": (
+        "Sub-entry of an out-of-scope parent (see parent disposition); "
+        "property/asset inside a killed holding, not a counterparty.",
+        "B6 leaf under killed parent",
+    ),
+}
+
+# Bucketed kills from the 2026-05-29 review (Handoff #30), keyed on stable row
+# identity (part_key, entry_number). Derived by applying the bucket rules above to
+# the Handoff #29 review worksheet, then frozen here as data -- the #27
+# decisions-as-keyed-data philosophy: a re-run re-associates each decision to
+# whatever CAND-### the row lands on and never silently re-buckets; a row the
+# parse no longer emits orphan-raises rather than vanishing.
+_BUCKET_KILLS = {
+    # B1 (115)
+    ("2", "1.1"): "B1", ("2", "1.2.1"): "B1", ("2", "1.3.1"): "B1", ("6", "5"): "B1",
+    ("6", "5.1"): "B1", ("6", "6"): "B1", ("6", "6.1"): "B1", ("6", "8"): "B1",
+    ("6", "8.1"): "B1", ("6", "11.1"): "B1", ("6", "12.1"): "B1", ("6", "14"): "B1",
+    ("6", "14.1"): "B1", ("6", "15"): "B1", ("6", "15.1"): "B1", ("6", "15.2"): "B1",
+    ("6", "16"): "B1", ("6", "16.1"): "B1", ("6", "17"): "B1", ("6", "18"): "B1",
+    ("6", "19"): "B1", ("6", "20"): "B1", ("6", "21"): "B1", ("6", "22"): "B1",
+    ("6", "22.1"): "B1", ("6", "22.2.1.1.1"): "B1", ("6", "23"): "B1", ("6", "24"): "B1",
+    ("6", "24.1.1.1.1.1"): "B1", ("6", "25"): "B1", ("6", "25.1.1.1.1.1.1.1"): "B1",
+    ("6", "26"): "B1", ("6", "26.1.1.1.1.1"): "B1", ("6", "27"): "B1", ("6", "27.1.1"): "B1",
+    ("6", "27.2.1"): "B1", ("6", "27.3"): "B1", ("6", "28"): "B1", ("6", "28.1.1.1.1.1"): "B1",
+    ("6", "29"): "B1", ("6", "29.1.1.1.1.1.1.1"): "B1", ("6", "30"): "B1", ("6", "31"): "B1",
+    ("6", "31.1.1.1.1.1"): "B1", ("6", "32"): "B1", ("6", "32.1.1.1.1"): "B1",
+    ("6", "32.1.2.1.1"): "B1", ("6", "32.1.3.1"): "B1", ("6", "33"): "B1", ("6", "33.1.1"): "B1",
+    ("6", "33.1.2"): "B1", ("6", "33.1.3"): "B1", ("6", "34"): "B1",
+    ("6", "34.1.1.1.1.1.1"): "B1", ("6", "34.2.1.1"): "B1", ("6", "34.3.1.1"): "B1",
+    ("6", "35"): "B1", ("6", "36"): "B1", ("6", "36.1.1.1.1.1.1"): "B1", ("6", "37"): "B1",
+    ("6", "37.1.1"): "B1", ("6", "38"): "B1", ("6", "38.1.1.1.1"): "B1",
+    ("6", "38.1.1.1.2.1.1"): "B1", ("6", "39"): "B1", ("6", "39.1.1.1.1"): "B1",
+    ("6", "40"): "B1", ("6", "40.1.1.1.1"): "B1", ("6", "41"): "B1",
+    ("6", "41.1.1.1.1.1.1.1"): "B1", ("6", "41.1.1.1.1.1.2.1"): "B1",
+    ("6", "41.1.1.1.1.1.3"): "B1", ("6", "41.2.1.1.1.1.1"): "B1", ("6", "41.2.1.1.1.2.1"): "B1",
+    ("6", "41.2.1.1.1.3.1"): "B1", ("6", "41.2.1.1.1.4.1"): "B1", ("6", "41.2.1.1.1.5.1"): "B1",
+    ("6", "41.2.1.1.1.6.1"): "B1", ("6", "41.3.1.1"): "B1", ("6", "41.4.1"): "B1",
+    ("6", "41.5"): "B1", ("6", "41.6"): "B1", ("6", "41.7"): "B1", ("6", "42"): "B1",
+    ("6", "42.1.1.1.1"): "B1", ("6", "43"): "B1", ("6", "43.1.1"): "B1", ("6", "44"): "B1",
+    ("6", "44.1.1.1.1.1.1.1.1"): "B1", ("6", "44.1.1.1.2.1.1.1.1"): "B1",
+    ("6", "44.1.1.1.3.1.1.1.1"): "B1", ("6", "45"): "B1", ("6", "46"): "B1", ("6", "47"): "B1",
+    ("6", "47.1"): "B1", ("6", "48"): "B1", ("6", "49"): "B1", ("6", "50"): "B1",
+    ("6", "51"): "B1", ("6", "52"): "B1", ("6", "52.1"): "B1", ("6", "53"): "B1",
+    ("6", "53.1"): "B1", ("6", "54"): "B1", ("6", "54.1"): "B1", ("6", "58"): "B1",
+    ("6", "58.1.1"): "B1", ("6", "59"): "B1", ("6", "59.1"): "B1", ("6", "60"): "B1",
+    ("6", "60.1"): "B1", ("6", "61"): "B1", ("6", "61.1"): "B1", ("6", "62"): "B1",
+    ("6", "62.1.1"): "B1",
+    # B2 (25)
+    ("5", "1.1"): "B2", ("5", "1.2"): "B2", ("5", "1.3"): "B2", ("5", "1.4"): "B2",
+    ("5", "1.5"): "B2", ("5", "1.6"): "B2", ("5", "1.8"): "B2", ("6", "10.1"): "B2",
+    ("6", "11.2"): "B2", ("6", "12.2"): "B2", ("6", "12.3"): "B2", ("6", "12.4"): "B2",
+    ("6", "12.5"): "B2", ("6", "13.1"): "B2", ("6", "13.2"): "B2", ("6", "13.3"): "B2",
+    ("6", "13.4"): "B2", ("6", "13.6"): "B2", ("6", "13.7"): "B2", ("6", "13.9"): "B2",
+    ("6", "19.1"): "B2", ("6", "20.1"): "B2", ("6", "21.1"): "B2", ("6", "46.1.1"): "B2",
+    ("6", "50.1"): "B2",
+    # B3 (7)
+    ("5", "1.7"): "B3", ("6", "11.3"): "B3", ("6", "12.9"): "B3", ("6", "13.8"): "B3",
+    ("6", "55"): "B3", ("6", "56"): "B3", ("6", "57"): "B3",
+    # B4 (2)
+    ("6", "12.6"): "B4", ("6", "13.5"): "B4",
+    # B5 (7)
+    ("6", "3"): "B5", ("6", "4"): "B5", ("6", "12.7"): "B5", ("6", "12.7.1"): "B5",
+    ("6", "12.7.2"): "B5", ("6", "12.7.3"): "B5", ("6", "12.8"): "B5",
+    # B6 (5)
+    ("6", "1.1"): "B6", ("6", "2.1"): "B6", ("6", "7.1"): "B6", ("6", "7.2"): "B6",
+    ("6", "7.3"): "B6",
+}
+
+# Point review-decisions that are not bucket kills, keyed on (part_key,
+# entry_number): the two USD1-stack promotes, Optima's hold, and the four
+# pre-existing kills carried forward from #27. The pre-existing kills keep their
+# original detailed reasons (their substance predates the bucket scheme) and are
+# marked with rule "PRE" so every killed row still carries a disposition_rule.
+_SPECIAL = {
     ("2", "1"): {
         "status": "killed_out_of_scope",
         "reviewed_at": "2026-05-29",
+        "rule": "PRE pre-bucket disposition (Handoff #27)",
         "reason": (
             "Divested clean asset; reporting confirms real-estate holdings were "
             "divested while the WLF crypto was retained. No sovereign "
@@ -170,6 +284,7 @@ DISPOSITIONS = {
     ("6", "1"): {
         "status": "killed_out_of_scope",
         "reviewed_at": "2026-05-29",
+        "rule": "PRE pre-bucket disposition (Handoff #27)",
         "reason": (
             "Cayman yacht-holding entity (Part 1 entries 76-77, George Town, "
             "Grand Cayman; sub-asset is motorized water vehicles). Foreign "
@@ -179,6 +294,7 @@ DISPOSITIONS = {
     ("6", "2"): {
         "status": "killed_out_of_scope",
         "reviewed_at": "2026-05-29",
+        "rule": "PRE pre-bucket disposition (Handoff #27)",
         "reason": (
             "Yacht holder (motorized water vehicle). Same pattern as M&A "
             "Management Company Ltd."
@@ -187,6 +303,7 @@ DISPOSITIONS = {
     ("6", "7"): {
         "status": "killed_out_of_scope",
         "reviewed_at": "2026-05-29",
+        "rule": "PRE pre-bucket disposition (Handoff #27)",
         "reason": (
             "Fund in liquidation (endnote 6.7); Marseille/Mumbai entries are "
             "underlying properties, not counterparties; a $15K-$50K interest "
@@ -215,7 +332,48 @@ DISPOSITIONS = {
             "docs/references/wlf-research-target.md."
         ),
     },
+    ("6", "41.9.1"): {
+        "status": "promoted",
+        "reviewed_at": "2026-05-29",
+        "promoted_to": "SC-007",
+        "reason": (
+            "Promoted into the existing World Liberty Financial record SC-007 as "
+            "the second retained-holding leg of the USD1 stack: SC Financial "
+            "Technologies LLC (stablecoin), held at 41.9.1 under WC Digital SC "
+            "LLC, co-owns the USD1 stablecoin brand alongside WLF (41.8.1) and is "
+            "the SC Financial Technologies signatory of the exploratory Pakistan "
+            "PVARA MOU. Documented financial relationship only; the MGX/UAE and "
+            "Pakistan legs stay distinct and no causal claim is asserted. See "
+            "docs/references/wlf-research-target.md."
+        ),
+    },
 }
+
+
+def _build_dispositions():
+    """Merge the point-decisions with the expanded bucket kills into one registry.
+
+    Keyed on (part_key, entry_number). Bucket kills expand to the shared bucket
+    reason + rule; a bucket-kill key that collides with a point-decision is a
+    construction error (the same row can't be both).
+    """
+    registry = dict(_SPECIAL)
+    for key, bucket_id in _BUCKET_KILLS.items():
+        if key in registry:
+            raise SystemExit(f"bucket kill collides with a point-decision: {key}")
+        reason, rule = BUCKETS[bucket_id]
+        registry[key] = {
+            "status": "killed_out_of_scope",
+            "reviewed_at": "2026-05-29",
+            "reason": reason,
+            "rule": rule,
+        }
+    return registry
+
+
+# The disposition registry: point-decisions + bucketed kills, keyed on
+# (part_key, entry_number). apply_disposition() enforces the required slots.
+DISPOSITIONS = _build_dispositions()
 
 # A trailing or embedded parenthetical descriptor, e.g. "World Liberty Financial
 # (cryptocurrency)" -> "cryptocurrency". The last group wins when more than one.
@@ -277,14 +435,20 @@ def apply_disposition(candidate, part_key, entry_number):
     if status not in STATES:
         raise SystemExit(f"unknown lifecycle state {status!r} for ({part_key}, {entry_number})")
     reason = disp.get("reason")
+    rule = disp.get("rule")
     promoted_to = disp.get("promoted_to")
     if status == "killed_out_of_scope" and not reason:
         raise SystemExit(f"killed_out_of_scope requires a reason: ({part_key}, {entry_number})")
+    if status == "killed_out_of_scope" and not rule:
+        raise SystemExit(f"killed_out_of_scope requires a disposition_rule: ({part_key}, {entry_number})")
     if status == "promoted" and not promoted_to:
         raise SystemExit(f"promoted requires promoted_to: ({part_key}, {entry_number})")
 
     candidate["promotion_status"] = status
     candidate["disposition_reason"] = reason
+    # disposition_rule (Handoff #30) names the bucket rule that matched, for
+    # killed rows; null for promoted/hold/unreviewed.
+    candidate["disposition_rule"] = rule
     candidate["promoted_to"] = promoted_to
     candidate["reviewed_at"] = disp.get("reviewed_at")
     candidate["scope_hypothesis_superseded"] = bool(
@@ -337,6 +501,7 @@ def _candidate(node, ancestors, doc, filename, disclosure_type, part_key):
         # (part, entry_number) so a re-run re-associates recorded decisions.
         "promotion_status": "unreviewed",
         "disposition_reason": None,
+        "disposition_rule": None,
         "promoted_to": None,
         "reviewed_at": None,
         "scope_hypothesis_superseded": False,

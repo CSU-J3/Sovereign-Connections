@@ -1,23 +1,23 @@
-# Research target — World Liberty Financial (Witkoff retained asset)
+# Research target — USD1 stack: World Liberty Financial + SC Financial Technologies (Witkoff retained holdings)
 
-**Status:** RECONCILED 2026-05-29 — WLF is already recorded as **SC-007** (scope LIVE), which predates this note. CAND-130 → `promoted_to: SC-007`. This doc's earlier "new record" framing was stale and is corrected below; it now serves as the evidence-enrichment record for SC-007.
+**Status:** RECONCILED 2026-05-29 — the USD1 stablecoin is held through **two retained Witkoff holdings** that both promote into **SC-007** (scope LIVE, which predates this note): World Liberty Financial (entry 41.8.1) and SC Financial Technologies (entry 41.9.1). Both candidates are `promoted_to: SC-007`. This doc's earlier "new record" framing was stale and is corrected below; it now serves as the evidence-enrichment record for SC-007.
 **Owner:** Corey (off-session, per disclosed-gap principle)
 **Source filing:** Witkoff OGE Form 278e, New Entrant, filed 2025-08-13 (`whitehouse.gov/wp-content/uploads/2025/09/Witkoff-Steven.pdf`)
-**Candidate status:** in `candidates.json` as **CAND-130** (emitted by the #26 deep-leaf re-run; not present before that). State: `promoted`, `promoted_to: SC-007`.
+**Candidate status:** in `candidates.json` as **CAND-130** (World Liberty Financial, 41.8.1) and **CAND-131** (SC Financial Technologies, 41.9.1), both emitted by the #26 deep-leaf re-run. State: both `promoted`, `promoted_to: SC-007` (the second leg dispositioned in Handoff #30).
 
 ## What the filing shows
 
-World Liberty Financial appears at **entry 41.8.1**, nested seven levels under:
+The USD1 stack appears as **two sibling holdings** nested under Witkoff Holdings LLC:
 
 ```
 41   Witkoff Holdings LLC        Over $50M, $34,363,535 distributions
 41.8   WC Digital Fi LLC
 41.8.1   World Liberty Financial (cryptocurrency)   value N/A, income N/A
+41.9   WC Digital SC LLC
+41.9.1   SC Financial Technologies LLC (stablecoin)   value N/A, income N/A
 ```
 
-Adjacent: **41.9.1 SC Financial Technologies LLC (stablecoin)** under WC Digital SC LLC.
-
-WLF carries no own value or income line — both N/A. The value rolls up to the parent (Witkoff Holdings LLC). It's a US-domiciled crypto entity with no foreign-signal field anywhere in its row.
+**Both legs of USD1.** World Liberty Financial (41.8.1) and SC Financial Technologies (41.9.1) co-own/co-issue the USD1 stablecoin; SC Financial Technologies is the Delaware-registered affiliate that signed the Pakistan PVARA MOU. Both carry no own value or income line — both N/A, rolling up to the parent (Witkoff Holdings LLC). Both are US-domiciled crypto entities with no foreign-signal field anywhere in their rows; the sovereign tie is established **entirely off-filing** (below), not from the parse.
 
 ## Why it's the live case (and CAND-001 is not)
 
@@ -58,13 +58,14 @@ The record is promotable **only as a documented financial relationship.** It mus
 
 ## Disposition: enriched SC-007 (not a new record)
 
-WLF was already recorded as **SC-007** in a prior session (scope LIVE), documenting the MGX→$2B→USD1 chain plus material this note didn't have: the Aryam/Tahnoon ~$500M stake and the Pakistan PVARA MOU. The 2026-05-29 verification pass added value not by minting a record but by **enriching SC-007's `primary_sources`** with three anchors it lacked:
+WLF was already recorded as **SC-007** in a prior session (scope LIVE), documenting the MGX→$2B→USD1 chain plus the Aryam/Tahnoon ~$500M stake and the Pakistan PVARA MOU. Two enrichment passes followed, neither minting a record:
 
-- Binance announcement, 2025-03-12 (party statement)
-- Zach Witkoff @ Token2049, ~2025-05-01 (party statement)
-- Warren-Merkley Senate Banking letter, 2025-06-11 (primary correspondence)
+- **2026-05-29 verification** added three transaction anchors (Binance announcement 2025-03-12; Zach Witkoff @ Token2049 ~2025-05-01; Warren-Merkley Senate Banking letter 2025-06-11), taking SC-007 from 10 to 13 primary sources.
+- **Handoff #30** promoted the **second USD1 leg** — SC Financial Technologies (41.9.1) — into SC-007 alongside WLF (41.8.1), made both retained legs explicit in the SC-007 summary, and added the **USD1 co-ownership reserve documentation (July 2025)** as a 14th primary source. SC-007 is now at **14 primary sources**.
 
-SC-007 went from 10 to 13 primary sources. No restructure; the Aryam/Tahnoon and PVARA content was untouched; no causal claim was added.
+**PVARA signatory — confirmed, not corrected.** SC-007's primary PVARA source already reads "PVARA official statement on **SC Financial Technologies** MOU" and the summary already attributes the MOU to SC Financial Technologies (signed by Zach Witkoff). The Handoff #30 precision check found no WLF-misattribution to fix — the primary-source attribution was already correct. (The Dawn/CoinDesk press sources retain their own "World Liberty Finance / WLFI-linked" framing verbatim, as the press reported it.)
+
+No restructure across either pass; the Aryam/Tahnoon and MGX/UAE content was untouched; the MGX/UAE and Pakistan legs stay distinct; no causal claim was added.
 
 The methodology points still stand and are worth a one-line note on the methodology page (not yet written):
 - SC-007 is sourced in part from a **retained** (not divested) holding;
