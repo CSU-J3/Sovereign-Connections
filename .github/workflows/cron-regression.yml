@@ -5,8 +5,8 @@ name: cron regression guard
 # silently changes collector output. It compares only — it never writes back.
 #
 # Discovery is stubbed (collectors/oge_278/discover.py): the guard runs against
-# the one known Witkoff filing today. Handoff #32 replaces the stub with a real
-# source, at which point this job also starts backfilling.
+# the one known Witkoff filing today. A future filing-discovery handoff replaces
+# the stub with a real source, at which point this job also starts backfilling.
 
 on:
   schedule:
