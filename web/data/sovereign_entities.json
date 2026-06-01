@@ -406,5 +406,30 @@
         "category": 3
       }
     ]
+  },
+  {
+    "id": "LUNATE",
+    "name": "Lunate",
+    "country": "United Arab Emirates",
+    "governance_note": "Privately-owned Abu Dhabi alternative asset manager (~$115 billion AUM, 2026), majority-owned by Chimera Investment LLC with the remainder held by its three managing partners (Khalifa Al Suwaidi, Murtaza Hussain, Seif Fikry). Chimera's own corporate site confirms Lunate Holding RSC LTD as a Chimera subsidiary. Control runs to the ruling family through a private vehicle, not through the Abu Dhabi government's balance sheet: Chimera is part of Sheikh Tahnoun bin Zayed Al Nahyan's private Royal Group empire (Royal Group majority-owns International Holding Company / IHC), and Tahnoun is the UAE national security adviser and brother of the president. The sovereign tie is at the limited-partner level, not the ownership level — Abu Dhabi sovereign wealth fund ADQ and Chimera anchored Lunate as limited partners from launch; ADQ invests in Lunate but does not own it. Classified sovereign-ADJACENT (ruling-family-controlled via Royal Group / Chimera, plus sovereign-LP-anchored via ADQ), explicitly NOT state-owned — calling Lunate 'state-owned' or 'an Abu Dhabi sovereign fund' would overstate the state's ownership and repeat the SWF-vs-government conflation the methodology guards against. Kept distinct from MGX, which DOES carry a state-owned shareholder (Mubadala, the government-owned SWF) alongside ruling-family-chaired G42 — MGX has sovereign ownership where Lunate has only sovereign anchoring; same overseer (Tahnoon), different ownership structure, so the two are not collapsed into 'Tahnoon's money'. Also distinct from ADQ, Royal Group, and IHC, which are separate entities in the ownership chain. Surfaced in SC-009 (Jared Kushner / Affinity Partners), where Lunate is one of three sovereign / sovereign-adjacent limited partners (with PIF and QIA), QIA and Lunate together committing ~$1.5 billion in 2024; classifying Lunate documents what it is and asserts no causal claim about any official act tied to the Affinity investment.",
+    "primary_sources": [
+      {
+        "label": "Chimera Investment LLC corporate site, confirming Lunate Holding RSC LTD as a Chimera subsidiary (owner's own statement of the ownership structure)",
+        "url": "https://www.chimerainvestment.com",
+        "category": 2
+      },
+      {
+        "label": "Reuters / AGBI launch coverage: Lunate majority-owned by Chimera Investment with its three managing partners holding the remainder; ~$115B AUM (2026)",
+        "category": 3
+      },
+      {
+        "label": "Reuters / Bloomberg reporting that Chimera is part of Sheikh Tahnoun bin Zayed Al Nahyan's private Royal Group, which majority-owns International Holding Company (IHC)",
+        "category": 3
+      },
+      {
+        "label": "Launch coverage (Medium / Global Times profile) that ADQ and Chimera anchored Lunate as limited partners from inception — sovereign tie at the LP level, not ownership",
+        "category": 3
+      }
+    ]
   }
 ]
