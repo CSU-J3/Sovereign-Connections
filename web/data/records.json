@@ -181,5 +181,50 @@
         "category": 3
       }
     ]
+  },
+  {
+    "id": "SC-009",
+    "business": "Affinity Partners (A Fin Management LLC)",
+    "family_member": "Jared Kushner",
+    "scope": "LIVE",
+    "source": "MULTI",
+    "period": "2021-PRES",
+    "frameworks": ["EMOL", "FIRRMA", "OGE", "208"],
+    "evidence_category": [1, 2, 3],
+    "summary": "First adv-sourced LIVE record — the sovereign-source nexus lives in SEC Form ADV, not an OGE Form 278e. A Fin Management LLC ('Affinity Partners') is a Delaware LLC formed in 2021, headquartered in Sunny Isles Beach, Florida, and wholly owned by Jared Kushner (ADV Part 2A, Item 4.A). As of December 31, 2025 it manages $6,160,297,411 in regulatory assets, all discretionary (Item 4.E), under a 2.0% annualized management fee plus performance carry of up to 20% of realized proceeds (Items 5.A, 6) — on roughly $6.16B the management fee alone runs on the order of $120M per year before carry. In its own ADV, Affinity discloses that the investor categories for its private funds include 'sovereign wealth funds' (Item 7); this is the sovereign-source nexus confirmed in the primary record itself. The Part 1A Schedule D breakdown (2026-03 annual update) lists six private funds, with Affinity Partners Parallel Fund I LP holding about 70% of AUM ($4,307,145,842) across only six beneficial owners — a concentration consistent with large sovereign commitments rather than a broad limited-partner base. The specific sovereign funds are named only in secondary reporting, held on separate evidentiary footing: a roughly $2B Public Investment Fund (Saudi) anchor commitment in 2021 — which PIF's own screening panel recommended rejecting before Crown Prince Mohammed bin Salman, who chairs PIF's board, overruled it (House Oversight 2022; Senate Finance / Wyden 2022–2024; NYT) — and approximately $1.5B combined from the Qatar Investment Authority and Abu Dhabi's Lunate in 2024 (Reuters; Kushner's own remarks). The ADV confirms sovereign-wealth-fund capital is present by category; it does not itself name PIF, QIA, or Lunate, which are three distinct sovereign / sovereign-adjacent vehicles cited individually and never fused as 'Gulf money'. The record documents a financial relationship at scale — billions in sovereign-source capital placed in a vehicle wholly owned by a former senior official, generating fee income to that official — and makes no causal claim. The oversight framing of the PIF commitment as payback for Kushner's official acts is a payment-caused-outcome inference and is not adopted: Kushner held no office during the reporting period (he left government in January 2021 and Affinity was incorporated the day after), so there is no contemporaneous official act to link — which is precisely why the relationship stands documented without a causal hook. Affinity's participation in the 2025–26 Electronic Arts acquisition consortium (PIF-controlled, with Silver Lake), in which Kushner reportedly introduced PIF to EA, is noted as business development only; he held no office in 2025–26 and no official act attaches. Promoted from watchlist W-002.",
+    "documented_amount": "AUM $6,160,297,411 @ 2025-12-31 (2% management fee + up to 20% carry); named sovereign commitments ~$3.5B (PIF ~$2B, 2021; QIA + Lunate ~$1.5B, 2024)",
+    "primary_sources": [
+      {
+        "label": "SEC Form ADV, A Fin Management LLC ('Affinity Partners'), firm CRD 315482 — Part 2A brochure dated 2026-03-22: Item 4.A sole owner Jared Kushner (Delaware LLC, 2021); Item 4.E regulatory AUM $6,160,297,411 @ 2025-12-31 (all discretionary); Items 5.A/6 2% management fee + up to 20% carry; Item 7 private-fund investor categories include 'sovereign wealth funds'",
+        "url": "https://adviserinfo.sec.gov/firm/summary/315482",
+        "type": "sec_filing",
+        "category": 1
+      },
+      {
+        "label": "SEC Form ADV Part 1A Schedule D (2026-03 annual update), A Fin Management LLC — six private funds with regulatory AUM and beneficial-owner counts; Affinity Partners Parallel Fund I LP $4,307,145,842 across 6 beneficial owners",
+        "type": "sec_filing",
+        "category": 1
+      },
+      {
+        "label": "House Committee on Oversight and Reform correspondence on the PIF–Affinity Partners commitment (Rep. Maloney, 2022), reporting the PIF screening-panel objection overruled by MBS",
+        "type": "congressional_letter",
+        "category": 2
+      },
+      {
+        "label": "Senate Finance Committee correspondence on PIF–Affinity Partners (Wyden investigation, 2022–2024)",
+        "type": "congressional_letter",
+        "category": 2
+      },
+      {
+        "label": "NYT reporting on the ~$2B PIF anchor commitment to Affinity and the screening-panel override by MBS (2022)",
+        "type": "press_disclosure",
+        "category": 3
+      },
+      {
+        "label": "Reuters reporting that the Qatar Investment Authority and Abu Dhabi's Lunate committed ~$1.5B combined to Affinity (2024)",
+        "type": "press_disclosure",
+        "category": 3
+      }
+    ]
   }
 ]

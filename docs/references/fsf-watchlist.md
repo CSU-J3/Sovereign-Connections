@@ -1,7 +1,7 @@
 # FSF Watchlist — entry criterion, source taxonomy, and evaluated entries
 
 **Date:** 2026-05-30
-**Status:** living document; v0.2 (three entries: 2 active/evaluated, 1 out)
+**Status:** living document; v0.3 (three entries: 2 evaluated, 1 out)
 **Scope:** the research queue for the Foreign Sovereign Funds tracker. Subjects worth pulling and evaluating for a sovereign-source nexus, across all source types — NOT a 278e-pull queue. Filing status does not gate inclusion.
 **Owner:** CJ
 **Related:** `docs/references/methodology-note-catalog-inclusion.md` (the catalog rule this mirrors); PROJECT.md Defined Terms.
@@ -60,7 +60,8 @@ A subject can carry more than one tag (a sitting official with both a 278e and a
 
 ### W-002 — Jared Kushner / Affinity Partners (A Fin Management LLC)
 - **Source type:** `adv` (+ `sec-deal` for the EA consortium)
-- **State:** `active` — nexus meets the criterion; primary record identified (SEC ADV); not yet structured into a record.
+- **State:** `evaluated` → SC-009 — primary record (SEC ADV, A Fin Management LLC, CRD 315482) pulled and structured.
+- **Promoted to:** SC-009 (`promoted_to: SC-009`).
 - **Nexus:** Affinity Partners (wholly owned by Kushner; SEC entity A Fin Management LLC) is sovereign-funded at scale. PIF (Saudi) anchored ~$2B in 2021. Qatar Investment Authority (sovereign) and Abu Dhabi's Lunate added ~$1.5B in 2024. AUM ~$4.8B by end-2024, ~99% non-US-person capital. Three sovereign / sovereign-adjacent funds into a single vehicle owned by a former senior official.
 - **Not a 278e subject:** Kushner left government Jan 2021; Affinity was incorporated the day after. No current filing obligation. The nexus lives in **SEC ADV filings**, not OGE disclosure — this is the entry that proves the watchlist must be broader than 278e.
 - **Primary records to pull:** SEC Form ADV for A Fin Management LLC (AUM, client-composition %, beneficial owners); SEC filings on the EA acquisition consortium (Affinity / PIF / Silver Lake). Congressional records (Wyden 2024, Maloney 2022 probe) are **primary correspondence but advocacy** — usable for transaction facts (the $2B, the ~$40M/yr fee figures, the PIF screening-committee objection overruled by MBS), not for their causal conclusions.
@@ -94,5 +95,6 @@ A subject can carry more than one tag (a sitting official with both a 278e and a
 ## Deferred / owed
 
 - **Retrieval mechanism** (drop-directory or per-type fetchers): deferred until a source type has enough entries to justify automation. Currently 1 × `278e`, 1 × `adv` — not yet.
-- **ADV parser:** when W-002 is worked, the ADV pull is manual; a parser is justified only when a second `adv` subject appears.
+- **ADV parser:** W-002 was worked manually (SC-009); a parser is justified only when a second `adv` subject appears.
+- **Lunate governance verification:** SC-009 surfaced Lunate (Abu Dhabi) as a sovereign-vehicle catalog candidate but it was **not** added — its governance (state-owned vs. state-adjacent) is unverified. Verify governance and catalog it on its own line if it clears the standard; keep it **distinct from MGX** (separate Abu Dhabi vehicle already in catalog via SC-007). PIF and QIA were already in `sovereign_entities.json` and needed no addition.
 - **Breadth pass:** a wider search for additional subjects (other principals with reported sovereign-source nexuses) runs *against this template* in a later session, so each candidate is evaluated, not just listed.
