@@ -194,13 +194,16 @@ Promotion to a record still requires secondary-source corroboration.
 
 ## 5. Blockers and unknowns for the production collector
 
-1. **Bulk CSV lag.** FOIA bulk data ends 2024-12-31; Affinity's current $6.16B
-   filing (2026-03-22) is absent — the CSV's latest Affinity RAUM is $3.0B
-   (2024-03-28). Current-period structured data is only on IAPD
-   (compilation/JSON API), whose machine-access method is unresolved (D below).
-2. **IAPD is a SPA.** Firm pages serve no data in HTML; the `compilation` XML is
-   JS-gated. The collector needs either the IAPD JSON API (reverse-engineered from
-   XHR) or a headless-browser path for 2025→ filings.
+1. **Bulk CSV lag — RESOLVED (Handoff #34, §8).** The lag was an artifact of the
+   `www.sec.gov` *web page* only; the SEC publishes the same multi-table CSV
+   **monthly and current** at `reports.adviserinfo.sec.gov`, machine-indexed by
+   `reports_metadata.json`. Affinity's 2026-03-22 filing is retrievable in
+   structured form. See §8.
+2. **IAPD is a SPA — RESOLVED (Handoff #34, §8).** The structured current data does
+   not need the SPA or a headless browser: the monthly CSV (above) and a
+   daily-refreshed compilation XML feed are both direct, scriptable downloads. The
+   firm JSON API (`api.adviserinfo.sec.gov/search/firm/{CRD}`) returns only a
+   summary card, not the full filing — but the bulk surfaces cover the fields.
 3. **Brochure path robots-disallowed.** Per-firm Part 2A
    (`crd_iapd_Brochure.aspx`) is in `Disallow`; use the bulk `adv-brochures-*.zip`
    sets. Brochure text is not in the Part 1A CSV.
@@ -258,3 +261,84 @@ Per the handoff, this pass writes no collector code, adds no `form_adv` schema
 variant, designs no candidate emission, and pulls no adviser beyond the Affinity
 pilot. The future package path is `collectors/adv_iapd/`, created in #34 once the
 IAPD current-period access method is settled.
+
+## 8. Current-period access — recon (Handoff #34)
+
+Recon to settle the one open blocker above (§5.1/§5.2): is there a scriptable,
+structured, current-period (2025→) Form ADV surface, or does current data come only
+as a per-firm PDF? This decides whether the ADV collector is a clean structured
+ingest end to end or a hybrid. (Branched off `feat/adv-iapd-discovery`, as the #33
+PR had not yet merged.)
+
+**Verdict A — a clean, scriptable, current-period structured surface exists.** The
+ADV collector is a light structured ingest end to end; historical and current data
+come from the same kind of source. The "lag" in §5.1 was an artifact of the
+`www.sec.gov` HTML page only — the live structured files are published elsewhere and
+machine-indexed.
+
+Three surfaces probed; two are decisive:
+
+**(a) Monthly Part 1 Data Files (CSV) — the primary surface.** A machine-readable
+index lists every bulk file with current dates:
+`https://reports.adviserinfo.sec.gov/reports/foia/reports_metadata.json`. Its
+`advFilingData` section ("Form ADV Part 1 Data Files") carries years 2024 / 2025 /
+**2026**, refreshed monthly (e.g. `ADV_Filing_Data_20260501_20260531.zip`, 8.5 MB,
+uploaded 2026-06-02). Download URL pattern (read from the IAPD bundle, not guessed):
+`…/reports/foia/{section}/{year}/{fileName}` — e.g.
+`https://reports.adviserinfo.sec.gov/reports/foia/advFilingData/2026/ADV_Filing_Data_20260301_20260331.zip`.
+Note the bare `…/reports/foia/{fileName}` path returns S3 `AccessDenied` (403); the
+`{section}/{year}` segments are required. These zips are the **identical multi-table
+CSV schema as the #33 historical bulk set** (`IA_ADV_Base`, `IA_Schedule_A_B`,
+`IA_Schedule_D_7B*`, …) — so the current slice extends the same ingest, no PDF parse.
+
+**(b) Daily compilation XML feed — firm-level, current as of today.** Manifest at
+`…/reports/CompilationReports/CompilationReports.manifest.json` lists
+`IA_FIRM_SEC_Feed_{MM_DD_YYYY}.xml.gz` (e.g. `IA_FIRM_SEC_Feed_06_14_2026.xml.gz`,
+7.2 MB gzipped → 81 MB XML, dated the run day). One GET, no auth, all 23,478
+SEC-registered IA firms with Part 1A item-level data (Items 1–11). Carries
+firm-level signals (incl. Item 5.F(3) non-US AUM) but **not** the Schedule D 7.B
+per-fund breakdown — so it complements, not replaces, surface (a).
+
+**(c) Per-firm JSON API — resolution aid only.** `https://api.adviserinfo.sec.gov/search/firm/{CRD}`
+returns a ~1.3 KB summary card (identifiers, `advFilingDate`, brochure version ids,
+compilation edition pointers) — confirmed Affinity's current `advFilingDate
+03/22/2026`. Good for CRD/filing-date resolution; it does **not** return the
+structured schedules.
+
+**Affinity current-filing test (CRD 315482, filed 2026-03-22), all figures matched
+the #33 PDF in structured form:**
+
+- Compilation feed (b), `Part1A/Item5`: `Q5F2C = 6160297411` (total RAUM $6.16B),
+  `Q5DF3 = 6160297411` (under client-type (f) pooled vehicles; no `Q5D…L` sovereign
+  element → 5.D(l) blank, as §3 predicted), and **`Q5F3 = 6097061904`** — Item 5.F(3)
+  reports $6.10B of RAUM as non-US-person-attributable at the firm level.
+- Monthly CSV (a), `IA_Schedule_D_7B1` (columns `Fund Name`, `Gross Asset Value`,
+  `Owners`, `%Owned Non-US`) — Affinity's six funds, current period:
+
+  | Fund | Gross Asset Value | Owners | %Owned Non-US |
+  |---|---:|---:|---:|
+  | Affinity Partners Parallel Fund I LP | 4,307,145,842 | 6 | **100** |
+  | Affinity Partners Fund I Co-Invest Delta LP | 1,193,319,132 | 1 | **100** |
+  | Affinity Partners Fund I Co-Invest Sigma LP | 596,596,930 | 1 | **100** |
+  | Affinity Partners Fund I LP | 45,179,176 | 1 | 0 |
+  | Affinity Partners Fund I Co-Invest Delta II LP | 12,033,077 | 1 | 0 |
+  | Affinity Partners Fund I Co-Invest Sigma II LP | 6,023,254 | 1 | 0 |
+
+  The three 100%-non-US funds total $6,097,061,904 — equal to the compilation feed's
+  Item 5.F(3) figure, and ≈99% of AUM. Every #33 figure reproduces from the current
+  structured data.
+
+**Access method (record for the collector):** host `reports.adviserinfo.sec.gov`,
+no auth, no robots block on `/reports/`; SEC-policy User-Agent (name + contact email)
+advisable and used here; rate-limit politely. Index → `reports_metadata.json`;
+files → `/reports/foia/{section}/{year}/{fileName}`; daily feed →
+`/reports/CompilationReports/{feed}`.
+
+**Cost verdict for the build:** structured ingest, both slices. The #34 follow-on is
+a build, not another decision — extend the #33 historical CSV ingest with the
+monthly `advFilingData` files (and optionally the daily compilation feed for
+firm-level freshness), and key sovereign detection on Schedule D 7.B `%Owned Non-US`
++ beneficial-owner concentration + fund scale (not `%non-US` alone), plus the
+firm-level Item 5.F(3) non-US AUM. The sovereign-*identity* limit from §3/§4 is
+unchanged: still secondary-source. The per-firm PDF and JSON API drop to
+verification/resolution aids.
