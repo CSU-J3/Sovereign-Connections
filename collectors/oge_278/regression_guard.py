@@ -39,6 +39,8 @@ import json
 import sys
 from collections import Counter
 
+from collectors.common import candidate_writer
+
 from . import candidates
 from .discover import FilingRef, discover_filings
 
@@ -54,16 +56,23 @@ EXPECTED_TALLY: dict[str, int] = {
 
 
 def _regenerate() -> str:
-    """Build the candidate list and serialize it exactly as the collector does.
+    """Regenerate the OGE slice exactly as the collector would write it, in memory.
 
-    Mirrors ``candidates.write_candidates`` byte-for-byte (2-space indent,
-    ``ensure_ascii=False``, trailing newline) but returns the text instead of
-    writing it. ``candidates.build()`` raises ``SystemExit`` on an orphaned
-    disposition; we let that propagate — a stale registry is a guard failure.
+    Since Handoff #36 ``candidates.build()`` returns id-less rows and the shared
+    writer assigns ids. The guard reproduces the real write path's id assignment
+    by running the writer's pure ``merge_rows`` against the committed file — so an
+    OGE row keeps its ``CAND-###`` by ``source_entity_key`` — then slices to the
+    OGE rows and serializes them the same way the writer does. It writes nothing,
+    honoring the write-nothing contract. ``candidates.build()`` raises
+    ``SystemExit`` on an orphaned disposition; we let that propagate.
     """
     emitted = candidates.build()
-    text = json.dumps(emitted, indent=2, ensure_ascii=False) + "\n"
-    return text
+    existing = candidate_writer.read_existing(candidates.OUTPUT)
+    merged = candidate_writer.merge_rows(
+        candidates.SOURCE, emitted, candidates.source_entity_key, existing
+    )
+    oge_rows = [c for c in merged if c["source_filing"].get("source") == candidates.SOURCE]
+    return candidate_writer.serialize(oge_rows)
 
 
 def _check_seam(text: str, ref: FilingRef) -> str | None:
@@ -136,15 +145,15 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     committed = committed_path.read_text(encoding="utf-8")
 
-    # candidates.json is shared: since Handoff #35 it also holds ADV/IAPD rows
-    # appended after the OGE candidates. This OGE guard governs only the OGE
-    # slice; compare against that slice so a sibling collector's rows don't read
-    # as OGE drift. The ADV/IAPD pipeline has its own regression guard (#36).
+    # candidates.json is shared: since Handoff #35 it also holds ADV/IAPD rows,
+    # and since #36 every row is source-tagged. This OGE guard governs only the
+    # OGE slice; compare against that slice so a sibling collector's rows don't
+    # read as OGE drift. The ADV/IAPD pipeline has its own regression guard (#36).
     committed_oge = [
         c for c in json.loads(committed)
-        if (c.get("source_filing") or {}).get("source") != "adv_iapd"
+        if (c.get("source_filing") or {}).get("source") == candidates.SOURCE
     ]
-    committed = json.dumps(committed_oge, indent=2, ensure_ascii=False) + "\n"
+    committed = candidate_writer.serialize(committed_oge)
 
     # 1. Byte-equality against the committed snapshot (OGE slice).
     if produced != committed:

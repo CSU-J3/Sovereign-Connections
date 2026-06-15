@@ -1,9 +1,14 @@
-"""ADV/IAPD candidate emitter (Handoff #35, build slice 1 — Affinity worked pass).
+"""ADV/IAPD candidate emitter (Handoff #35 build; #36 writer unification).
 
 Emits pre-promotion ``CAND-###`` candidates from the structured ADV ingest
 (``collectors.adv_iapd.ingest``) into ``web/data/candidates.json``, the same file
-the OGE 278 emitter writes. ADV candidates are appended after the existing OGE
-candidates; the OGE rows are never touched.
+the OGE 278 emitter writes. This module is now pure emission: :func:`build_rows`
+turns one assembled firm object into ADV candidate rows; the orchestration (which
+firms to fetch) lives in ``collectors.adv_iapd.collector`` and the merge-and-write
+(coexisting with the OGE rows, preserving ids) lives in the shared
+``collectors.common.candidate_writer`` (Handoff #36). The OGE rows are never
+touched, and a re-run keeps each ADV fund's ``CAND-###`` stable by
+:func:`source_entity_key`.
 
 Shape and posture follow the OGE precedent (``collectors/oge_278/candidates.py``):
 sequential ``CAND-###`` with no semantics, conservative over-emission, verbatim
@@ -18,20 +23,19 @@ only hand-authored field. ADV-specific mapping (Handoff #35 Step 3):
   - ``raw_value``        = the fund's 7.B fields copied verbatim from the ingest.
   - ``rollup_value``     = the firm-level Item 5 totals the fund sits within
     (regulatory AUM, non-US AUM) — the ADV analog of the OGE parent rollup,
-    carried alongside the fund for concentration context, never fabricated onto
-    the fund. (Proposed reuse of the OGE slot — flagged in the handoff report.)
+    carried alongside the fund as the concentration denominator, never fabricated
+    onto the fund. See ``docs/collectors/candidate-schema-notes.md``.
   - ``filer``            = the adviser legal name, ``business_name`` = the fund
     name, both verbatim from the structured filing (uppercase as the SEC serves
-    them). The filer/business_name mapping is flagged back in the handoff.
+    them).
   - ``descriptor``       = null: ADV fund names carry no parenthetical, so the OGE
     descriptor slot has no ADV analog; the fund type lives in ``raw_value``.
 
 Emission rule (Step 4): over the seeded adviser(s), emit one candidate per private
 fund that reports non-US ownership (``%Owned Non-US`` > 0). Funds reporting no
 non-US ownership are not emitted. Filtering to actual sovereign scope is a
-promotion-time judgment, not the collector's. Emitted candidates are ordered by
-gross asset value descending so the ``CAND-###`` assignment is deterministic
-across runs.
+promotion-time judgment, not the collector's. Emitted rows are ordered by gross
+asset value descending (then fund id) so emission is deterministic.
 
 Lifecycle: every ADV candidate emits ``promotion_status: "unreviewed"`` with null
 disposition siblings. The proxy limit (#33/#34) holds — the ADV gives ownership
@@ -39,29 +43,14 @@ disposition siblings. The proxy limit (#33/#34) holds — the ADV gives ownershi
 prompt that names the proxy signal and states plainly that the owners are not in
 the ADV and the sovereign source is unverified. It never asserts a sovereign
 connection.
-
-Idempotent: a re-run strips prior ``adv_iapd`` candidates, re-fetches, and
-re-appends from the current max OGE id, so the OGE rows and the ADV ids stay
-stable as long as the OGE count is fixed.
-
-Run: ``.venv/Scripts/python -m collectors.adv_iapd.candidates`` (Windows) /
-``.venv/bin/python -m collectors.adv_iapd.candidates`` (macOS/Linux).
 """
 
 from __future__ import annotations
 
-import json
-import re
-from pathlib import Path
-
-from collectors.adv_iapd import ingest
-
-REPO_ROOT = Path(__file__).resolve().parents[2]
-OUTPUT = REPO_ROOT / "web" / "data" / "candidates.json"
-
-# Seeded adviser list (Handoff #35 scope guardrail): CRD 315482 (Affinity) only.
-# The covered-adviser inventory that grows this is a later handoff.
-SEED_CRDS = ["315482"]
+# This collector's source tag in the shared candidates.json. Every ADV row
+# carries it in source_filing.source so the shared writer (Handoff #36) can scope
+# a regeneration to the ADV slice and leave the OGE rows untouched.
+SOURCE = "adv_iapd"
 
 # Hand-authored hedged research prompts, keyed by the fund's Schedule D 7.B
 # ``Fund ID``. Each names the proxy signal (percent non-US, owner concentration,
@@ -106,6 +95,18 @@ HYPOTHESES = {
 }
 
 
+def source_entity_key(candidate: dict):
+    """Stable identity of an ADV candidate's source entity (Handoff #36).
+
+    The firm CRD plus the Schedule D 7.B Fund ID — the *fund*, not the filing
+    instance, so a re-filing of the same fund keeps its ``CAND-###``. The shared
+    writer uses this to preserve ids across re-runs; it must not depend on
+    emission order or id.
+    """
+    sf = candidate["source_filing"]
+    return (sf.get("crd"), (candidate.get("raw_value") or {}).get("fund_id"))
+
+
 def _scope_hypothesis(fund: dict) -> str:
     authored = HYPOTHESES.get(fund.get("fund_id"))
     if authored:
@@ -125,11 +126,11 @@ def _scope_hypothesis(fund: dict) -> str:
 
 
 def _candidate(firm: dict, fund: dict) -> dict:
-    """One candidate for a private fund reporting non-US ownership. id set later."""
+    """One candidate for a private fund reporting non-US ownership. id set by the writer."""
     return {
         "id": None,
         "source_filing": {
-            "source": "adv_iapd",
+            "source": SOURCE,
             "crd": firm["crd"],
             "sec_number": firm["sec_number"],
             "filing_id": firm["filing_id"],
@@ -169,52 +170,14 @@ def _candidate(firm: dict, fund: dict) -> dict:
     }
 
 
-def _next_id_number(preserved: list[dict]) -> int:
-    nums = [int(re.sub(r"\D", "", c["id"])) for c in preserved if c.get("id")]
-    return (max(nums) + 1) if nums else 1
+def build_rows(firm: dict) -> list[dict]:
+    """The ADV candidates for one assembled firm object (ids left unset).
 
-
-def build() -> list[dict]:
-    """Existing non-ADV candidates, then freshly emitted ADV candidates.
-
-    Reads the current ``candidates.json``, keeps every non-``adv_iapd`` row
-    untouched (the OGE candidates), and appends one ADV candidate per seeded
-    fund reporting non-US ownership, with ids continuing from the current max.
+    One candidate per private fund reporting non-US ownership; funds with none are
+    not emitted. Ordered by gross asset value descending, then fund id, so emission
+    is deterministic. The shared writer assigns ids, preserving a fund's
+    ``CAND-###`` by :func:`source_entity_key`.
     """
-    existing = json.loads(OUTPUT.read_text(encoding="utf-8"))
-    preserved = [
-        c for c in existing
-        if (c.get("source_filing") or {}).get("source") != "adv_iapd"
-    ]
-
-    emitted: list[dict] = []
-    for crd in SEED_CRDS:
-        firm = ingest.fetch_firm(crd)
-        ingest.validate(firm)  # stop on source drift; do not emit drifted numbers
-        funds = [f for f in firm["private_funds"] if (f.get("percent_non_us_owners") or 0) > 0]
-        funds.sort(key=lambda f: -(f.get("gross_asset_value") or 0))
-        emitted.extend(_candidate(firm, f) for f in funds)
-
-    start = _next_id_number(preserved)
-    for offset, cand in enumerate(emitted):
-        cand["id"] = f"CAND-{start + offset:03d}"
-    return preserved + emitted
-
-
-def write_candidates(candidates: list[dict]) -> Path:
-    """Serialize to ``candidates.json``; same format as the OGE writer (#28)."""
-    OUTPUT.write_text(
-        json.dumps(candidates, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-    return OUTPUT
-
-
-def main() -> None:
-    candidates = build()
-    write_candidates(candidates)
-    adv = [c for c in candidates if (c.get("source_filing") or {}).get("source") == "adv_iapd"]
-    print(f"wrote {len(candidates)} candidates ({len(adv)} ADV) -> {OUTPUT.relative_to(REPO_ROOT)}")
-
-
-if __name__ == "__main__":
-    main()
+    funds = [f for f in firm["private_funds"] if (f.get("percent_non_us_owners") or 0) > 0]
+    funds.sort(key=lambda f: (-(f.get("gross_asset_value") or 0), f.get("fund_id") or ""))
+    return [_candidate(firm, f) for f in funds]

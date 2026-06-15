@@ -1,0 +1,86 @@
+{
+  "crd": "315482",
+  "legal_name": "A FIN MANAGEMENT LLC",
+  "sec_number": "801-122021",
+  "filing_id": "2074750",
+  "filing_date": "2026-03-22",
+  "source_dataset": "ADV_Filing_Data_20260301_20260331.zip",
+  "source_table": "IA_Schedule_D_7B1",
+  "item5": {
+    "regulatory_aum": 6160297411,
+    "non_us_aum": 6097061904
+  },
+  "owners": [
+    {
+      "name": "KUSHNER, JARED, COREY",
+      "de_fe_i": "I",
+      "title_or_status": "FOUNDER AND CHIEF EXECUTIVE OFFICER",
+      "ownership_code": "E",
+      "control_person": "Y"
+    },
+    {
+      "name": "KEY, LAUREN, ELISE",
+      "de_fe_i": "I",
+      "title_or_status": "CHIEF FINANCIAL OFFICER",
+      "ownership_code": "NA",
+      "control_person": "Y"
+    },
+    {
+      "name": "BREKKE, IAN, JOSEPH",
+      "de_fe_i": "I",
+      "title_or_status": "CHIEF LEGAL OFFICER AND CHIEF COMPLIANCE OFFICER",
+      "ownership_code": "NA",
+      "control_person": "Y"
+    }
+  ],
+  "private_funds": [
+    {
+      "fund_name": "AFFINITY PARTNERS FUND I CO-INVEST SIGMA II LP",
+      "fund_id": "805-1880764981",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 6023254,
+      "beneficial_owner_count": 1,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "AFFINITY PARTNERS FUND I CO-INVEST DELTA II LP",
+      "fund_id": "805-2944771777",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 12033077,
+      "beneficial_owner_count": 1,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "AFFINITY PARTNERS FUND I CO-INVEST DELTA LP",
+      "fund_id": "805-9422731494",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 1193319132,
+      "beneficial_owner_count": 1,
+      "percent_non_us_owners": 100
+    },
+    {
+      "fund_name": "AFFINITY PARTNERS FUND I CO-INVEST SIGMA LP",
+      "fund_id": "805-3756709628",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 596596930,
+      "beneficial_owner_count": 1,
+      "percent_non_us_owners": 100
+    },
+    {
+      "fund_name": "AFFINITY PARTNERS FUND I LP",
+      "fund_id": "805-8009434491",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 45179176,
+      "beneficial_owner_count": 1,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "AFFINITY PARTNERS PARALLEL FUND I LP",
+      "fund_id": "805-7516626074",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 4307145842,
+      "beneficial_owner_count": 6,
+      "percent_non_us_owners": 100
+    }
+  ]
+}

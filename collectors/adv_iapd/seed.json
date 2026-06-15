@@ -1,0 +1,4 @@
+{
+  "_comment": "Seeded covered-person-connected adviser CRDs for the ADV/IAPD collector (Handoff #36). ADV is seeded, not discovered, so this is the ADV analog of the OGE collector's discover.py stub: a stable list the collector iterates. CRD 315482 = A FIN MANAGEMENT LLC (Affinity Partners, Jared Kushner). The covered-adviser inventory that grows this list — derived from the covered-persons definition in PROJECT.md — is a later handoff.",
+  "crds": ["315482"]
+}
