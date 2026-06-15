@@ -58,23 +58,25 @@ def _fixture_path(crd: str) -> Path:
     return SAMPLES / f"adv-iapd-firm-{crd}.json"
 
 
-def _regenerate(crds: list[str]) -> str:
+def _regenerate(advisers: list[dict]) -> str:
     """Regenerate the ADV slice exactly as the collector would write it, in memory.
 
     Loads each seeded CRD's committed firm fixture (offline), validates it, emits
-    rows, then reproduces the real write path's id assignment by running the
-    writer's pure ``merge_rows`` against the committed file — so an ADV fund keeps
-    its ``CAND-###`` by source-entity key. Returns the serialized ADV slice.
-    Raises ``SystemExit`` (via ``ingest.validate``) on a drifted fixture.
+    rows stamped with the seed entry's covered person (#37), then reproduces the
+    real write path's id assignment by running the writer's pure ``merge_rows``
+    against the committed file — so an ADV fund keeps its ``CAND-###`` by
+    source-entity key. Returns the serialized ADV slice. Raises ``SystemExit`` (via
+    ``ingest.validate``) on a drifted fixture.
     """
     rows: list[dict] = []
-    for crd in crds:
+    for entry in advisers:
+        crd = entry["crd"]
         fixture = _fixture_path(crd)
         if not fixture.exists():
             raise SystemExit(f"missing committed firm fixture for CRD {crd}: {fixture}")
         firm = json.loads(fixture.read_text(encoding="utf-8"))
         ingest.validate(firm)  # a fixture that drifted from the recon figures fails
-        rows.extend(candidates.build_rows(firm))
+        rows.extend(candidates.build_rows(firm, entry["covered_person"]))
 
     existing = candidate_writer.read_existing(candidate_writer.OUTPUT)
     merged = candidate_writer.merge_rows(
@@ -97,6 +99,27 @@ def _check_seed(text: str, crds: set[str]) -> str | None:
     return None
 
 
+def _check_covered_person(text: str, by_crd: dict[str, str]) -> str | None:
+    """Confirm every emitted ADV row carries its seed entry's covered person (#37).
+
+    Each ADV candidate's ``covered_person`` must be non-empty and equal the seed's
+    covered person for that row's CRD. Byte-equality already implies this on a green
+    run; checked explicitly so a covered-person regression reads clearly.
+    """
+    for c in json.loads(text):
+        crd = c["source_filing"].get("crd")
+        actual = c.get("covered_person")
+        expected = by_crd.get(crd)
+        if not actual:
+            return f"ADV candidate {c.get('id')} (CRD {crd}) has an empty covered_person"
+        if actual != expected:
+            return (
+                f"ADV candidate {c.get('id')} (CRD {crd}) covered_person "
+                f"{actual!r} != seed {expected!r}"
+            )
+    return None
+
+
 def _check_tally(text: str) -> str | None:
     """Confirm the ADV disposition tally matches EXPECTED_TALLY. Error string or None."""
     counts = Counter(c["promotion_status"] for c in json.loads(text))
@@ -114,11 +137,13 @@ def _check_tally(text: str) -> str | None:
 
 
 def main(argv: list[str] | None = None) -> int:
-    crds = load_seed()
+    advisers = load_seed()
+    crds = [entry["crd"] for entry in advisers]
+    covered_by_crd = {entry["crd"]: entry["covered_person"] for entry in advisers}
     print(f"regression guard: regenerating ADV slice for CRD(s) {crds}", file=sys.stderr)
 
     try:
-        produced = _regenerate(crds)
+        produced = _regenerate(advisers)
     except SystemExit as exc:  # missing fixture or ingest.validate drift
         print(f"FAIL: ADV regeneration raised — {exc}")
         return 1
@@ -155,7 +180,11 @@ def main(argv: list[str] | None = None) -> int:
     # 2. Seed-seam tie and disposition-tally invariant. Byte-equality already
     #    implies these on a green run; checked explicitly so a failure reads
     #    clearly instead of as a raw diff.
-    for check in (_check_seed(produced, set(crds)), _check_tally(produced)):
+    for check in (
+        _check_seed(produced, set(crds)),
+        _check_covered_person(produced, covered_by_crd),
+        _check_tally(produced),
+    ):
         if check is not None:
             print(f"FAIL: {check}")
             return 1

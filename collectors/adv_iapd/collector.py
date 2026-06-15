@@ -11,8 +11,9 @@ runnable command that goes from the seed list to candidate rows in
                   longer reproduces its recon figures (source drift); the wrapper
                   does not weaken that check, so drifted numbers never flow into
                   candidates.
-    3. Emit     — ``candidates.build_rows(firm)`` emits one candidate per private
-                  fund reporting non-US ownership (ids unset).
+    3. Emit     — ``candidates.build_rows(firm, covered_person)`` emits one
+                  candidate per private fund reporting non-US ownership (ids
+                  unset), each stamped with the seed entry's covered person.
     4. Write    — the shared ``collectors.common.candidate_writer`` regenerates
                   only the ``adv_iapd`` slice, preserves the OGE rows and each
                   ADV fund's existing ``CAND-###`` by source-entity key, and writes
@@ -44,33 +45,37 @@ PACKAGE_DIR = Path(__file__).resolve().parent
 SEED_FILE = PACKAGE_DIR / "seed.json"
 
 
-def load_seed() -> list[str]:
-    """The seeded adviser CRDs to collect, as strings (the seed seam, #36).
+def load_seed() -> list[dict]:
+    """The seeded covered advisers to collect (the seed seam, #36; #37 covered_person).
 
     The ADV analog of ``collectors.oge_278.discover.discover_filings``: callers
-    iterate it without caring that it is a committed list today. Growing the list
-    is a later handoff.
+    iterate it without caring that it is a committed list today. Each entry is the
+    seed object — ``crd`` (str) and ``covered_person`` (the administration-connected
+    person the funds tie to, authored in source-faithful Schedule A form), plus an
+    optional ``adviser_name`` for readability. Growing the list is a later handoff.
     """
     seed = json.loads(SEED_FILE.read_text(encoding="utf-8"))
-    return [str(crd) for crd in seed["crds"]]
+    return [{**entry, "crd": str(entry["crd"])} for entry in seed["advisers"]]
 
 
-def run(crds: list[str] | None = None) -> dict:
-    """Run ingest -> validate -> emit for every seeded CRD and write the ADV slice.
+def run(advisers: list[dict] | None = None) -> dict:
+    """Run ingest -> validate -> emit for every seeded adviser and write the ADV slice.
 
-    Returns a summary dict: the CRDs processed, per-firm fund/candidate counts,
-    the total candidate count in the file after the merge, the ADV-slice tally,
-    and the output path. Raises ``SystemExit`` (via ``ingest``) on a missing firm
-    or source drift; the CLI guard turns that into a non-zero exit.
+    Each seed entry carries its CRD and the covered person stamped on every
+    candidate from that adviser (#37). Returns a summary dict: the CRDs processed,
+    per-firm fund/candidate counts, the total candidate count in the file after the
+    merge, the ADV-slice tally, and the output path. Raises ``SystemExit`` (via
+    ``ingest``) on a missing firm or source drift; the CLI guard turns that into a
+    non-zero exit.
     """
-    crds = crds or load_seed()
+    advisers = advisers or load_seed()
 
     rows: list[dict] = []
     firms: list[dict] = []
-    for crd in crds:
-        firm = ingest.fetch_firm(crd)
+    for entry in advisers:
+        firm = ingest.fetch_firm(entry["crd"])
         ingest.validate(firm)  # stop on source drift; do not emit drifted numbers
-        firm_rows = candidates.build_rows(firm)
+        firm_rows = candidates.build_rows(firm, entry["covered_person"])
         rows.extend(firm_rows)
         firms.append(
             {
@@ -89,7 +94,7 @@ def run(crds: list[str] | None = None) -> dict:
     adv = [c for c in merged if c["source_filing"].get("source") == candidates.SOURCE]
     tally = collections.Counter(c["promotion_status"] for c in adv)
     return {
-        "crds": crds,
+        "crds": [entry["crd"] for entry in advisers],
         "firms": firms,
         "adv_candidates": len(adv),
         "total_in_file": len(merged),

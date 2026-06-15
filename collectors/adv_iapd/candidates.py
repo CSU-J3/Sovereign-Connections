@@ -28,6 +28,10 @@ only hand-authored field. ADV-specific mapping (Handoff #35 Step 3):
   - ``filer``            = the adviser legal name, ``business_name`` = the fund
     name, both verbatim from the structured filing (uppercase as the SEC serves
     them).
+  - ``covered_person``   = the administration-connected person the funds tie to
+    (Handoff #37), from the seed, not the filing — the ADV names the adviser and
+    fund but never the covered person, so the connection is supplied at collection
+    in the source-faithful Schedule A owner form (e.g. ``KUSHNER, JARED, COREY``).
   - ``descriptor``       = null: ADV fund names carry no parenthetical, so the OGE
     descriptor slot has no ADV analog; the fund type lives in ``raw_value``.
 
@@ -125,7 +129,7 @@ def _scope_hypothesis(fund: dict) -> str:
     )
 
 
-def _candidate(firm: dict, fund: dict) -> dict:
+def _candidate(firm: dict, fund: dict, covered_person: str) -> dict:
     """One candidate for a private fund reporting non-US ownership. id set by the writer."""
     return {
         "id": None,
@@ -141,6 +145,12 @@ def _candidate(firm: dict, fund: dict) -> dict:
         },
         "filer": firm["legal_name"],
         "business_name": fund["fund_name"],
+        # The administration-connected covered person whose tie to these funds is
+        # why the candidate matters (Handoff #37). From the seed, not the filing:
+        # the ADV names the adviser and the fund but never the covered person, so
+        # the connection is supplied at collection, authored in the source-faithful
+        # Schedule A owner form. See docs/collectors/candidate-schema-notes.md.
+        "covered_person": covered_person,
         # ADV fund names carry no parenthetical; the OGE descriptor slot has no
         # ADV analog. Fund type is kept in raw_value, not retyped here.
         "descriptor": None,
@@ -170,14 +180,15 @@ def _candidate(firm: dict, fund: dict) -> dict:
     }
 
 
-def build_rows(firm: dict) -> list[dict]:
+def build_rows(firm: dict, covered_person: str) -> list[dict]:
     """The ADV candidates for one assembled firm object (ids left unset).
 
     One candidate per private fund reporting non-US ownership; funds with none are
     not emitted. Ordered by gross asset value descending, then fund id, so emission
-    is deterministic. The shared writer assigns ids, preserving a fund's
-    ``CAND-###`` by :func:`source_entity_key`.
+    is deterministic. ``covered_person`` is the seed entry's covered person, stamped
+    on every candidate from this adviser (Handoff #37). The shared writer assigns
+    ids, preserving a fund's ``CAND-###`` by :func:`source_entity_key`.
     """
     funds = [f for f in firm["private_funds"] if (f.get("percent_non_us_owners") or 0) > 0]
     funds.sort(key=lambda f: (-(f.get("gross_asset_value") or 0), f.get("fund_id") or ""))
-    return [_candidate(firm, f) for f in funds]
+    return [_candidate(firm, f, covered_person) for f in funds]

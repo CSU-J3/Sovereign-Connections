@@ -9,6 +9,34 @@ collector — and which schema reading — a row came from. The full candidate f
 set is defined by Handoff #23 (schema) and the per-collector emitter docstrings;
 this note records the cross-collector field meanings that differ by `source`.
 
+## `covered_person` per source (Handoff #37)
+
+`covered_person` is a top-level name string on every candidate, naming the
+administration-connected person whose tie to the business the candidate documents.
+It sits alongside `filer` and `business_name` and closes the gap flagged in #35:
+an ADV candidate names the adviser (`filer`) and the fund (`business_name`) but
+not the covered person — the reason the candidate matters. The field is uniform
+across sources, populated source-appropriately:
+
+- **`oge_278`.** An OGE Form 278e is filed *by* the covered person, so for OGE
+  `covered_person` equals `filer`. That duplicates `filer` for OGE rows, but a
+  single field that answers "which covered person" regardless of source is worth
+  the redundancy.
+
+- **`adv_iapd`.** From the seed, not the filing. The ADV names the adviser and the
+  fund but never the covered person, and the seed *is* the list of
+  covered-person-connected advisers, so the connection is known at collection, not
+  inferred — Affinity (CRD 315482) maps to Jared Kushner. The value is authored in
+  the source-faithful Schedule A owner form the ingest already pulls (uppercase
+  `LAST, FIRST, MIDDLE`, e.g. `KUSHNER, JARED, COREY`), so it stays as
+  source-faithful as the OGE `filer` it sits beside; records-layer normalization is
+  deferred (the #35 casing call). Seeded per adviser in
+  `collectors/adv_iapd/seed.json` and stamped on every candidate from that adviser.
+
+The field carries a name only. A covered-person *basis* or *relationship*
+(officeholder, named family member, covered intermediary, per PROJECT.md) is left
+to the seed and the records layer, not asserted on the candidate.
+
 ## `rollup_value` per source (closes the Handoff #35 implicit-reuse flag)
 
 `rollup_value` is a nullable object that carries a **value the candidate sits
