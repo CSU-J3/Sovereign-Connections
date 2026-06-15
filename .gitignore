@@ -3,6 +3,10 @@ __pycache__/
 *.pyc
 .venv/
 
+# Collector working dirs: downloaded bulk ADV data cache and ad-hoc scratch.
+.cache/
+.scratch/
+
 # Working artifacts: handoff docs and decision notes pasted in from Claude.ai
 # sessions. Kept on disk for reference but not committed.
 # (Anchored to root so docs/handoffs/ — the cbt-pattern session log

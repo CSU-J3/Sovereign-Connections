@@ -5512,5 +5512,113 @@
     "promoted_to": null,
     "reviewed_at": "2026-05-29",
     "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-169",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "315482",
+      "sec_number": "801-122021",
+      "filing_id": "2074750",
+      "filing_date": "2026-03-22",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "A FIN MANAGEMENT LLC",
+    "business_name": "AFFINITY PARTNERS PARALLEL FUND I LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-7516626074",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 4307145842,
+      "percent_non_us_owners": 100,
+      "beneficial_owner_count": 6
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 6160297411,
+      "firm_non_us_aum": 6097061904
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 100% beneficially owned by non-United States persons, $4,307,145,842 gross asset value across only 6 beneficial owners — roughly 70% of the adviser's $6,160,297,411 regulatory AUM. The scale and six-owner concentration are consistent with large institutional or sovereign limited partners, but Form ADV reports only the aggregate non-US percentage and the owner count; it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV — secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-170",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "315482",
+      "sec_number": "801-122021",
+      "filing_id": "2074750",
+      "filing_date": "2026-03-22",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "A FIN MANAGEMENT LLC",
+    "business_name": "AFFINITY PARTNERS FUND I CO-INVEST DELTA LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-9422731494",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 1193319132,
+      "percent_non_us_owners": 100,
+      "beneficial_owner_count": 1
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 6160297411,
+      "firm_non_us_aum": 6097061904
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this co-investment fund 100% beneficially owned by non-United States persons, $1,193,319,132 held by a single beneficial owner. A single foreign beneficial owner at this scale is consistent with one large institutional or sovereign limited partner, but the ADV gives only the aggregate non-US percentage and owner count, never the owner's identity. The sovereign source is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-171",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "315482",
+      "sec_number": "801-122021",
+      "filing_id": "2074750",
+      "filing_date": "2026-03-22",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "A FIN MANAGEMENT LLC",
+    "business_name": "AFFINITY PARTNERS FUND I CO-INVEST SIGMA LP",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-3756709628",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 596596930,
+      "percent_non_us_owners": 100,
+      "beneficial_owner_count": 1
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 6160297411,
+      "firm_non_us_aum": 6097061904
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this co-investment fund 100% beneficially owned by non-United States persons, $596,596,930 held by a single beneficial owner. As with the other Affinity co-invest vehicles, a single foreign owner at this scale points to one large institutional or sovereign limited partner, but the ADV reports only the aggregate non-US share and owner count and names no owner. The sovereign source is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
   }
 ]

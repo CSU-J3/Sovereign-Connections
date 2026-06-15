@@ -136,7 +136,17 @@ def main(argv: list[str] | None = None) -> int:
         return 1
     committed = committed_path.read_text(encoding="utf-8")
 
-    # 1. Byte-equality against the committed snapshot.
+    # candidates.json is shared: since Handoff #35 it also holds ADV/IAPD rows
+    # appended after the OGE candidates. This OGE guard governs only the OGE
+    # slice; compare against that slice so a sibling collector's rows don't read
+    # as OGE drift. The ADV/IAPD pipeline has its own regression guard (#36).
+    committed_oge = [
+        c for c in json.loads(committed)
+        if (c.get("source_filing") or {}).get("source") != "adv_iapd"
+    ]
+    committed = json.dumps(committed_oge, indent=2, ensure_ascii=False) + "\n"
+
+    # 1. Byte-equality against the committed snapshot (OGE slice).
     if produced != committed:
         print("FAIL: collector output drifted from committed candidates.json")
         diff = difflib.unified_diff(
