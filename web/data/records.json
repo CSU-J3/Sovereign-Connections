@@ -216,12 +216,16 @@
       },
       {
         "label": "House Committee on Oversight and Reform correspondence on the PIF–Affinity Partners commitment (Rep. Maloney, 2022), reporting the PIF screening-panel objection overruled by MBS",
-        "type": "congressional_letter",
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "House Committee on Oversight and Reform",
         "category": 2
       },
       {
         "label": "Senate Finance Committee correspondence on PIF–Affinity Partners (Wyden investigation, 2022–2024)",
-        "type": "congressional_letter",
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "Senate Finance Committee",
         "category": 2
       },
       {
