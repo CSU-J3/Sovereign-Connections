@@ -1,4 +1,10 @@
 {
-  "_comment": "Seeded covered-person-connected adviser CRDs for the ADV/IAPD collector (Handoff #36). ADV is seeded, not discovered, so this is the ADV analog of the OGE collector's discover.py stub: a stable list the collector iterates. CRD 315482 = A FIN MANAGEMENT LLC (Affinity Partners, Jared Kushner). The covered-adviser inventory that grows this list — derived from the covered-persons definition in PROJECT.md — is a later handoff.",
-  "crds": ["315482"]
+  "_comment": "Seeded covered-person-connected advisers for the ADV/IAPD collector (Handoff #36 seam; #37 covered_person). ADV is seeded, not discovered, so this is the ADV analog of the OGE collector's discover.py stub: a stable list the collector iterates. Each entry pairs a firm CRD with the covered person whose tie to the funds the candidate documents — the connection is known at collection (the seed IS the covered-person-connected list), not inferred. `crd` and `covered_person` are required; `adviser_name` is optional, for readability only. `covered_person` is authored in the Schedule A owner form the ingest already pulls (uppercase 'LAST, FIRST, MIDDLE', source-faithful as the candidate-layer filer/business_name sit, per Handoff #35); records-layer normalization is deferred. CRD 315482 = A FIN MANAGEMENT LLC (Affinity Partners), covered person Jared Kushner = Schedule A owner 'KUSHNER, JARED, COREY'. The covered-adviser inventory that grows this list — derived from the covered-persons definition in PROJECT.md — is a later handoff.",
+  "advisers": [
+    {
+      "crd": "315482",
+      "adviser_name": "A FIN MANAGEMENT LLC",
+      "covered_person": "KUSHNER, JARED, COREY"
+    }
+  ]
 }

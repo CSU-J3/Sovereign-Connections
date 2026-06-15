@@ -500,6 +500,11 @@ def _candidate(node, ancestors, doc, filename, disclosure_type, part_key):
         },
         "filer": doc["filer"],
         "business_name": node["entity_name"],
+        # The covered person the candidate documents (Handoff #37). An OGE 278 is
+        # filed BY the covered person, so for OGE covered_person equals filer; the
+        # duplication buys a single field that answers "which covered person" across
+        # every source. See docs/collectors/candidate-schema-notes.md.
+        "covered_person": doc["filer"],
         # Parenthetical descriptor lifted verbatim from business_name — a weak
         # scope signal passed through, never filtered on at collection.
         "descriptor": _descriptor(node["entity_name"]),
