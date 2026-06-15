@@ -1,12 +1,16 @@
 name: cron regression guard
 
-# Regenerates the OGE 278 collector output and fails if it drifts from the
-# committed web/data/candidates.json. Catches the case where a code change
-# silently changes collector output. It compares only — it never writes back.
+# Regenerates each collector's slice of web/data/candidates.json and fails if it
+# drifts from what is committed. Catches the case where a code change silently
+# changes collector output. It compares only — it never writes back.
 #
-# Discovery is stubbed (collectors/oge_278/discover.py): the guard runs against
-# the one known Witkoff filing today. A future filing-discovery handoff replaces
-# the stub with a real source, at which point this job also starts backfilling.
+# Two guards run, one per source slice of the shared candidates.json:
+#   - OGE 278 (collectors/oge_278): discovery is stubbed
+#     (collectors/oge_278/discover.py) to the one known Witkoff filing; a future
+#     filing-discovery handoff replaces the stub, at which point this also backfills.
+#   - ADV/IAPD (collectors/adv_iapd): seeded (collectors/adv_iapd/seed.json), and
+#     regenerated offline from a committed firm fixture under data/samples/ — no
+#     network call, so it is deterministic in CI.
 
 on:
   schedule:
@@ -32,8 +36,11 @@ jobs:
         # the emit module, but install the project deps for parity / future use.
         run: pip install -r collectors/requirements.txt
 
-      - name: Run regression guard
+      - name: Run OGE 278 regression guard
         run: python -m collectors.oge_278.regression_guard
+
+      - name: Run ADV/IAPD regression guard
+        run: python -m collectors.adv_iapd.regression_guard
 
       - name: Assert committed data untouched
         # Belt-and-suspenders: the guard regenerates in memory, so the tree must

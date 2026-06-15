@@ -87,9 +87,28 @@ import json
 import re
 from pathlib import Path
 
+from collectors.common import candidate_writer
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SAMPLES = REPO_ROOT / "data" / "samples"
 OUTPUT = REPO_ROOT / "web" / "data" / "candidates.json"
+
+# This collector's source tag in the shared candidates.json. Every OGE row
+# carries it in source_filing.source so the shared writer (Handoff #36) can scope
+# a regeneration to the OGE slice and leave sibling rows (ADV/IAPD) untouched.
+SOURCE = "oge_278"
+
+
+def source_entity_key(candidate):
+    """Stable identity of an OGE candidate's source entity (Handoff #36).
+
+    The parsed filing plus the dotted entry number — the same ``(part,
+    entry_number)`` row identity dispositions key on (#27), expressed via the
+    fields present on the candidate. The shared writer uses this to preserve a
+    row's ``CAND-###`` across re-runs; it must not depend on parse order or id.
+    """
+    sf = candidate["source_filing"]
+    return (sf.get("parsed_file"), sf.get("entry_number"))
 
 # The parsed OGE 278e part files, in parse order (Parts 2, 5, 6). disclosure_type
 # is drawn from the part — NOT inferred from the row. The handoff's example set
@@ -464,6 +483,8 @@ def _candidate(node, ancestors, doc, filename, disclosure_type, part_key):
         # id is assigned after the full walk, once parse order is fixed.
         "id": None,
         "source_filing": {
+            # Source tag for the shared writer's slice scoping (Handoff #36).
+            "source": SOURCE,
             "source_pdf": doc["source_pdf"],
             "parsed_file": f"data/samples/{filename}",
             "part": doc["part"],
@@ -541,29 +562,31 @@ def build():
     if stale:
         raise SystemExit(f"dispositions key rows that were not emitted: {stale}")
 
-    for index, candidate in enumerate(candidates, start=1):
-        candidate["id"] = f"CAND-{index:03d}"
+    # ids are assigned by the shared writer (Handoff #36), not here: it preserves
+    # each row's existing CAND-### by source_entity_key and only mints new ids for
+    # genuinely new rows, so a re-run keeps OGE 1-168 stable. build() returns the
+    # emitted rows with ``id`` unset (None).
     return candidates
 
 
 def write_candidates(candidates):
-    """Serialize the candidate list to ``web/data/candidates.json``, return the path.
+    """Write the OGE rows through the shared, source-scoped writer; return the path.
 
-    Extracted from ``main()`` (Handoff #28) so the collector wrapper can write
-    the same output the CLI does without duplicating the serialization. The
-    serialization is unchanged: 2-space indent, ``ensure_ascii=False``, trailing
-    newline — keeping re-runs byte-identical.
+    Since Handoff #36 the OGE collector no longer overwrites the whole file. It
+    hands its freshly emitted rows to ``collectors.common.candidate_writer``
+    scoped to ``oge_278``: the writer regenerates only the OGE slice, preserves
+    the ADV/IAPD sibling rows, reuses each OGE row's existing ``CAND-###`` by
+    ``source_entity_key``, and writes back in stable global id order with the same
+    serialization as before (byte-identical on an unchanged run).
     """
-    OUTPUT.write_text(
-        json.dumps(candidates, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-    )
-    return OUTPUT
+    path, _ = candidate_writer.write_source_rows(SOURCE, candidates, source_entity_key)
+    return path
 
 
 def main():
     candidates = build()
     write_candidates(candidates)
-    print(f"wrote {len(candidates)} candidates -> {OUTPUT.relative_to(REPO_ROOT)}")
+    print(f"wrote {len(candidates)} OGE candidates -> {OUTPUT.relative_to(REPO_ROOT)}")
 
 
 if __name__ == "__main__":
