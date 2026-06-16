@@ -46,10 +46,11 @@ from .collector import load_seed
 SAMPLES = candidate_writer.REPO_ROOT / "data" / "samples"
 
 # The disposition tally the committed ADV slice must hold. ADV candidates emit
-# `unreviewed` only (no dispositions yet); the seed is Affinity's three non-US
-# funds. Drift here is a regression even if byte-equality somehow passes.
+# `unreviewed` only (no dispositions yet). The seed is Affinity's three non-US
+# funds (CRD 315482) plus 1789 Capital's fifteen non-US funds (CRD 335007,
+# Handoff #42). Drift here is a regression even if byte-equality somehow passes.
 EXPECTED_TALLY: dict[str, int] = {
-    "unreviewed": 3,
+    "unreviewed": 18,
 }
 
 

@@ -1,10 +1,15 @@
 {
-  "_comment": "Seeded covered-person-connected advisers for the ADV/IAPD collector (Handoff #36 seam; #37 covered_person). ADV is seeded, not discovered, so this is the ADV analog of the OGE collector's discover.py stub: a stable list the collector iterates. Each entry pairs a firm CRD with the covered person whose tie to the funds the candidate documents — the connection is known at collection (the seed IS the covered-person-connected list), not inferred. `crd` and `covered_person` are required; `adviser_name` is optional, for readability only. `covered_person` is authored in the Schedule A owner form the ingest already pulls (uppercase 'LAST, FIRST, MIDDLE', source-faithful as the candidate-layer filer/business_name sit, per Handoff #35); records-layer normalization is deferred. CRD 315482 = A FIN MANAGEMENT LLC (Affinity Partners), covered person Jared Kushner = Schedule A owner 'KUSHNER, JARED, COREY'. The covered-adviser inventory that grows this list — derived from the covered-persons definition in PROJECT.md — is a later handoff.",
+  "_comment": "Seeded covered-person-connected advisers for the ADV/IAPD collector (Handoff #36 seam; #37 covered_person). ADV is seeded, not discovered, so this is the ADV analog of the OGE collector's discover.py stub: a stable list the collector iterates. Each entry pairs a firm CRD with the covered person whose tie to the funds the candidate documents — the connection is known at collection (the seed IS the covered-person-connected list), not inferred. `crd` and `covered_person` are required; `adviser_name` is optional, for readability only. `covered_person` is authored in the Schedule A owner form the ingest already pulls (uppercase 'LAST, FIRST, MIDDLE', source-faithful as the candidate-layer filer/business_name sit, per Handoff #35); records-layer normalization is deferred. CRD 315482 = A FIN MANAGEMENT LLC (Affinity Partners), covered person Jared Kushner = Schedule A owner 'KUSHNER, JARED, COREY'. CRD 335007 = 1789 CAPITAL MANAGEMENT, LLC, covered person Donald Trump Jr. (named-family prong, son; Handoff #42, covered-adviser inventory) authored as 'TRUMP, DONALD, JR' — UNLIKE Kushner, he is NOT a Schedule A owner of this filing; the ADV identifies him only by the 'DTJ' shorthand (per the inventory), so this covered_person is authored in Schedule A form rather than copied from a Schedule A row, and the exact SEC rendering of his name is unverified. The covered-adviser inventory that grows this list — derived from the covered-persons definition in PROJECT.md — is docs/references/covered-adviser-inventory.md.",
   "advisers": [
     {
       "crd": "315482",
       "adviser_name": "A FIN MANAGEMENT LLC",
       "covered_person": "KUSHNER, JARED, COREY"
+    },
+    {
+      "crd": "335007",
+      "adviser_name": "1789 CAPITAL MANAGEMENT, LLC",
+      "covered_person": "TRUMP, DONALD, JR"
     }
   ]
 }
