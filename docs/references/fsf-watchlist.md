@@ -31,7 +31,7 @@ Subjects don't share a source type. The eventual discovery/retrieval mechanism m
 | Tag | Source | Retrieval path | Parse status |
 |-----|--------|----------------|--------------|
 | `278e` | OGE Form 278e public financial disclosure | request-gated (OGE Form 201) or agency/White House PDF release; **no public bulk API** | parser built (`collectors/oge_278/`) |
-| `adv` | SEC Form ADV (investment advisers) | SEC IAPD / Investment Adviser Public Disclosure; public, structured | no parser yet |
+| `adv` | SEC Form ADV (investment advisers) | SEC IAPD / Investment Adviser Public Disclosure; public, structured | parser built (`collectors/adv_iapd/`) |
 | `sec-deal` | SEC transaction/ownership filings (13D/G, S-1, etc.) | EDGAR; public, structured | no parser yet |
 | `registry` | foreign corporate registry | per-jurisdiction; varies | manual |
 | `gov-doc` | government MOU, sovereign-fund disclosure, official statement | per-source; often press-released | manual |
@@ -107,7 +107,7 @@ A subject can carry more than one tag (a sitting official with both a 278e and a
 
 ## Deferred / owed
 
-- **Retrieval mechanism** (drop-directory or per-type fetchers): deferred until a source type has enough entries to justify automation. Currently 1 × `278e`, 1 × `adv` — not yet.
-- **ADV parser:** W-002 was worked manually (SC-009); a parser is justified only when a second `adv` subject appears.
+- **Retrieval mechanism** (drop-directory or per-type fetchers): deferred until a source type has enough entries to justify automation. Currently 1 × `278e`, 2 × `adv` — not yet.
+- **ADV parser:** done — built in #35/#36 (`collectors/adv_iapd/`). W-002 was worked manually (SC-009) before it existed; W-004 (1789) is now the second `adv` subject, worked through the parser.
 - **Lunate governance verification:** SC-009 surfaced Lunate (Abu Dhabi) as a sovereign-vehicle catalog candidate but it was **not** added — its governance (state-owned vs. state-adjacent) is unverified. Verify governance and catalog it on its own line if it clears the standard; keep it **distinct from MGX** (separate Abu Dhabi vehicle already in catalog via SC-007). PIF and QIA were already in `sovereign_entities.json` and needed no addition.
 - **Breadth pass:** a wider search for additional subjects (other principals with reported sovereign-source nexuses) runs *against this template* in a later session, so each candidate is evaluated, not just listed.
