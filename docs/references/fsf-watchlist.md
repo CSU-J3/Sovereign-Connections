@@ -1,7 +1,7 @@
 # FSF Watchlist — entry criterion, source taxonomy, and evaluated entries
 
 **Date:** 2026-05-30
-**Status:** living document; v0.3 (three entries: 2 evaluated, 1 out)
+**Status:** living document; v0.4 (four entries: 2 evaluated, 1 watch, 1 out)
 **Scope:** the research queue for the Foreign Sovereign Funds tracker. Subjects worth pulling and evaluating for a sovereign-source nexus, across all source types — NOT a 278e-pull queue. Filing status does not gate inclusion.
 **Owner:** CJ
 **Related:** `docs/references/methodology-note-catalog-inclusion.md` (the catalog rule this mirrors); PROJECT.md Defined Terms.
@@ -82,6 +82,19 @@ A subject can carry more than one tag (a sitting official with both a 278e and a
   - **Temerity Fund LP** — a small US private-equity commitment, no sovereign LP on the face of the record.
 - **Why not on prominence/association:** familial proximity to Jared Kushner's Affinity/PIF nexus (W-002) does **not** transfer. The criterion requires a named vehicle and a described tie in *this* subject's record; neither is present. Adding him on the family link alone is exactly the symmetry-guard failure mode the watchlist exists to prevent.
 - **Reopen condition:** only if reporting surfaces a sovereign LP inside one of the entity structures (a fund or vehicle in the portfolio with a sovereign limited partner). Absent that, stays `out`.
+
+### W-004 — Donald Trump Jr. / 1789 Capital Management, LLC
+- **Source type:** `adv`
+- **State:** `watch` — ADV primary record pulled and structured into candidates (CAND-172 through CAND-186, Handoff #42); non-US ownership is documented but no sovereign source is identified, so 1789 stays out of the SC catalog with a defined promotion trigger. Distinct from W-003 `out`: this entry has documented non-US ownership, not an absent nexus.
+- **Subject / qualifying interest:** 1789 Capital Management, LLC (CRD 335007). Covered person Donald Trump Jr., a named family member (the President's son) and partner at the firm. The qualifying financial interest is the partner/employment role under 5 CFR 2640.103(a), **not** Schedule A ownership — he is not a Schedule A owner of the adviser; the Form ADV references him only as "DTJ" in disclosing the New York Attorney General injunction barring him from serving as an officer or director of a New York entity. See `docs/references/covered-adviser-inventory.md`.
+- **Nexus:** 1789's funds report non-US beneficial ownership at scale, and the firm is reported to be open to sovereign-wealth-fund capital from countries it considers "pro-American." No public source names a sovereign limited partner in any 1789 fund.
+- **What is documented:**
+  - **SEC Form ADV** (CRD 335007, filing 2026-03-31): 15 of 26 private funds report non-US ownership at Schedule D 7.B. **Category 1.** Firm-level Item 5.F(3) non-US *client* AUM is $0; the per-fund 7.B beneficial-owner figure is the signal, not Item 5 — the two measure different things (see the inventory note on the distinction).
+  - **Reuters**, "Trump-linked venture fund 1789 Capital tops $1 billion in assets," September 8, 2025: the firm is open to accepting foreign investors including sovereign wealth funds from countries it considers "pro-American," per people familiar with the firm. **Category 3.** Establishes a stated willingness to take sovereign capital; names no specific sovereign fund and reports no specific sovereign investment. (Byline and canonical reuters.com URL not yet pinned.)
+- **Why it stays out:** the sovereign-source test requires a named foreign sovereign, sovereign wealth fund, state-owned enterprise, or controlling-interest chain, established through a category-1 source or category-3 reporting that cites underlying primary documents. Non-US ownership alone does not clear scope, because the owners may be private foreign nationals, which the definition excludes. A stated policy of accepting sovereign money is not a documented sovereign flow. No public source names a sovereign limited partner in any 1789 fund.
+- **Promotion trigger** (the forward-looking analog of W-003's reopen condition): a named sovereign limited partner (foreign treasury, SWF, SOE, or controlling-interest chain) in any 1789 fund, established through a category-1 source or category-3 reporting that cites underlying primary documents. On that, the relevant candidate among CAND-172 through CAND-186 promotes through the existing pipeline.
+- **Linked candidates:** CAND-172 through CAND-186 — the 15 ADV candidates emitted in #42, which stay `unreviewed`; the watchlist entry carries the disposition.
+- **Symmetry note:** evaluated on the documented fact pattern, not prominence. An opposite-party analogue — a President's child as a partner in a registered adviser whose funds report non-US ownership with no named sovereign limited partner — resolves the same way: a watch, not a record. Distinct from W-003 (Charles Kushner, `out`, no nexus at all); W-004 has documented non-US ownership but an unestablished sovereign source.
 
 ---
 
