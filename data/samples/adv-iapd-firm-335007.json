@@ -1,0 +1,281 @@
+{
+  "crd": "335007",
+  "legal_name": "1789 CAPITAL MANAGEMENT, LLC",
+  "sec_number": "801-134250",
+  "filing_id": "2078345",
+  "filing_date": "2026-03-31",
+  "source_dataset": "ADV_Filing_Data_20260301_20260331.zip",
+  "source_table": "IA_Schedule_D_7B1",
+  "item5": {
+    "regulatory_aum": 2725022048,
+    "non_us_aum": 0
+  },
+  "owners": [
+    {
+      "name": "1789 CAPITAL HOLDINGS, LLC",
+      "de_fe_i": "DE",
+      "title_or_status": "MEMBER",
+      "ownership_code": "E",
+      "control_person": "Y"
+    },
+    {
+      "name": "HANS, NORMAN, THEODORE",
+      "de_fe_i": "I",
+      "title_or_status": "CHIEF COMPLIANCE OFFICER",
+      "ownership_code": "NA",
+      "control_person": "N"
+    },
+    {
+      "name": "Malik, Omeed",
+      "de_fe_i": "I",
+      "title_or_status": "PRESIDENT AND SECRETARY",
+      "ownership_code": "NA",
+      "control_person": "Y"
+    },
+    {
+      "name": "BUSKIRK, CHRISTOPHER",
+      "de_fe_i": "I",
+      "title_or_status": "VICE PRESIDENT",
+      "ownership_code": "NA",
+      "control_person": "Y"
+    },
+    {
+      "name": "KNIGHTS COURT, LLC",
+      "de_fe_i": "DE",
+      "title_or_status": "BOARD OF MANAGERS",
+      "ownership_code": "D",
+      "control_person": "Y"
+    },
+    {
+      "name": "TELPERION, LLC",
+      "de_fe_i": "DE",
+      "title_or_status": "BOARD OF MANAGERS",
+      "ownership_code": "D",
+      "control_person": "Y"
+    },
+    {
+      "name": "Malik, Omeed",
+      "de_fe_i": "I",
+      "title_or_status": "MANAGING MEMBER",
+      "ownership_code": "E",
+      "control_person": "Y"
+    },
+    {
+      "name": "BUSKIRK, CHRISTOPHER",
+      "de_fe_i": "I",
+      "title_or_status": "MANAGING MEMBER",
+      "ownership_code": "E",
+      "control_person": "Y"
+    }
+  ],
+  "private_funds": [
+    {
+      "fund_name": "1789 CAPITAL VALENCE LP",
+      "fund_id": "805-4251663771",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 9537791,
+      "beneficial_owner_count": 20,
+      "percent_non_us_owners": 39
+    },
+    {
+      "fund_name": "1789 REAL ESTATE FUND I, LP",
+      "fund_id": "805-2212984031",
+      "fund_type": "Real Estate Fund",
+      "gross_asset_value": 87000000,
+      "beneficial_owner_count": 10,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL ORACLE, LP",
+      "fund_id": "805-7025033176",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 27878863,
+      "beneficial_owner_count": 2,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL TREEHOUSE, LP",
+      "fund_id": "805-8793475171",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 16424759,
+      "beneficial_owner_count": 4,
+      "percent_non_us_owners": 43
+    },
+    {
+      "fund_name": "1789 CAPITAL TREEHOUSE II, LP",
+      "fund_id": "805-6640342038",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 18120620,
+      "beneficial_owner_count": 2,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL LAKEHOUSE, LP",
+      "fund_id": "805-6326817051",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 34998280,
+      "beneficial_owner_count": 8,
+      "percent_non_us_owners": 83
+    },
+    {
+      "fund_name": "1789 PARALLEL FUND I, LP",
+      "fund_id": "805-2539763838",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 345215009,
+      "beneficial_owner_count": 4,
+      "percent_non_us_owners": 93
+    },
+    {
+      "fund_name": "1789 ODYSSEY II, LP",
+      "fund_id": "805-6149293735",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 46623327,
+      "beneficial_owner_count": 4,
+      "percent_non_us_owners": 99
+    },
+    {
+      "fund_name": "1789 CAPITAL CO-INVEST I, LP",
+      "fund_id": "805-5317096061",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 24858,
+      "beneficial_owner_count": 7,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL ODYSSEY, LP",
+      "fund_id": "805-5316747474",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 34994396,
+      "beneficial_owner_count": 32,
+      "percent_non_us_owners": 1
+    },
+    {
+      "fund_name": "1789 CAPITAL PATRIOT LP",
+      "fund_id": "805-9018751806",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 38977694,
+      "beneficial_owner_count": 15,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 NIRVANA LP",
+      "fund_id": "805-2527214322",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 42905058,
+      "beneficial_owner_count": 16,
+      "percent_non_us_owners": 20
+    },
+    {
+      "fund_name": "1789 CAPITAL SI LP",
+      "fund_id": "805-1432254801",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 111144274,
+      "beneficial_owner_count": 47,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL RO, LP",
+      "fund_id": "805-1163271569",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 13514349,
+      "beneficial_owner_count": 58,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL MYNT LP",
+      "fund_id": "805-9181422478",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 8869018,
+      "beneficial_owner_count": 3,
+      "percent_non_us_owners": 37
+    },
+    {
+      "fund_name": "1789 CAPITAL MATRIX II, LP",
+      "fund_id": "805-4771002654",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 129751244,
+      "beneficial_owner_count": 18,
+      "percent_non_us_owners": 3
+    },
+    {
+      "fund_name": "1789 CAPITAL BH, LP",
+      "fund_id": "805-8749711268",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 10346254,
+      "beneficial_owner_count": 32,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL FUND I LP",
+      "fund_id": "805-7946256324",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 890248571,
+      "beneficial_owner_count": 98,
+      "percent_non_us_owners": 46
+    },
+    {
+      "fund_name": "1789 PACIFIC ALLIANCE US GROWTH EQUITY FUND, LP",
+      "fund_id": "805-9396461882",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 382160184,
+      "beneficial_owner_count": 3,
+      "percent_non_us_owners": 55
+    },
+    {
+      "fund_name": "1789 CAPITAL CHPS LP",
+      "fund_id": "805-5212109374",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 40889435,
+      "beneficial_owner_count": 11,
+      "percent_non_us_owners": 22
+    },
+    {
+      "fund_name": "1789 CAPITAL MATRIX, LP",
+      "fund_id": "805-9757751816",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 165803163,
+      "beneficial_owner_count": 55,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 NIRVANA II LP",
+      "fund_id": "805-2905187978",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 5312614,
+      "beneficial_owner_count": 2,
+      "percent_non_us_owners": 0
+    },
+    {
+      "fund_name": "1789 CAPITAL CHPS II, LP",
+      "fund_id": "805-3025065944",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 11051505,
+      "beneficial_owner_count": 4,
+      "percent_non_us_owners": 63
+    },
+    {
+      "fund_name": "1789 CAPITAL LAKEHOUSE II, LP",
+      "fund_id": "805-9833002332",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 43555664,
+      "beneficial_owner_count": 35,
+      "percent_non_us_owners": 52
+    },
+    {
+      "fund_name": "1789 CAPITAL MATRIX III, LP",
+      "fund_id": "805-2861344263",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 9675118,
+      "beneficial_owner_count": 4,
+      "percent_non_us_owners": 94
+    },
+    {
+      "fund_name": "1789 PACIFIC ALLIANCE SPECIAL SITUATIONS FUND, LP",
+      "fund_id": "805-9661753820",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 200000000,
+      "beneficial_owner_count": 2,
+      "percent_non_us_owners": 0
+    }
+  ]
+}

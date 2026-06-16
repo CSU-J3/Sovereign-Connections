@@ -5959,5 +5959,560 @@
     "promoted_to": null,
     "reviewed_at": null,
     "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-172",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL FUND I LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-7946256324",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 890248571,
+      "percent_non_us_owners": 46,
+      "beneficial_owner_count": 98
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 46% beneficially owned by non-United States persons, $890,248,571 gross asset value across 98 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-173",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 PACIFIC ALLIANCE US GROWTH EQUITY FUND, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-9396461882",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 382160184,
+      "percent_non_us_owners": 55,
+      "beneficial_owner_count": 3
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 55% beneficially owned by non-United States persons, $382,160,184 gross asset value across 3 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-174",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 PARALLEL FUND I, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-2539763838",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 345215009,
+      "percent_non_us_owners": 93,
+      "beneficial_owner_count": 4
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 93% beneficially owned by non-United States persons, $345,215,009 gross asset value across 4 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-175",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL MATRIX II, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-4771002654",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 129751244,
+      "percent_non_us_owners": 3,
+      "beneficial_owner_count": 18
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 3% beneficially owned by non-United States persons, $129,751,244 gross asset value across 18 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-176",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 ODYSSEY II, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-6149293735",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 46623327,
+      "percent_non_us_owners": 99,
+      "beneficial_owner_count": 4
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 99% beneficially owned by non-United States persons, $46,623,327 gross asset value across 4 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-177",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL LAKEHOUSE II, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-9833002332",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 43555664,
+      "percent_non_us_owners": 52,
+      "beneficial_owner_count": 35
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 52% beneficially owned by non-United States persons, $43,555,664 gross asset value across 35 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-178",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 NIRVANA LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-2527214322",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 42905058,
+      "percent_non_us_owners": 20,
+      "beneficial_owner_count": 16
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 20% beneficially owned by non-United States persons, $42,905,058 gross asset value across 16 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-179",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL CHPS LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-5212109374",
+      "fund_type": "Venture Capital Fund",
+      "gross_asset_value": 40889435,
+      "percent_non_us_owners": 22,
+      "beneficial_owner_count": 11
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 22% beneficially owned by non-United States persons, $40,889,435 gross asset value across 11 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-180",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL LAKEHOUSE, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-6326817051",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 34998280,
+      "percent_non_us_owners": 83,
+      "beneficial_owner_count": 8
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 83% beneficially owned by non-United States persons, $34,998,280 gross asset value across 8 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-181",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL ODYSSEY, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-5316747474",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 34994396,
+      "percent_non_us_owners": 1,
+      "beneficial_owner_count": 32
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 1% beneficially owned by non-United States persons, $34,994,396 gross asset value across 32 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-182",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL TREEHOUSE, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-8793475171",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 16424759,
+      "percent_non_us_owners": 43,
+      "beneficial_owner_count": 4
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 43% beneficially owned by non-United States persons, $16,424,759 gross asset value across 4 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-183",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL CHPS II, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-3025065944",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 11051505,
+      "percent_non_us_owners": 63,
+      "beneficial_owner_count": 4
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 63% beneficially owned by non-United States persons, $11,051,505 gross asset value across 4 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-184",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL MATRIX III, LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-2861344263",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 9675118,
+      "percent_non_us_owners": 94,
+      "beneficial_owner_count": 4
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 94% beneficially owned by non-United States persons, $9,675,118 gross asset value across 4 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-185",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL VALENCE LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-4251663771",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 9537791,
+      "percent_non_us_owners": 39,
+      "beneficial_owner_count": 20
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 39% beneficially owned by non-United States persons, $9,537,791 gross asset value across 20 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
+  },
+  {
+    "id": "CAND-186",
+    "source_filing": {
+      "source": "adv_iapd",
+      "crd": "335007",
+      "sec_number": "801-134250",
+      "filing_id": "2078345",
+      "filing_date": "2026-03-31",
+      "form": "SEC Form ADV Part 1A, Schedule D Section 7.B",
+      "table": "IA_Schedule_D_7B1",
+      "source_dataset": "ADV_Filing_Data_20260301_20260331.zip"
+    },
+    "filer": "1789 CAPITAL MANAGEMENT, LLC",
+    "business_name": "1789 CAPITAL MYNT LP",
+    "covered_person": "TRUMP, DONALD, JR",
+    "descriptor": null,
+    "business_id": null,
+    "disclosure_type": "adv_private_fund",
+    "raw_value": {
+      "fund_id": "805-9181422478",
+      "fund_type": "Private Equity Fund",
+      "gross_asset_value": 8869018,
+      "percent_non_us_owners": 37,
+      "beneficial_owner_count": 3
+    },
+    "rollup_value": {
+      "firm_regulatory_aum": 2725022048,
+      "firm_non_us_aum": 0
+    },
+    "scope_hypothesis": "Schedule D 7.B reports this fund 37% beneficially owned by non-United States persons, $8,869,018 gross asset value across 3 beneficial owner(s). Form ADV reports only the aggregate non-US percentage and owner count — it does not name the owners. Whether any beneficial owner is a sovereign-wealth fund is unverified and not established by the ADV; secondary-source identity work is required before promotion. No sovereign connection is asserted.",
+    "promotion_status": "unreviewed",
+    "disposition_reason": null,
+    "disposition_rule": null,
+    "promoted_to": null,
+    "reviewed_at": null,
+    "scope_hypothesis_superseded": false
   }
 ]
