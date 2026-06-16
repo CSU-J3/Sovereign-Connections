@@ -155,11 +155,13 @@ Investigative reporting plays a larger role here than in the other two trackers 
 
 ## Evidence hierarchy (strongest to weakest)
 
-1. Primary records: OGE 278 filings, SEC filings, court filings, FARA registrations, CFIUS public determinations, congressional testimony, foreign jurisdiction registry filings
+1. Primary records: OGE 278 filings, SEC filings, court filings, FARA registrations, CFIUS public determinations, congressional testimony and hearing transcripts, foreign jurisdiction registry filings
 2. Tracker data with traceable primary record (federal or foreign-jurisdiction)
 3. Investigative reporting from outlets with demonstrated foreign-financial-flow capacity (NYT, WaPo, ProPublica, FT, Bloomberg, Reuters, AP, OCCRP) where the reporting cites underlying documents
 4. Analysis from named experts at established institutions (CREW, POGO, academic ethics scholars, Brookings, Lawfare contributors, the foreign-influence specialist community)
 5. Opinion writing
+
+Congressional committee documents are tiered by the type of document, not lumped together. Testimony and hearing transcripts are tier 1, sworn or verbatim primary evidence. Committee reports, and letters or referrals that rest on a traceable primary record (where the fact at issue is established in the underlying filings the document cites), are tier 2: a committee report characterizes evidence rather than being the underlying record, so it sits below the primary filings it cites. A committee statement that is pure position or opinion with no traceable underlying record falls to tier 4.
 
 Don't dress up category 4 or 5 as category 1. The foreign sovereign beat in particular has a temptation to lean on category 3 because primary records are harder to obtain. Resist; cite the underlying document the reporting references, not the reporting alone.
 
