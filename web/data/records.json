@@ -7,9 +7,36 @@
     "source": "MULTI",
     "period": "2017-2020",
     "frameworks": ["EMOL", "OGE"],
-    "evidence_category": [1, 2, 3],
+    "evidence_category": [1, 2, 4],
     "summary": "First-term hospitality-revenue fact pattern. CREW reporting, House Oversight Committee documents, and the underlying foreign Emoluments litigation established the records. Comparative for methodology calibration on what counts as a foreign government official acting in official capacity payment.",
-    "documented_amount": "Various"
+    "documented_amount": "Various",
+    "primary_sources": [
+      {
+        "type": "court_filing",
+        "label": "Citizens for Responsibility and Ethics in Washington v. Trump, 953 F.3d 178 (2d Cir. 2019). The Second Circuit reinstated the first foreign Emoluments Clause suit, holding the hospitality plaintiffs (CREW, ROC United, Eric Goode, Jill Phaneuf) had competitor standing over foreign-government patronage of Trump properties. S.D.N.Y. No. 1:17-cv-00458 (Daniels, J.), decided September 13, 2019. Rehearing en banc denied, 971 F.3d 102 (2d Cir. 2020), five judges dissenting; vacated as moot, Trump v. CREW, No. 20-330, 141 S. Ct. 1262 (2021). Distinct from SC-004 (D.C. and Maryland) though closely analogous.",
+        "url": "https://clearinghouse.net/case/15957/",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "advocacy_report",
+        "organization": "Citizens for Responsibility and Ethics in Washington (CREW)",
+        "published_at": "2018-01",
+        "label": "CREW, 'Profiting from the Presidency' (year-one report, January 2018). Documented at least 11 foreign governments patronizing Trump businesses and 40 special-interest events at Trump properties in the first year, the Trump International Hotel in Washington prominent among them.",
+        "url": "https://www.citizensforethics.org/reports-investigations/crew-reports/profiting-from-the-presidency/",
+        "category": 4,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "congressional_document",
+        "document_type": "report",
+        "chamber_or_committee": "House Committee on Oversight and Accountability (Democratic minority staff)",
+        "document_date": "2024-01-04",
+        "label": "House Oversight Democratic minority staff report, 'White House for Sale: How Princes, Prime Ministers, and Premiers Paid Off President Trump,' January 4, 2024, 156 pages. Found at least $7.8M in payments from 20-plus foreign governments and state-owned entities to four Trump properties (Trump International Hotel Washington, Trump International Hotel Las Vegas, Trump World Tower and Trump Tower New York) over 2017-2018, drawn from Mazars USA records obtained through litigation; China the largest source at roughly $5.6M. Ranking Member Raskin foreword.",
+        "category": 2,
+        "retrieved_at": "2026-06-16"
+      }
+    ]
   },
   {
     "id": "SC-003",
@@ -19,9 +46,36 @@
     "source": "CHN",
     "period": "2017-2018",
     "frameworks": ["EMOL", "FARA"],
-    "evidence_category": [2],
+    "evidence_category": [1, 3, 4],
     "summary": "Tests the state-grant-as-payment framing. Trademarks were awarded by a Chinese state IP office on a non-routine timeline coinciding with her White House role. Comparative reference for whether non-cash sovereign benefits register as foreign Emoluments Clause flows.",
-    "documented_amount": "18+ trademarks granted"
+    "documented_amount": "18+ trademarks granted",
+    "primary_sources": [
+      {
+        "type": "corporate_registration",
+        "registration_type": "trademark",
+        "registry": "China Trademark Office, State Administration for Industry and Commerce (SAIC); trademark functions reorganized into the China National Intellectual Property Administration (CNIPA) in 2018",
+        "jurisdiction": "China",
+        "label": "China Trademark Office grants to Ivanka Trump Marks LLC, 2017-2018. Grant clusters coincided with administration policy events: provisional approvals around April 6, 2017 (the day Ivanka Trump and Jared Kushner dined with Xi Jinping at Mar-a-Lago); registration and first-trial approvals in May and June 2018 around the ZTE sanctions reversal and a contemporaneous reported $500M Chinese loan to a Trump Organization-linked Indonesia project; and 18 further marks granted to Trump and Ivanka-linked companies over October to November 2018, bringing the year total to roughly 34. Applicant Ivanka Trump Marks LLC. Individual registration numbers are held in the registry database but were not published in the source reporting (disclosed gap).",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "press_disclosure",
+        "label": "Associated Press reporting on the China trademark grants to Ivanka Trump Marks LLC (Erika Kinetz), 2017-2019, establishing the counts and the timing relative to trade negotiations and the ZTE reversal; the May 2018 cluster reported May 28, 2018 and the 18-marks-in-two-months tally reported November 2018.",
+        "url": "https://www.cbsnews.com/news/ivanka-trump-receives-5-trademarks-from-china-amid-trade-talks/",
+        "category": 3,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "advocacy_report",
+        "organization": "Citizens for Responsibility and Ethics in Washington (CREW)",
+        "published_at": "2018-05",
+        "label": "CREW trademark-database reviews flagging the timing of the China grants relative to Trump administration China policy, 2018; the May 2018 registration approvals coinciding with the ZTE announcement noted as the worked example.",
+        "url": "https://www.citizensforethics.org/reports-investigations/crew-investigations/ivanka-trumps-business-wins-approval-for-more-china-trademarks/",
+        "category": 4,
+        "retrieved_at": "2026-06-16"
+      }
+    ]
   },
   {
     "id": "SC-004",
@@ -80,7 +134,36 @@
     "frameworks": ["FARA", "LDA"],
     "evidence_category": [1, 2, 3],
     "summary": "Documented for methodology completeness as the case the framework excludes despite political salience. Burisma is a Cyprus-registered private holding company; no Ukrainian state ownership in the documented record. State ties run through the owner's prior ministerial tenure, not through ownership structure. The exclusion is symmetrical: a Republican-side analogue with the same facts would also fall outside scope.",
-    "documented_amount": "~$3.4M to Rosemont Seneca Bohai LLC (entity-level inflows)"
+    "documented_amount": "~$3.4M to Rosemont Seneca Bohai LLC (entity-level inflows)",
+    "primary_sources": [
+      {
+        "type": "corporate_registration",
+        "registration_type": "company_registry",
+        "registry": "Cyprus Department of Registrar of Companies and Official Receiver (DRCOR)",
+        "jurisdiction": "Cyprus",
+        "identifier": "HE186236",
+        "filed_at": "2006-10-26",
+        "label": "Burisma Holdings Limited, Cyprus registration HE186236, Department of Registrar of Companies and Official Receiver. Incorporated as a Cyprus private limited company on October 26, 2006; registered office in Limassol; status dissolution following voluntary liquidation, dissolved February 16, 2023. Owned by Brociti Investments Limited (Mykola Zlochevsky). The registry record shows private ownership with no Ukrainian state shareholding, the documentary basis for the out-of-scope classification.",
+        "url": "https://opencorporates.com/companies/cy/HE186236",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "congressional_document",
+        "document_type": "report",
+        "chamber_or_committee": "Senate Committee on Homeland Security and Governmental Affairs and Senate Committee on Finance (majority staff, joint)",
+        "document_date": "2020-09-23",
+        "label": "Senate HSGAC and Finance majority staff joint report, 'Hunter Biden, Burisma, and Corruption: The Impact on U.S. Government Policy and Related Concerns,' September 23, 2020. Characterizes the Burisma board compensation and related financial flows. Cited for the documented-record basis of the case, not for a sovereign nexus, which the report does not establish.",
+        "category": 2,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "press_disclosure",
+        "label": "Reuters review of bank records reporting that Burisma sent approximately $3.4 million to Rosemont Seneca Bohai LLC between April 2014 and November 2015, the entity-level inflow behind the documented_amount. Reuters noted it could not independently verify the documents or how much Hunter Biden personally received.",
+        "category": 3,
+        "retrieved_at": "2026-06-16"
+      }
+    ]
   },
   {
     "id": "SC-007",
