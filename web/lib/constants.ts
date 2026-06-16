@@ -76,14 +76,14 @@ export const SOURCE_LABEL: Record<Source, string> = {
   NA: "NA",
 };
 
-const RECORDS_WITH_WALK = new Set(["SC-001", "SC-002", "SC-006"]);
+const RECORDS_WITH_WALK = new Set(["SC-009", "SC-002", "SC-006"]);
 
 export function hasWalkButton(recordId: string): boolean {
   return RECORDS_WITH_WALK.has(recordId);
 }
 
 export const WALK_PROMPTS: Record<string, string> = {
-  "SC-001":
+  "SC-009":
     "Walk the sovereign-adjacent definition through the Affinity Partners record using PROJECT.md categories.",
   "SC-002":
     "Walk the foreign-Emoluments-Clause framework through the Trump Organization foreign-government bookings record using PROJECT.md categories.",
