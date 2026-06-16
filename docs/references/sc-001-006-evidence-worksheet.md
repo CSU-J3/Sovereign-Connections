@@ -14,35 +14,11 @@ Abbreviation expansions (e.g. "NYT → New York Times") are flagged as inference
 
 ## SC-001 — Affinity Partners
 
-**Record header**
-- ID: SC-001
-- Title / business: Affinity Partners
-- Family member: Jared Kushner
-- Scope: COMP
-- `primary_sources`: **absent** (field not present on the record)
+**Retired into SC-009 per Handoff #39 (2026-06-16).**
 
-**Evidence prose extracted from `summary`**
-- "SEC filings establish the financial interest"
-- "NYT and FT reporting establish the PIF source"
+SC-001 (Affinity Partners, COMP) covered the same business and the same money as SC-009 (A Fin Management LLC / Affinity Partners, LIVE) and carried no `primary_sources` of its own. Its evidence resolved entirely into SC-009: the "SEC filings" leg is the A Fin Management Form ADV already cited on SC-009, and the "NYT reporting" leg is the April 10, 2022 New York Times screening-panel account, now a dated `press_disclosure` on SC-009. The "FT" leg of SC-001's summary did not resolve to a distinct, citable Financial Times article: the screening-panel account is a New York Times exclusive attributed by other outlets to the Times, and no separate FT piece with a byline, date, or URL was located. That is recorded here as a disclosed gap rather than asserted as a source.
 
-**Per-phrase mapping**
-
-1. "SEC filings establish the financial interest"
-   - Likely variant: `sec_filing`
-   - Fields the variant needs but the record lacks: form number/type, filer/registrant name, filing date, URL/accession number. (Affinity Partners is a registered investment adviser, so a Form ADV is plausible — but the record does not say so; do not assume.)
-   - Already present supporting the mapping: business name "Affinity Partners"; family member "Jared Kushner"; `source: PIF`; `documented_amount: "$2 billion"`. No URL, no date, no specific filing named.
-
-2. "NYT and FT reporting establish the PIF source"
-   - Likely variant: `press_disclosure` ×2 (the phrase names two outlets — NYT and FT — so it resolves to two separate press entries).
-   - Fields each entry needs but the record lacks: publisher (NYT and FT are abbreviations — *inferred* expansions New York Times and Financial Times, not in the text), article title, publication date, byline, URL.
-   - Already present supporting the mapping: outlet abbreviations "NYT" and "FT"; the claim they "establish the PIF source". No titles, dates, or URLs.
-
-**Open questions**
-- "SEC filings" is plural and unspecified. Which registrant filed — Affinity Partners itself, a portfolio company, or a related entity — and which form(s)? The record does not say.
-- "NYT and FT reporting" names no specific articles; the research pass needs to identify which pieces.
-
-**Coverage estimate**
-High — the `summary` carries two evidence sentences and both are surfaced (one `sec_filing`, two `press_disclosure`). All evidence claims in the prose are captured, though every phrase is non-specific (no titles, dates, or URLs to transcribe).
+Because SC-001 added nothing SC-009 lacked, it was retired rather than split. The SC-001 ID stays retired and unused; SC-002 through SC-009 were not renumbered. References that named SC-001 as the Affinity comparator (e.g. the PIF entity note in `sovereign_entities.json`) were repointed to SC-009.
 
 ---
 
@@ -205,7 +181,7 @@ Low. The `summary` is predominantly methodological framing about why the case is
 
 | Record | Evidence phrases | Variants implied | Coverage |
 |---|---|---|---|
-| SC-001 | 2 | `sec_filing`, `press_disclosure` ×2 | High |
+| SC-001 | retired | retired into SC-009 (Handoff #39) | retired |
 | SC-002 | 3 | `press_disclosure`/`advocacy_report` (ambiguous), `congressional_letter`/generic (ambiguous), `court_filing` | Moderate |
 | SC-003 | 1 | reserved `corporate_registration` (imperfect) | Low |
 | SC-004 | 1 (spanning 2 stages) | `court_filing` | High |
@@ -216,6 +192,6 @@ Low. The `summary` is predominantly methodological framing about why the case is
 - CREW (SC-002): `press_disclosure` vs. reserved `advocacy_report` — a methodology call on how advocacy-organization material is classified.
 - "House Oversight Committee documents" (SC-002): no active variant cleanly covers congressional *documents* that are not letters.
 - State IP-office grants (SC-003) and corporate-registry records (SC-006): no active variant covers either; reserved `corporate_registration` is the nearest, and a dedicated variant may be warranted.
-- SC-001, SC-002, SC-005 all lack dates on at least one source; SC-004 is the only record whose `summary` carries a usable date.
+- SC-002 and SC-005 lack dates on at least one source; SC-004 is the only record whose `summary` carries a usable date. (SC-001 retired into SC-009 per Handoff #39.)
 
 *End of worksheet. No record content or schema was changed in producing this document.*

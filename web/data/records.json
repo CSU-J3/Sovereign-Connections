@@ -1,17 +1,5 @@
 [
   {
-    "id": "SC-001",
-    "business": "Affinity Partners",
-    "family_member": "Jared Kushner",
-    "scope": "COMP",
-    "source": "PIF",
-    "period": "2021-PRES",
-    "frameworks": ["EMOL", "FIRRMA", "OGE", "208"],
-    "evidence_category": [2],
-    "summary": "The closest documented direct analogue to the post-2025 fact pattern. SEC filings establish the financial interest; NYT and FT reporting establish the PIF source. Pre-2025 timing places it in the comparative set rather than the live tracker.",
-    "documented_amount": "$2 billion"
-  },
-  {
     "id": "SC-002",
     "business": "Trump Organization foreign-government bookings",
     "family_member": "Donald Trump (and family beneficial interests)",
@@ -44,7 +32,23 @@
     "period": "2017-2021",
     "frameworks": ["EMOL"],
     "evidence_category": [1],
-    "summary": "Anchor case for the foreign Emoluments Clause modern doctrinal posture. Reached the Fourth Circuit on standing and zone-of-interests; vacated and remanded as moot in January 2021 after Trump left office. The case law on emolument definition still governs the framework this tracker uses."
+    "summary": "Anchor case for the foreign Emoluments Clause modern doctrinal posture. Reached the Fourth Circuit on standing and zone-of-interests; vacated and remanded as moot in January 2021 after Trump left office. The case law on emolument definition still governs the framework this tracker uses.",
+    "primary_sources": [
+      {
+        "type": "court_filing",
+        "label": "In re Trump (DC and Maryland v. Trump), 958 F.3d 274 (4th Cir. 2020) (en banc). Full court denied the President's petition for a writ of mandamus and allowed the foreign Emoluments Clause claims to proceed. D. Md. No. 8:17-cv-01596 (Messitte, J.), decided May 14, 2020.",
+        "url": "https://clearinghouse.net/case/15881/",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      },
+      {
+        "type": "court_filing",
+        "label": "Trump v. District of Columbia, No. 20-331, 141 S. Ct. 1262 (2021) (mem.). Cert granted, judgment vacated, case remanded to the Fourth Circuit with instructions to dismiss as moot under Munsingwear, January 25, 2021. Fourth Circuit vacatur 838 F. App'x 789 (4th Cir. 2021); D. Md. case closed May 11, 2021.",
+        "url": "https://clearinghouse.net/case/15881/",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      }
+    ]
   },
   {
     "id": "SC-005",
@@ -55,7 +59,16 @@
     "period": "2017-2020",
     "frameworks": ["EMOL"],
     "evidence_category": [1],
-    "summary": "DC Circuit held individual members of Congress lacked standing to sue over foreign Emoluments Clause violations absent institutional authorization. Load-bearing for any future enforcement challenge."
+    "summary": "DC Circuit held individual members of Congress lacked standing to sue over foreign Emoluments Clause violations absent institutional authorization. Load-bearing for any future enforcement challenge.",
+    "primary_sources": [
+      {
+        "type": "court_filing",
+        "label": "Blumenthal v. Trump, 949 F.3d 14 (D.C. Cir. 2020) (per curiam). The D.C. Circuit held that individual members of Congress lack standing to sue over the Foreign Emoluments Clause absent institutional authorization. No. 19-5237, decided February 7, 2020; cert denied, 141 S. Ct. 553 (2020). D.D.C. No. 1:17-cv-01154 (Sullivan, J.). Not vacated in the 2021 moot-vacatur wave; remains good law on legislative standing.",
+        "url": "https://clearinghouse.net/case/15893/",
+        "category": 1,
+        "retrieved_at": "2026-06-16"
+      }
+    ]
   },
   {
     "id": "SC-006",
@@ -215,11 +228,14 @@
         "category": 1
       },
       {
-        "label": "House Committee on Oversight and Reform correspondence on the PIF–Affinity Partners commitment (Rep. Maloney, 2022), reporting the PIF screening-panel objection overruled by MBS",
         "type": "congressional_document",
         "document_type": "letter",
         "chamber_or_committee": "House Committee on Oversight and Reform",
-        "category": 2
+        "document_date": "2022-06-02",
+        "label": "House Oversight Chairwoman Carolyn Maloney, letter to Jared Kushner opening the committee probe of the Saudi PIF investment in A Fin Management LLC (Affinity), June 2, 2022. States the $2B PIF raise and Affinity's filing-indicated roughly $25M per year in management fees, and notes Affinity was incorporated in Delaware on January 21, 2021, the day after the first administration ended.",
+        "url": "https://oversightdemocrats.house.gov/news/press-releases/chairwoman-maloney-launches-probe-of-saudi-government-s-2-billion-investment-in",
+        "category": 2,
+        "retrieved_at": "2026-06-16"
       },
       {
         "label": "Senate Finance Committee correspondence on PIF–Affinity Partners (Wyden investigation, 2022–2024)",
@@ -229,14 +245,17 @@
         "category": 2
       },
       {
-        "label": "NYT reporting on the ~$2B PIF anchor commitment to Affinity and the screening-panel override by MBS (2022)",
         "type": "press_disclosure",
-        "category": 3
+        "label": "David D. Kirkpatrick and Kate Kelly, 'Before Giving Billions to Jared Kushner, Saudi Investment Fund Had Big Doubts,' The New York Times, April 10, 2022. Documents-based account of the PIF screening panel recommending rejection (firm inexperience, an asset-management fee it called excessive, public-relations risk from Kushner's prior White House role) and the full PIF board under Mohammed bin Salman overruling it days later.",
+        "category": 3,
+        "retrieved_at": "2026-06-16"
       },
       {
-        "label": "Reuters reporting that the Qatar Investment Authority and Abu Dhabi's Lunate committed ~$1.5B combined to Affinity (2024)",
         "type": "press_disclosure",
-        "category": 3
+        "label": "Iain Withers, 'Kushner's Affinity's assets jump to $4.8 billion after Gulf cash injection,' Reuters, January 2025. Reports the $1.5B 2024 commitment from the Qatar Investment Authority and Abu Dhabi's Lunate, per Kushner's December 2024 podcast remarks and the A Fin Management ADV. Corroborated by Bloomberg, 'Kushner's Affinity Gets Additional $1.5 Billion From Qatar, Abu Dhabi's Lunate,' December 20, 2024.",
+        "url": "https://www.bloomberg.com/news/articles/2024-12-20/jared-kushner-s-affinity-gets-1-5-billion-more-from-qatar-abu-dhabi-s-lunate",
+        "category": 3,
+        "retrieved_at": "2026-06-16"
       }
     ]
   }
