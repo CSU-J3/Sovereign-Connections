@@ -168,6 +168,12 @@ export interface SovereignRecord {
   documented_amount?: string;
   primary_sources?: PrimarySource[];
   convergent_interest_flag?: boolean;
+  // Soft-flag (Handoff #49). Presence excludes the record from the headline LIVE
+  // count while it stays visible in the dataset and the LIVE filter view; the
+  // string is the documented reason. Distinct from `convergent_interest_flag`,
+  // which elevates rather than excludes. The headline count (Handoff #50)
+  // consumes this field.
+  headline_exclusion_reason?: string;
 }
 
 export interface SovereignEntity {

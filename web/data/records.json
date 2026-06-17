@@ -316,7 +316,8 @@
         "url": "https://www.bisnow.com/new-york/news/hotel/pakistan-reaches-agreement-with-us-to-redevelop-nyc-hotel-133331",
         "category": 3
       }
-    ]
+    ],
+    "headline_exclusion_reason": "Logged as a v2.0 covered-intermediary watch entry. As of February 2026, Witkoff Group is not a party to the Roosevelt Hotel MOU and no PIA-source flow to a Witkoff entity is documented; post-privatization PIA Investments carries only a minority Pakistani-government stake. Promotes to a headline record if a PIA-source flow to a Witkoff entity, or a Witkoff Group contractual position in the redevelopment, is documented."
   },
   {
     "id": "SC-009",
