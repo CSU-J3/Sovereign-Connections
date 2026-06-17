@@ -93,6 +93,9 @@ interface PrimarySourceBase {
  * Note: schema proposal v2 keyed this union on `category`, which collided with
  * the pre-existing integer evidence-tier field of the same name. Per Handoff
  * #21 sign-off the discriminant is `type`; `category` stays the evidence tier.
+ *
+ * Validated at runtime in CI by `tools/validate_primary_sources.py` (Handoff #48),
+ * which encodes these same rules — update both when adding or changing a variant.
  */
 export type PrimarySource =
   // Generic (untyped) source — the pre-existing flat shape.
