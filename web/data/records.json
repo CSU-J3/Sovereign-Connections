@@ -178,7 +178,11 @@
     "documented_amount": "$500M Aryam stake (Tahnoon, Jan 2025); $2B MGX-Binance via USD1 (May 2025)",
     "primary_sources": [
       {
+        "type": "oge_278e",
+        "filing_type": "new_entrant",
+        "certification_status": "filer_signed_only",
         "label": "Witkoff OGE Form 278e (New Entrant Report, August 13, 2025)",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2025/09/Witkoff-Steven.pdf",
         "category": 1
       },
       {
@@ -186,23 +190,34 @@
         "category": 1
       },
       {
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "House Select Committee on the CCP",
+        "document_date": "2026-02-04",
         "label": "House Select Committee on the CCP, letter to Zach Witkoff, February 4, 2026",
         "category": 2
       },
       {
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "U.S. Senate",
         "label": "Warren-Murphy letter on Witkoff OGE form ethics-officer signoff, November 2025",
         "category": 2
       },
       {
+        "type": "press_disclosure",
         "label": "NYT, 'Where Mideast Envoy Pitched Peace, His Son Pitched Investors' (Kamin & Hope, September 26, 2025; corrected October 5, 2025)",
         "url": "https://www.nytimes.com/2025/09/26/business/witkoff-son-qatar-gaza.html",
         "category": 3
       },
       {
+        "type": "press_disclosure",
         "label": "WSJ, 'Spy Sheikh Secret Stake Trump Crypto Tahnoon' series, January 31, 2026",
         "category": 3
       },
       {
+        "type": "advocacy_report",
+        "organization": "Public Citizen",
         "label": "Public Citizen analysis of WSJ-reported documents, January 2026",
         "category": 4
       },
@@ -211,11 +226,13 @@
         "category": 1
       },
       {
+        "type": "press_disclosure",
         "label": "Dawn (Pakistan), 'Pakistan signs MoU with Donald Trump-linked World Liberty Finance', January 14, 2026",
         "url": "https://www.dawn.com/news/1966922",
         "category": 3
       },
       {
+        "type": "press_disclosure",
         "label": "CoinDesk, 'Pakistan regulator inks MoU with WLFI-linked crypto business for stablecoin-based payments', January 14, 2026",
         "url": "https://www.coindesk.com/business/2026/01/14/pakistan-signs-deal-with-trump-linked-crypto-business-for-cross-border-payments",
         "category": 3
@@ -229,6 +246,10 @@
         "category": 1
       },
       {
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "Senate Banking Committee",
+        "document_date": "2025-06-11",
         "label": "Warren-Merkley letter to the MGX and Binance CEOs (Senate Banking Committee, June 11, 2025), reporting WLF's confirmation the transaction would likely have settled in foreign fiat absent USD1",
         "category": 2
       },
@@ -264,23 +285,33 @@
         "category": 1
       },
       {
+        "type": "oge_278e",
+        "filing_type": "new_entrant",
+        "certification_status": "filer_signed_only",
         "label": "Witkoff OGE Form 278e (New Entrant Report, August 13, 2025)",
+        "url": "https://www.whitehouse.gov/wp-content/uploads/2025/09/Witkoff-Steven.pdf",
         "category": 1
       },
       {
+        "type": "congressional_document",
+        "document_type": "letter",
+        "chamber_or_committee": "U.S. Senate",
         "label": "Warren-Murphy letter on Witkoff OGE form ethics-officer signoff, November 2025",
         "category": 2
       },
       {
+        "type": "press_disclosure",
         "label": "Reuters reporting on the Roosevelt Hotel MOU and Pakistan IMF context, February 2026",
         "category": 3
       },
       {
+        "type": "press_disclosure",
         "label": "Commercial Observer, 'Trump Envoy Steve Witkoff, Pakistani Government Plan Roosevelt Hotel Redevelopment', February 26, 2026",
         "url": "https://commercialobserver.com/2026/02/trump-envoy-steve-witkoff-pakistan-roosevelt-hotel/",
         "category": 3
       },
       {
+        "type": "press_disclosure",
         "label": "Bisnow New York, 'Steve Witkoff Strikes U.S.-Pakistan Deal To Redevelop Manhattan Hotel', February 20, 2026",
         "url": "https://www.bisnow.com/new-york/news/hotel/pakistan-reaches-agreement-with-us-to-redevelop-nyc-hotel-133331",
         "category": 3
