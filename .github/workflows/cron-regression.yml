@@ -11,6 +11,11 @@ name: cron regression guard
 #   - ADV/IAPD (collectors/adv_iapd): seeded (collectors/adv_iapd/seed.json), and
 #     regenerated offline from a committed firm fixture under data/samples/ — no
 #     network call, so it is deterministic in CI.
+#
+# A third, sibling step (tools/validate_primary_sources.py, Handoff #48) validates
+# every primary_sources entry in web/data/{records,sovereign_entities}.json against
+# the PrimarySource union in web/lib/types.ts, failing on a malformed source. It is
+# read-only like the guards.
 
 on:
   schedule:
@@ -41,6 +46,11 @@ jobs:
 
       - name: Run ADV/IAPD regression guard
         run: python -m collectors.adv_iapd.regression_guard
+
+      - name: Validate primary_sources against the PrimarySource union
+        # Asserts every web/data/{records,sovereign_entities}.json primary_sources
+        # entry against the union in web/lib/types.ts (Handoff #48). Read-only.
+        run: python tools/validate_primary_sources.py
 
       - name: Assert committed data untouched
         # Belt-and-suspenders: the guard regenerates in memory, so the tree must
