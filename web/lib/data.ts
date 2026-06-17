@@ -33,7 +33,12 @@ export function getRecordCounts(): {
 } {
   return {
     total: RECORDS.length,
-    live: RECORDS.filter((r) => r.scope === "LIVE").length,
+    // live = scope LIVE and not soft-flagged out of the headline count (#49/#50).
+    // headline_exclusion_reason is absent on most records, so the clause is a
+    // no-op until a record carries the flag; SC-008 carries it, so live is 2.
+    live: RECORDS.filter(
+      (r) => r.scope === "LIVE" && !r.headline_exclusion_reason,
+    ).length,
   };
 }
 
