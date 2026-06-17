@@ -444,8 +444,11 @@ export default function MethodologyPage() {
           cryptocurrency into Pakistan's financial system. Steve Witkoff
           subsequently negotiated, in his envoy capacity, a US-Pakistan
           exploration of redeveloping the Roosevelt Hotel in Manhattan, an asset
-          owned by Pakistan International Airlines Investment Limited, a
-          Pakistani state-owned enterprise. Steve Witkoff's August 13, 2025 OGE
+          owned by Pakistan International Airlines Investment Limited. PIA was
+          privatized in December 2025 under Pakistan's IMF Extended Fund Facility
+          program; the Pakistani government retains a minority stake, which makes
+          the counterparty sovereign-adjacent rather than a wholly state-owned
+          enterprise. Steve Witkoff's August 13, 2025 OGE
           Form 278e (the New Entrant Report on file with the White House)
           documents continuing equity exposures across multiple Witkoff Group
           affiliates.
